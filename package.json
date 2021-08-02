@@ -1,0 +1,23 @@
+{
+  "name": "ceneval",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlceca05/convocene.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlceca05/convocene/issues"
+  },
+  "homepage": "https://github.com/carlceca05/convocene#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}
