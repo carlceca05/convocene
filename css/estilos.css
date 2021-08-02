@@ -1,8 +1,64 @@
-
+.fondo1{
+    background-image: url(../img/chica-haciendo-su-examen_1098-218.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fondo2{
+    background-image: url(../img/chica-estudiando-examen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
 .img1{
     background-image: url(../img/min1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fondoverde{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    background-image: url(../img/img3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img3{
+    background-image: url(../img/img4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fondeado{
+    background-image: url(../img/img3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fondeado2{
+    background-image: url(../img/inve.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.chonchito{
+    font-weight: 500;
+}
+.inv{
+    background-image: url(../img/inve.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.inv2{
+    background-image: url(../img/inve2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
