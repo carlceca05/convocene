@@ -1,0 +1,9 @@
+
+
+
+.img1{
+    background-image: url(../img/min1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
