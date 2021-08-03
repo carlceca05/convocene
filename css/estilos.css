@@ -1,3 +1,17 @@
+.fondo{
+    background-image: url(../img/img4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+.fondo9{
+    background-image: url(../img/img4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
 .fondo1{
     background-image: url(../img/chica-haciendo-su-examen_1098-218.jpg);
     background-repeat: no-repeat;
@@ -62,4 +76,49 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.anima{
+    
+}
+@media only screen and (min-width:901px) and (max-width:3000px) {
+    .cuadrada{
+        display: none;
+    }
+    .espacio{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+@media only screen and (min-width:100px) and (max-width:900px) {
+    .img2{
+        background-image:none;
+    }
+    .inv{
+        background-image: none;
+    }
+    .espacio{
+        padding-top: 0px;
+        padding-bottom: 48px;
+    }
+    .desaparece{
+        display: none;
+    }
+    .reduxco{
+        width: 50px;
+    }
+}
+
+.redonda{
+    border-radius: 20%;
+}
+
+.rotado{
+    position: relative; 
+    top: -200px;
+    left: 45%;
+    transform: rotate(20deg);
+    
+}
+.pararotado{
+    margin-top: 150px;
 }
