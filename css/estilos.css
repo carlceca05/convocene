@@ -3,14 +3,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    
+}
+.alto{
+    height: 60vh;
 }
 .fondo9{
     background-image: url(../img/img4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50vh;
 }
 .fondo1{
     background-image: url(../img/chica-haciendo-su-examen_1098-218.jpg);
@@ -105,6 +107,9 @@
     }
     .reduxco{
         width: 50px;
+    }
+    .alto{
+        height: auto;
     }
 }
 
