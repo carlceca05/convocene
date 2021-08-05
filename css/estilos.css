@@ -3,15 +3,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 .alto{
     height: 60vh;
 }
-.fondo9{
-    background-image: url(../img/img4.png);
+.fondo88{
+    background-image: url(../img/cuadrado.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 .fondo1{
@@ -26,8 +25,6 @@
     background-position: center;
     background-size: cover;
 }
-
-
 .img1{
     background-image: url(../img/min1.jpg);
     background-repeat: no-repeat;
@@ -90,6 +87,10 @@
         padding-top: 48px;
         padding-bottom: 48px;
     }
+    .espacio2{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 @media only screen and (min-width:100px) and (max-width:900px) {
     .img2{
@@ -126,4 +127,52 @@
 }
 .pararotado{
     margin-top: 150px;
+}
+
+/* ESTILOS SLIDER  */
+#carousel .carousel-item.boat{
+    background-image:url("../img/img4.png");
+}
+#carousel .carousel-item.sea{
+    background-image:url("../img/img3.png");
+}
+#carousel .carousel-item.river{
+    background-image:url("../img/chica-haciendo-su-examen_1098-218.jpg");
+}
+#carousel .carousel-item{
+    height:70vh;
+    width:100%;
+    min-height:350px;
+    background:no-repeat center center scroll;
+    background-size:cover;
+  }
+  #carousel .carousel-inner .carousel-item{
+    transition:-webkit-transform 2s ease;
+    transition:transform 2s ease;
+    transition:transform 2s ease, -webkit-transform 2s ease;
+  }
+  #carousel .carousel-item .caption{
+    background:rgba(60,160,144,0.7);
+    /*animation-duration: 1s;
+    animation-delay: 2s;*/
+  }
+  /*
+  #carousel .caption h2{
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+  #carousel .caption p{
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+  }
+  #carousel .caption a{
+    animation-duration: 1s;
+    animation-delay: 2.4s;
+  }*/
+#carousel .carousel-item .caption2{
+    background:rgba(0,0,0,0.5);
+}
+
+.oscurito{
+    background:rgba(0,0,0,0.5);
 }
