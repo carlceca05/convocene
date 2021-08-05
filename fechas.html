@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/style.css">
+ 
+  
+
+</head>
+
+<body >
+  <section class="container">
+    <div class="row">
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#eug">
+                  <i class="icon-double-angle-right"></i> CDMX (plantel eugenia <img class="pull-right lazyload"
+                        data-src="img/metro-eugenia.webp" height="16" width="16">)
+                </a>
+              </div>
+              <div id="eug" class="accordion-body in collapse" style="height: auto;">
+                <div class="accordion-inner">
+                  <div class="texto">
+                    <div class="card">
+                      <p>
+                        <b>Plantel Eugenia</b>
+                      </p>
+                      <p>
+                        <i class="icon-map-marker"></i> Enrique Pestalozzi 711, Col. del Valle, Benito Juárez, 03100 Ciudad de México, Distrito Federal. A unas calles del metro Eugenia <img
+                        class="lazyload" style="width:14px; height:14px;" data-src="img/metro-eugenia.webp"
+                        width="14" height="14"><a href="https://goo.gl/maps/niy5PzVejPM2" target="_blank">Cómo llegar</a><br>
+                        <i class="icon-phone"></i> <a onclick="goog_report_conversion('tel:5562717532')" href="tel:5562717532"><strong style="color:#41bb19;"> (55) 6271 7532</a></strong> - <a
+                        onclick="goog_report_conversion('tel:5512091084')" href="tel:5512091084"><strong
+                        style="color:#41bb19;"> (55) 1209 1084</a></strong><br>
+                        <i class="icon-envelope-alt"></i> <a title="info@prepaenunexamen.com"
+                        href="mailto:info@prepaenunexamen.com?subject=Solicitud de información&body=Nombre:%0A%0ATeléfono:%0A%0AEstado:%0A%0AMunicipio:%0A%0ACurso:%0A%0AMensaje:">info@prepaenunexamen.com</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="map df eugenia">
+                  </div>
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--FIN DE COSAS-->
+
+
+  
+ 
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/tabletop.js"></script>
+  <script type='text/javascript'>function posicionarMenu() { var b = $("header").outerHeight(true); var a = $("nav").outerHeight(true); if ($(window).scrollTop() >= b - a) { $("nav").addClass("navbar-fixed-top"); $("nav").removeClass("trampa") } else { $("nav").addClass("trampa"); $("nav").addClass("navbar-fixed-top") } } $(document).ready(function () { posicionarMenu(); $(window).scroll(function () { posicionarMenu() }) }); $(function () { $("#testmenu a").popover() });
+    //spreadsheet TODO: FIXME:
+    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Boph5TkZSiAV4RtYyP8yhLS1j-74uj-YAA54kUtwa5o/pubhtml';
+    $(document).ready(function () {
+      Tabletop.init({
+        key: public_spreadsheet_url,
+        callback: showInfo,
+        wanted: ["distrito federal", "viaducto", "oaxaca", "queretaro", "examen"],
+        debug: true
+      })
+    })
+    function showInfo(data, tabletop) {
+      $.each(tabletop.sheets("distrito federal").all(), function (i, df) {
+        var df_li = $('<p><b>' + df.dias + '</b></p><p><i class="icon-calendar"></i> ' + df.fecha + '<br><i class="icon-time"></i> ' + df.horario + '<br><i class="icon-file-alt"></i> ' + df.examen + '<br><b style="color:red;">' + df.status + '</b></p>')
+        df_li.prependTo("#eug .texto");
+      })
+      $.each(tabletop.sheets("oaxaca").all(), function (i, oax) {
+        var oax_li = $('<p><b>' + oax.dias + '</b></p><p><i class="icon-calendar"></i> ' + oax.fecha + '<br><i class="icon-time"></i> ' + oax.horario + '<br><i class="icon-file-alt"></i> ' + oax.examen + '<br><b style="color:red;">' + oax.status + '</b></p>')
+        oax_li.prependTo("#oax .texto");
+      })
+      $.each(tabletop.sheets("queretaro").all(), function (i, qro) {
+        var qro_li = $('<p><b>' + qro.dias + '</b></p><p><i class="icon-calendar"></i> ' + qro.fecha + '<br><i class="icon-time"></i> ' + qro.horario + '<br><i class="icon-file-alt"></i> ' + qro.examen + '<br><b style="color:red;">' + qro.status + '</b></p>')
+        qro_li.prependTo("#qro .texto");
+      })
+      $.each(tabletop.sheets("viaducto").all(), function (i, vto) {
+        var vto_li = $('<p><b>' + vto.dias + '</b></p><p><i class="icon-calendar"></i> ' + vto.fecha + '<br><i class="icon-time"></i> ' + vto.horario + '<br><i class="icon-file-alt"></i> ' + vto.examen + '<br><b style="color:red;">' + vto.status + '</b></p>')
+        vto_li.prependTo("#vto .texto");
+      })
+      $.each(tabletop.sheets("examen").all(), function (i, exa) {
+        var exa_li = $('<h2>Examen ' + exa.aplicacion + '</h3><a href="http://registroenlinea.ceneval.edu.mx/RegistroLinea/" target="_new">Registro en línea ' + exa.registro + '</a>')
+        exa_li.appendTo("#examen .page-header");
+      })
+    }
+  </script>
+</body>
+
+</html>

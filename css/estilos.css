@@ -145,34 +145,33 @@
     min-height:350px;
     background:no-repeat center center scroll;
     background-size:cover;
-  }
-  #carousel .carousel-inner .carousel-item{
+}
+#carousel .carousel-inner .carousel-item{
     transition:-webkit-transform 2s ease;
     transition:transform 2s ease;
     transition:transform 2s ease, -webkit-transform 2s ease;
-  }
-  #carousel .carousel-item .caption{
+}
+#carousel .carousel-item .caption{
     background:rgba(60,160,144,0.7);
     /*animation-duration: 1s;
     animation-delay: 2s;*/
-  }
-  /*
-  #carousel .caption h2{
+}
+/*
+#carousel .caption h2{
     animation-duration: 1s;
     animation-delay: 2s;
-  }
-  #carousel .caption p{
+}
+#carousel .caption p{
     animation-duration: 1s;
     animation-delay: 2.2s;
-  }
-  #carousel .caption a{
+}
+#carousel .caption a{
     animation-duration: 1s;
     animation-delay: 2.4s;
-  }*/
+}*/
 #carousel .carousel-item .caption2{
     background:rgba(0,0,0,0.5);
 }
-
 .oscurito{
     background:rgba(0,0,0,0.5);
 }
