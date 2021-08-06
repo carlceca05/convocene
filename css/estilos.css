@@ -10,7 +10,7 @@
 .fondo88{
     background-image: url(../img/cuadrado.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
 }
 .fondo1{
@@ -246,3 +246,4 @@ main header{
 				min-width: 99%;
 				/*margin:  0 10px  0 0;*/
 			}
+        

@@ -15,6 +15,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <style>
+        .modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalbox{
+    width: 70%;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+}
+.close:hover {
+    background: #3CA090;
+    color:#222;
+}
+    </style>
+
 </head>
 <body>
     <!--navegacion-->
@@ -38,7 +115,6 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Capacitación </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li class=""><a class="dropdown-item " href="aula_virtual.html">  Aula Virtual</a></li>
-                            
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item " href="curso_linea.html">Curso en línea</a></li>
                             <li><hr class="dropdown-divider"></li>
@@ -82,25 +158,78 @@
         <div class="container text-center py-5" >
             <h1 class=" fw-bold  text-white ">CURSO AULA VIRTUAL EN VIVO </h1>
             <h5 class=" mb-4 text-primary"> LA MEJOR FORMA DE APRENDER </h5>
-            <a class="btn btn-outline-primary  shadow" href="#registro"> Inscríbete </a>
+            <!--
+            <a class="btn btn-outline-primary  shadow" href="#registro"> Inscríbete </a>-->
         </div>
     </section>
-    <!--secion 2 -->
-    <!--
-    <section class="container-fluid bg-light">
-        <div class="container ">
-            <h2 class="text-center py-4">Capacítate adecuadamente para aprobar tu examen CENEVAL</h2>
-            <h6 class="text-primary">Consigue tus metas y objetivos más fácil y rápido</h6>
-            <p>Capacítate en todos los temas de la guía para el examen único de prepa en un examen CENEVAL , estudia con profesores de cada área de conocimientos mediante transmisiones en vivo, contesta tus dudas y conoce los tips para aprobar más fácilmente.</p>
-            <ul class="list-unstyled">
-                <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span> Transmisiones en vivo con profesores de cada área de conocimientos.</li>
-                <li><span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span> Exámenes parciales con reactivos similares a los del examen real.</li>
-                <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span> Exámenes simulacro con 192 reactivos cronometrado y revisión para que te familiarices con la prueba real y conozcas tu dominio de los conocimientos adquiridos en cada clase.</li>
-            </ul>
-        </div>
-    </section>
-    -->
+    
 
+    <!--seccion 3-->
+    <section class="container-fluid">
+        <div class="container pb-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-3">
+                <div class="col border-end border-primary">
+                    <p class="text-center pt-3 fs-6">15 de Julio 2021<br>
+                    <strong> Proxima fecha </strong></p>
+                </div>
+                <div class="col">
+                    <p class="text-center pt-3 fs-6">120 Hrs.
+                    <br>
+                    <strong> Horas de Curso  </strong></p>
+                </div>
+                <div class="col border-start border-primary">
+                    <p class="text-center ">15 de Julio 2021
+                    <br> <strong> Proxima fecha del examen CENEVAL </strong> </p>
+                </div>
+                <div class="col border-start border-primary">
+                    <p class="text-center pt-3"> <a class="btn btn-primary btn-lg text-white shadow" href="#modal1"> Comprar</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--ventana emergente-->
+<section>
+    <div id="modal1" class="modalmask">
+        <div class="modalbox movedown">
+            <a href="#close" title="Close" class="close">X</a>
+                <h5 class="text-center bg-primary text-white p-3">Métodos de pago</h5>
+                <div class="row mt-4">
+                    <div class="col">
+                        <h5 >Paso 1: Realiza tu pago </h5>
+                        <p><strong>Pagos en:</strong>
+                        <br>
+                        <strong>OXXO Y 7Eleven</strong>
+                        <br><br>
+                        <strong>BBVA Bancomer</strong>
+                        <br>
+                        <strong>Tarjeta:</strong>4152 3137 2688 5655<br>
+                        </p>
+                        <br>
+                        <p><strong>Depósito Bancario</strong>
+                        <br>
+                        <strong>BBVA Bancomer</strong>
+                        <br>
+                        <strong>Cuenta:</strong>0475813824
+                        <br>
+                        <strong>Clabe:</strong>012180004758138248
+                        <br>
+                        <strong>Tarjeta:</strong>4152 3137 2688 5655
+                        <br><br>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h5 >Paso 2: Contáctanos </h5>
+                        <p>Una vez hayas realizado tu pago, nos envías un correo electrónico con tu comprobante de pago y todos tus datos (Nombre completo, correo electrónico, teléfono y localidad) a <strong> info@convocatoriaceneval.com </strong> o bien comunicate con nosotros a los teléfonos <strong> (55) 6271 7532 - (55) 1209 1084 </strong></p>
+                        <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5512091084"> <img class="" src="img/whatsapp.png" style="width:35px; height:35px;"></a></p>
+                        <h4 >Paso 3: Envío de Usuario y Contraseña </h4>
+                        <p>Inmediatamente recibamos tu correo te enviaremos las instrucciones de acceso a la plataforma con un nombre de usuario y contraseña únicos.</p>
+                    </div>        
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!--secion 2 -->
     <section class="container-fluid pb-4 ">
         <div class="container ">
                 <div  class="img2 rounded shadow mt-3 ">
@@ -235,77 +364,159 @@
     </section>
     <!--secion 2 -->
     <section class="container-fluid py-5">
-        <div class="container py-5">
-            <h2>FECHAS Y HORARIOS</h2>
-            <div class="texto">
-
-            </div>
-            <p></p>
-            
-            <p> AQUI VAN LAS FECHAS </p>
-
-
-
-            <div id="eug">
-                <div class="texto"> 
+        <div class="container  py-5">
+            <div class="row row-cols-1 row-cols-lg-3 mt-5">
+                <div class="col">
+                    <div class="card shadow p-3">
+                        <h3 class="text-center " > <strong style="font-size: 2.5em; " class="text-primary" > 25 </strong> <br>
+                        de Agosto</h3>
+                        <p class="card-text text-center">Próxima fecha del examen CENEVAL</p>
+                    </div>
                 </div>
-            </div> 
+                <div class="col">
+                    <div class="card shadow p-3">
+                        <div id="eug">
+                            <div class="texto card-text"> 
+                            </div>
+                        </div>
+                        
+                        <p class="card-text"> Fechas y horarios del curso en aula virtual </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow p-3">
+                        <h3 class="card-text text-primary text-center " style="font-size:2.5em;">$4,500</h3>
+                        <p class="text-center"><a class="btn btn-outline-primary " href="#modal1"> Comprar</a></p>    
+                        <p class="card-title">Costo del curso en aula virtual</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <h6 class="bg-primary p-2 text-white "  > >>   CDMX (plantel eugenia> </h6>
+            <div class="row">
+                <div class="col">
+                    <div class="bg-light">
+                        <h6>Plantel Eugenia</h6>
+                        <p>Enrique Pestalozzi 711, Col. del Valle, Benito Juárez, 03100 Ciudad de México, Distrito Federal. A unas calles del metro Eugenia Cómo llegar
+                        (55) 6271 7532 - (55) 1209 1084
+                        info@bachilleratoceneval.com</p>
+                    </div>
+                </div>
 
-            
-
-
-
-            <a href="fechas.html">fechas</a>
-
-
-
+                <div class="col">
+                    <img src="img/" alt="">
+                </div>
+            </div>
+            -->
         </div>
     </section>
-
-    
     <!--secion 2 -->
-    <section class="container-fluid">
+    <section class="container-fluid py-5">
         <div class="container">
-            <h2>COMPRAR</h2>
-            <p> AQUI VA LO TABLA DE COMPRAR </p>
-        </div>
-    </section>
-    <!--secion 2 -->
-    <section class="container-fluid">
-        <div class="container">
-            <h2>Requisitos para aplicar el examen CENEVAL</h2>
-            <p>CURP
-                Acta de Nacimiento
-                Identificación Oficial vigente (Sólo INE o Pasaporte)
-                Carta compromiso (descarga el formato en la página de CENEVAL)
-                En caso de ser menor de edad, presentar carta de autorización del padre o tutor.
-                </p>
+            <div  class="img2 rounded shadow mt-3 ">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col cuadrada ">
+                        <img src="img/cuadrado.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-lg-8 p-4 ">
+                        <h4>Requisitos para aplicar el examen CENEVAL</h4>
+                        <ul>
+                            <li>CURP</li>
+                            <li> Acta de Nacimiento  </li>
+                            <li> Identificación Oficial vigente (Sólo INE o Pasaporte)</li>
+                            <li> Carta compromiso (descarga el formato en la página de CENEVAL)</li>
+                            <li> En caso de ser menor de edad, presentar carta de autorización del padre o tutor.</li>
+                        </ul>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
         </div>
     </section>
     <!--secion 2 -->
     <section class="container-fluid">
         <div class="container">
             <h2>Preguntas frecuentes</h2>
-            <p>CURP
-                Acta de Nacimiento
-                Identificación Oficial vigente (Sólo INE o Pasaporte)
-                Carta compromiso (descarga el formato en la página de CENEVAL)
-                En caso de ser menor de edad, presentar carta de autorización del padre o tutor.
-                </p>
+            <div class="accordion pb-5" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="headingOne">
+                        <button class="accordion-button collapsed bg-light fw-bold text-muted" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué es CENEVAL?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            <p>CENEVAL es la institución encargada de realizar el examen único de bachillerato por medio del acuerdo 286 con la SEP, con el cual se busca que las personas quienes por algún motivo no concluyeron sus estudios de manera presencial, puedan acreditar su bachillerato en un examen. Lo que antes te podía tomar tres años o más, ahora lo puedes completar en 4 meses y un solo examen. 90% de nuestros alumnos aprueban a la primera.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header fw-bold" id="headingTwo">
+                        <button class="accordion-button collapsed bg-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué es ACREDITABACH?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>El Acreditabach es el examen de CENEVAL con el cual se acreditan los conocimientos del bachillerato general, se trata de un examen que se lleva a cabo a nivel nacional y mediante el acuerdo 286 con la SEP, es el instrumento para que las personas a partir de los 15 años, puedan obtener su certificado de bachillerato en un solo examen. El examen consta de dos etapas: conocimientos generales y habilidad comunicativa. Nuestro curso está enfocado 100% al contenido del examen y nuestro objetivo es que tú apruebes el examen a la primera, muchos de nuestros alumnos ya cuentan con su certificado de bachillerato y gracias a su retroalimentación, perfeccionamos y actualizamos nuestros cursos y reactivos para hacerlos más efectivos, sencillos y prácticos para aprobar el Acreditabach.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header fw-bold" id="headingThree">
+                        <button class="accordion-button collapsed bg-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Para qué tomar un curso de capacitación?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Porque de acuerdo con estadísticas de CENEVAL, 70% de quienes aplican el examen no logra pasarlo, mientras que otro porcentaje se queda a una o dos materias de aprobarlo. Esto significa que deberán volver a presentar todo el examen o la materia que no aprobaron, pagando nuevamente el derecho a examen. Porque para aprobar el examen CENEVAL Acreditabach es necesario pasar las dos etapas del examen y tener un promedio mínimo de 7.0, ya que algunas universidades en el país, piden a sus aspirantes tener un promedio mínimo de 7.0. Esto garantiza que después de obtener tu certificado de bachillerato, puedas aspirar a estudiar en cualquier universidad del país.</p>
+                            <p>Porque más de 10 años de capacitar a las personas para aprobar sus exámenes nos han vuelto expertos en los temas que debes conocer para aprobar, por ello te ofrecemos un curso especializado para tener tu prepa en un examen CENEVAL, sencillo, efectivo y rápido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header fw-bold" id="headingThree">
+                        <button class="accordion-button collapsed bg-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Comó es el examen único CENEVAL de bachillerato?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Se trata de un examen que se aplica a nivel nacional se denomina Examen Global, el cual contiene dos etapas, la primera es el Examen General de Competencias Disciplinares Básicas (EGCD), es decir, conocimientos generales de bachillerato. Esta etapa evalúa Matemáticas, Ciencias Experimentales, Ciencias Sociales y Humanidades.</p>
+                            <p> La segunda etapa del examen es de habilidad comunicativa y se divide en dos: Examen de Comprensión Lectora (ECL) y Examen de Habilidades de Expresión y Argumentación Escritas (EHEAE). En esta fase leerás de dos a tres textos y contestar preguntas sobre el tema, al final tendrás que escribir un ensayo de dos cuartillas y media sobre un tema polémico donde debes argumentar y explicar tu postura a favor o en contra.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header fw-bold" id="headingThree">
+                        <button class="accordion-button collapsed bg-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Se puede terminar el bachillerato en línea ?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Prepárate tomando clases especializadas en el examen de manera presencial o en línea, puedes estudiar fines de semana por la mañana, entre semana por la mañana o tarde o desde tu casa en tu computadora con el curso en línea.</p>
+                            <p>El curso incluye exámenes simulacro como la prueba real y un taller de práctica con reactivos, te enseñamos todo lo necesario para que apruebes fácil y rápido de manera que lo único que te separa de tu certificado de bachillerato es ¡el tiempo que tomes el curso!</p>
+                        </div>
+                    </div>
+                    
+                </div>        
+            </div>
+
         </div>
     </section>
     <!--secion 2 -->
     <section class="container-fluid">
         <div class="container">
             <h2>Testimonios</h2>
-            <p>
-                </p>
+            
         </div>
     </section>
     <!--formulario-->
     <section class="container-fluid">
         <div class="container">
-            <h1>Formulario</h1>
+            <h1>BOLETIN</h1>
             <iframe width="100%" height="800" src="https://prepaenunexamen.com/formularios/cotizacion.html" frameborder="0" scrolling="auto"> </iframe>
         </div>
     </section>
