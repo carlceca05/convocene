@@ -112,6 +112,7 @@
     .alto{
         height: auto;
     }
+    
 }
 
 .redonda{
@@ -175,3 +176,73 @@
 .oscurito{
     background:rgba(0,0,0,0.5);
 }
+
+/*  owl */
+
+/*
+main header{
+	width: 98%;
+	height: 60px;
+	margin: 0 auto;
+	background: gray;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-between;
+	border-bottom: 2px solid #ddd;
+	}
+    */
+		/*header p span{
+			font-size: 40px;
+		    margin: 0 5px;
+		    cursor: pointer;
+		    color: #555;
+		    width: 30px;
+		    height: 30px;
+		    display: inline-block;
+		    line-height: 19px;
+		    text-align: center;
+		    border-radius: 3px;
+		}
+		header p span:hover{
+			background: #222;
+    		color: white;
+		}*/
+        /*
+		.hola{
+			width: 98%;
+			height: 600px;
+			/*background: red;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			overflow-x: auto;
+		}
+        */
+        
+		div::-webkit-scrollbar{
+			display: none;
+		}
+        
+		.hola .product{
+			min-width: 40%;
+			/*height: 90%;*/
+			/*background: whitesmoke;*/
+			/*margin:  0 20px  0 0;*/
+			/*border-radius: 20px;*/
+			/*position: relative;*/
+			/*left: 0;*/
+			transition: 0.5s;
+
+		}
+		
+		
+		@media (max-width: 768px) {
+            /*
+			header p span{
+				font-size: 30px;
+			}*/
+			.hola .product {
+				min-width: 99%;
+				/*margin:  0 10px  0 0;*/
+			}
