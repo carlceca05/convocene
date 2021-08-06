@@ -15,6 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sss.css">
+
+
+   
+
     <style>
         .modalmask {
     position: fixed;
@@ -368,23 +374,32 @@
             <div class="row row-cols-1 row-cols-lg-3 mt-5">
                 <div class="col">
                     <div class="card shadow p-3">
+                        <!--
+                        <h3 class=" text-center">Próximo examen </h3>
                         <h3 class="text-center " > <strong style="font-size: 2.5em; " class="text-primary" > 25 </strong> <br>
                         de AGOSTO</h3>
                         <p class="card-text text-center">Próxima fecha del examen CENEVAL</p>
+                        -->
+                        <div id="examen">
+                            <div class="page-header"> </div>
+
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow p-3">
-                        <!--
+                        <p class="card-text text-center"> Fechas y horarios del curso en aula virtual </p>
                         <div id="eug">
                             <div class="texto card-text"> 
                             </div>
                         </div>
-                        -->
+                        <!--
                         <h3 class="text-center"><strong class="text-primary" style="font-size: 1.5em;">05-31</strong> <br>  de JULIO</h3>
                         <h4 class="text-center"><strong class="text-primary">18:00-21:00</strong> <br>  Vespertino</h4>
-
-                        <p class="card-text text-center"> Fechas y horarios del curso en aula virtual </p>
+-->
+                        
+                    
                     </div>
                 </div>
                 <div class="col">
@@ -511,53 +526,77 @@
         </div>
     </section>
     <!--secion 2 -->
-    <section class="container-fluid">
+
+ 
+
+
+
+
+        
+
+
+    <section class="container-fluid bg-warning">
         <div class="container">
-            <h4 class="text-center">¿Qué dicen nuestros alumnos?</h4>
-
-
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="test bg-light w-50 border h-100 border-primary">
-                        <h6 >jose juan juarez </h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis impedit tenetur culpa blanditiis saepe quam soluta accusamus in eaque, accusantium laudantium aliquid earum id sit aliquam iure mollitia porro?</p>
-                    </div>
+            <h3 class="text-center">¿Qué dicen nuestros alumnos?</h3>
+            <div class="slider-testimonial">
+              <div class="testimonial-item">
+                <div class="testimonial-client text-center">
+                  <img class="img-fluid " src="img/testimonios-cecaes-bachillerato-ceneval-3.webp" alt="">
+                  <p class="client-name"> Dulce Hernández</p>
                 </div>
-                <div class="item">
+                <div class="text-center">
+                  <p>"Debo decir muchas gracias ya que con este curso me dio muchas posibilidades de pasar mi examen, y
+                    asi fue, me explicaron detalladamente todo lo que necesitaba saber respecto al examen y su método de
+                    enseñanza es la correcta porque conocen el examen tal cual es"</p>
                 </div>
-                <div class="item"><h4>3</h4></div>
-                <div class="item"><h4>4</h4></div>
-                <div class="item"><h4>5</h4></div>
-                <div class="item"><h4>6</h4></div>
-                <div class="item"><h4>7</h4></div>
-                <div class="item"><h4>8</h4></div>
-                <div class="item"><h4>9</h4></div>
-                <div class="item"><h4>10</h4></div>
-                <div class="item"><h4>11</h4></div>
-                <div class="item"><h4>12</h4></div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-client">
+                  <img class="" src="img/testimonios-cecaes-bachillerato-ceneval-2.webp" alt="">
+                  <p class="client-name">César Hylian</p>
+                  <img class="" data-src="img/educacion-cinco-estrellas.webp" alt="">
+                </div>
+                <div class="testimonial-text">
+                  <p>"Tomé el curso para acreditar la prepa y gracias a ustedes lo pase satisfactoriamente, todo
+                    gracias a su apoyo y asesoría completamente enfocada con el <strong>examen CENEVAL</strong> y sin
+                    quedarme con alguna duda respecto a las preguntas que realizan. 100% Recomendado."</p>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <div class="testimonial-client">
+                  <img class="" style="border-radius: 50%;" src="img/testimonios-cecaes-bachillerato-ceneval-3.webp" alt="">
+                  <p class="client-name">Eren Mila</p>
+                </div>
+                <div class="testimonial-text">
+                  <p>"Aprendí mucho, no lo tuve que memorizar y se me hizo muy fácil contestar el examen, el curso
+                    sobrepaso mis expectativas y finalmente pude obtener mi certificado. ¡Gracias por su ayuda y
+                    atención que tuvieron con cada uno de nosotros!"</p>
+                </div>
+              </div>
             </div>
+        </section>
 
-
-            <script>
-                $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
+        
+          <!--SCRIPTS-->
+         
+         
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+         
+          <script src="js/sss.js"></script>
+          <script>
+              jQuery(function($){
+                $('.slider-testimonial').sss({
+                  slideShow : true,
+                  speed : 4000
+                  });
+              });
             </script>
+     
+     
+        
+       
 
-            
+
         </div>
     </section>
     <!--formulario-->
@@ -641,16 +680,16 @@
     //spreadsheet TODO: FIXME:
     var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Boph5TkZSiAV4RtYyP8yhLS1j-74uj-YAA54kUtwa5o/pubhtml';
     $(document).ready(function () {
-      Tabletop.init({
+        Tabletop.init({
         key: public_spreadsheet_url,
         callback: showInfo,
         wanted: ["distrito federal", "viaducto", "oaxaca", "queretaro", "examen"],
         debug: true
-      })
+        })
     })
     function showInfo(data, tabletop) {
       $.each(tabletop.sheets("distrito federal").all(), function (i, df) {
-        var df_li = $('<p><b>' + df.dias + '</b></p><p><i class="icon-calendar"></i> ' + df.fecha + '<br><i class="icon-time"></i> ' + df.horario + '<br><i class="icon-file-alt"></i> ' + df.examen + '<br><b style="color:red;">' + df.status + '</b></p>')
+        var df_li = $('<p><b>' + df.dias + '</b></p><p><i class="bi-calendar-check"></i> ' + df.fecha + '<br><i class="bi bi-alarm"></i> ' + df.horario + '<br><i class="bi bi-alarm"></i> ' + df.examen + '<br><b style="color:red;">' + df.status + '</b></p>')
         df_li.prependTo("#eug .texto");
       })
       $.each(tabletop.sheets("oaxaca").all(), function (i, oax) {
@@ -666,13 +705,14 @@
         vto_li.prependTo("#vto .texto");
       })
       $.each(tabletop.sheets("examen").all(), function (i, exa) {
-        var exa_li = $('<h2>Examen ' + exa.aplicacion + '</h3><a href="http://registroenlinea.ceneval.edu.mx/RegistroLinea/" target="_new">Registro en línea ' + exa.registro + '</a>')
+        var exa_li = $( '<h4 class="text-center">Proximo Examen</h4>' +  '<h3 class="text-center">Examen ' + exa.aplicacion + '</h3><a class="text-center" href="http://registroenlinea.ceneval.edu.mx/RegistroLinea/" target="_new">Registro en línea ' + exa.registro + '</a>')
         exa_li.appendTo("#examen .page-header");
       })
     }
   </script>
 
 
+<script src="js/slider.js"></script>
 
 
     <!--scripts de cecaes-->

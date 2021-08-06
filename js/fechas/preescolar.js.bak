@@ -1,0 +1,47 @@
+// JavaScript Document
+
+  var examen='15 de marzo';
+  var examenb='15 de marzo'
+  var lugarB='Ciudad de M&eacute;xico';
+  var registro='12 de enero al 13 de febrero';
+  var registrob='12 de enero al 13 de febrero'
+  var anio=2015;
+  var resultados='resultados 17 de abril';
+  var resultadosb='resultados 17 de abril';
+
+  var tipo='l&iacute;nea';
+
+  var dia='Sabatino';
+  var curso='17 de enero al 14 de marzo';
+  var horario='8:00 am a 3:00 pm';
+  var sede='Av. Cuauht&eacute;moc No. 876 Col. Narvarte C.P. 03020';
+  
+  var diab='S&aacute;bados y Domingos';
+  var cursob='17 de mayo al 19 de julio';
+  var horariob='8:00 am a 3:00pm';
+  var sedeb='Av. universidad y Retablo (arriba del oxxo) Tel&eacute;fono:(442) 212 4712 | (442) 480 4465';
+  
+// WEB FORM AWEBER
+  
+      <!--
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-1940289589")) {
+                document.getElementById("af-form-1940289589").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-1940289589")) {
+                document.getElementById("af-body-1940289589").className = "af-body inline af-quirksMode";
+            }
+            if (document.getElementById("af-header-1940289589")) {
+                document.getElementById("af-header-1940289589").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-1940289589")) {
+                document.getElementById("af-footer-1940289589").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+    -->
+  
+  
