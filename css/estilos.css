@@ -183,7 +183,7 @@ div::-webkit-scrollbar{
 	display: none;
 	}
 .hola .product{
-	min-width: 40%;
+	min-width: 33%;
 	transition: 0.5s;
 	}
 @media (max-width: 768px) {
