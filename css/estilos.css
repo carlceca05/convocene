@@ -76,6 +76,12 @@
     background-position: center;
     background-size: cover;
 }
+.sesion{
+    background-image: url(../img/sesion.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .anima{
     
 }
