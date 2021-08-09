@@ -91,6 +91,13 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .bordesito{
+        border-right: #3ca090 2px solid;
+    }
+    .pararotado{
+        margin-top: 100px;
+    }
+    
 }
 @media only screen and (min-width:100px) and (max-width:900px) {
     .img2{
@@ -111,26 +118,32 @@
     }
     .alto{
         height: auto;
+    }   
+    .pararotado{
+        margin-top: 100px;
     }
-    .form-respon{
-        height: auto;
-    }
-}
-
+    
+}    
 .redonda{
     border-radius: 20%;
 }
-
+.sombra{
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
+}
 .rotado{
     position: relative; 
-    top: -200px;
+    top: -150px;
     left: 45%;
-    transform: rotate(20deg);
-    
+    transform: scale(2) rotate(20deg);
 }
-.pararotado{
-    margin-top: 150px;
+.rotamovil{
+    position: relative; 
+    bottom: -50px;
+    left: 38%;
+    transform: scale(2);
+
 }
+
 
 /* ESTILOS SLIDER  */
 #carousel .carousel-item.boat{
@@ -156,22 +169,8 @@
 }
 #carousel .carousel-item .caption{
     background:rgba(60,160,144,0.7);
-    /*animation-duration: 1s;
-    animation-delay: 2s;*/
 }
-/*
-#carousel .caption h2{
-    animation-duration: 1s;
-    animation-delay: 2s;
-}
-#carousel .caption p{
-    animation-duration: 1s;
-    animation-delay: 2.2s;
-}
-#carousel .caption a{
-    animation-duration: 1s;
-    animation-delay: 2.4s;
-}*/
+
 #carousel .carousel-item .caption2{
     background:rgba(0,0,0,0.5);
 }
@@ -180,26 +179,15 @@
 }
 
 /*  owl */
-		div::-webkit-scrollbar{
-			display: none;
-		}
-		.hola .product{
-			min-width: 40%;
-			/*height: 90%;*/
-			/*background: whitesmoke;*/
-			/*margin:  0 20px  0 0;*/
-			/*border-radius: 20px;*/
-			/*position: relative;*/
-			/*left: 0;*/
-			transition: 0.5s;
-		}
-		@media (max-width: 768px) {
-            /*
-			header p span{
-				font-size: 30px;
-			}*/
-			.hola .product {
-				min-width: 99%;
-				/*margin:  0 10px  0 0;*/
-			}
+div::-webkit-scrollbar{
+	display: none;
+	}
+.hola .product{
+	min-width: 40%;
+	transition: 0.5s;
+	}
+@media (max-width: 768px) {
+	.hola .product {
+	    min-width: 99%;
+	}
 /* testimonios */
