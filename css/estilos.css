@@ -7,8 +7,8 @@
 .alto{
     height: 60vh;
 }
-.fondo88{
-    background-image: url(../img/cuadrado.png);
+.aula{
+    background-image: url(../img/aula.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -96,6 +96,18 @@
 }
 .taller{
     background-image: url(../img/taller.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.capacitate{
+    background-image: url(../img/capa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ventajas{
+    background-image: url(../img/ventajas.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
