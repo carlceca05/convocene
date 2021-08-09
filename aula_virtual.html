@@ -19,81 +19,81 @@
     
     <style>
         .modalmask {
-    position: fixed;
-    font-family: Arial, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-.modalmask:target {
-    opacity:1;
-    pointer-events: auto;
-}
-.modalbox{
-    width: 70%;
-    position: relative;
-    padding: 20px;
-    background: #fff;
-    border-radius:3px;
-    -webkit-transition: all 500ms ease-in;
-    -moz-transition: all 500ms ease-in;
-    transition: all 500ms ease-in;   
-}
-.movedown {
-    margin: 0 auto;
-}
-.rotate {
-    margin: 10% auto;
-    -webkit-transform: scale(-5,-5);
-    transform: scale(-5,-5);
-}
-.resize {
-    margin: 10% auto;
-    width:0;
-    height:0;
-}
-.modalmask:target .movedown{       
-    margin:10% auto;
-}
-.modalmask:target .rotate{     
-    transform: rotate(360deg) scale(1,1);
-        -webkit-transform: rotate(360deg) scale(1,1);
-}
-.modalmask:target .resize{
-    width:400px;
-    height:200px;
-}
-.close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: 10px;
-    text-align: center;
-    top: 10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius:3px;
-}
-.close:hover {
-    background: #3CA090;
-    color:#222;
-}
-.testi{
-    position: absolute;
-    top:0;
-    right: 0;
-    padding: 3px;
-}
+        position: fixed;
+        font-family: Arial, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+        }
+        .modalmask:target {
+        opacity:1;
+        pointer-events: auto;
+        }
+        .modalbox{
+        width: 70%;
+        position: relative;
+        padding: 20px;
+        background: #fff;
+        border-radius:3px;
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;   
+        }
+        .movedown {
+        margin: 0 auto;
+        }
+        .rotate {
+        margin: 10% auto;
+        -webkit-transform: scale(-5,-5);
+        transform: scale(-5,-5);
+        }
+        .resize {
+        margin: 10% auto;
+        width:0;
+        height:0;
+        }
+        .modalmask:target .movedown{       
+        margin:10% auto;
+        }
+        .modalmask:target .rotate{     
+        transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);   
+        }
+        .modalmask:target .resize{
+        width:400px;
+        height:200px;
+        }
+        .close {
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+        top: 10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius:3px;
+        }
+        .close:hover {
+        background: #3CA090;
+        color:#222;
+        }
+        .testi{
+        position: absolute;
+        top:0;
+        right: 0;
+        padding: 3px;
+        }
     </style>
 
 </head>
@@ -427,7 +427,7 @@
             <div class="accordion pb-5" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header " id="headingOne">
-                        <button class="accordion-button collapsed bg-light fw-bold text-muted" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed bg-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             ¿Qué es CENEVAL?
                         </button>
                     </h2>
@@ -495,57 +495,54 @@
     </section>
     <section class="container pt-5 pb-5 mb-5">
         <h2 class="fw-bold text-center mb-5">Testimonios</h2>
-        <div class="items">
+        <div class="items ">
             <!--#1-->
-            <div class="card me-2 ">
-                <div class="row p-1">
-                    <div class="col-4">
-                        <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
+            <div class="card me-2 shadow">
+                <div class="row p-1  ">
+                    <div class="col-3 ">
+                        <img src="img/testimonios-cecaes-bachillerato-ceneval-2.webp" class="img-fluid pt-2 ps-2"  alt="...">
                     </div>
-                    <div class="col-8">
-                        <div class="card-body border-primary border-3 border-start">
-                            <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
-                            <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
-                            <p class="card-text mt-0"><small> Emprendedor conciente </small> </p>
+                    <div class="col-9">
+                        <div class="card-body border-primary border-3 border-start ">
+                            <p class="card-title"><small> "Debo decir muchas gracias ya que con este curso me dio muchas posibilidades de pasar mi examen, y asi fue, me explicaron detalladamente todo lo que necesitaba saber respecto al examen y su método de enseñanza es la correcta porque conocen el examen tal cual es" </small></p>
+                            <h6 class="card-text mb-0"><small>Dulce Hernández</small> </h6>
                         </div>
                         <div class="testi">
-                            <img class="" src="imagenes/ico-quote-mark.webp" alt="">
+                            <img class="" src="img/ico-quote-mark.webp" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!--#2-->
-            <div class="card me-2 ">
+            <div class="card me-2 shadow ">
                 <div class="row p-1">
-                    <div class="col-4">
-                        <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
+                    <div class="col-3">
+                        <img src="img/testimonios-cecaes-bachillerato-ceneval-3.webp" class="img-fluid pt-2 ps-2" alt="...">
                     </div>
-                    <div class="col-8">
+                    <div class="col-9">
                         <div class="card-body border-primary border-3 border-start">
-                            <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
-                            <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
-                            <p class="card-text mt-0"><small> Creador de contenido y emprendedor </small> </p>
+                            <p class="card-title"> <small>"Tomé el curso para acreditar el bachillerato y gracias a ustedes lo pase satisfactoriamente, todo gracias a su apoyo y asesoría completamente enfocada con el examen CENEVAL y sin quedarme con alguna duda respecto a las preguntas que realizan. 100% Recomendado."</small></p>
+                            <h6 class="card-text mb-0"><small>Armando Perez olivas</small> </h6>
                             <div class="testi">
-                                <img class="" src="imagenes/ico-quote-mark.webp" alt="">
+                                <img class="" src="img/ico-quote-mark.webp" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!--#3-->
-            <div class="card me-2">
+            <div class="card me-2 shadow">
                 <div class="row p-1">
-                    <div class="col-4">
-                        <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
+                    <div class="col-3">
+                        <img src="img/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
                     </div>
-                    <div class="col-8">
+                    <div class="col-9">
                         <div class="card-body border-primary border-3 border-start">
-                            <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
-                            <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
-                            <p class="card-text mt-0"><small> Creador de contenido y emprendedor</small></p>
+                            <p class=""><small> "Aprendí mucho, no lo tuve que memorizar y se me hizo muy fácil contestar el examen, el curso sobrepaso mis expectativas y finalmente pude obtener mi certificado. ¡Gracias por su ayuda y atención que tuvieron con cada uno de nosotros!" </small></p>
+                            <h6 class="card-text mb-0"><small>Armando Perez olivas</small> </h6>
                         </div>
                         <div class="testi">
-                            <img class="" src="imagenes/ico-quote-mark.webp" alt="">
+                            <img class="" src="img/ico-quote-mark.webp" alt="">
                         </div>
                     </div>
                 </div>
