@@ -82,6 +82,24 @@
     background-position: center;
     background-size: cover;
 }
+.linea{
+    background-image: url(../img/linea.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.simulacro{
+    background-image: url(../img/simulacro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.taller{
+    background-image: url(../img/taller.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .anima{
     
 }
