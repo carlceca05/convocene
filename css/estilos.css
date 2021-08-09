@@ -112,6 +112,18 @@
     background-position: center;
     background-size: cover;
 }
+.terminar{
+    background-image: url(../img/terminar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.requisitos{
+    background-image: url(../img/requisitos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .anima{
     
 }
