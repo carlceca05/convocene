@@ -25,7 +25,7 @@
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-    background-image: url(../img/cursoenlinea.jpg);
+    background-image: url(../img/cursoenlinea.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -107,123 +107,123 @@
 
 /*GLOBAL*/
 .requisitos{
-    background-image: url(../img/requisitos.png);
+    background-image: url(../img/requisitos.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .terminar{
-    background-image: url(../img/terminar.png);
+    background-image: url(../img/terminar.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .ventajas{
-    background-image: url(../img/ventajas.png);
+    background-image: url(../img/ventajas.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .capacitate{
-    background-image: url(../img/capa.png);
+    background-image: url(../img/capa.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .boletin{
-    background-image: url(../img/boletin.png);
+    background-image: url(../img/boletin.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 /*INDEX*/
 .fondo{
-    background-image: url(../img/img4.png);
+    background-image: url(../img/img4.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .fondo1{
-    background-image: url(../img/chica-haciendo-su-examen_1098-218.jpg);
+    background-image: url(../img/chica-haciendo-su-examen_1098-218.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .fondo2{
-    background-image: url(../img/chica-estudiando-examen.jpg);
+    background-image: url(../img/chica-estudiando-examen.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .taller{
-    background-image: url(../img/taller.png);
+    background-image: url(../img/taller.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .simulacro{
-    background-image: url(../img/simulacro.png);
+    background-image: url(../img/simulacro.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .linea{
-    background-image: url(../img/linea.png);
+    background-image: url(../img/linea.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .sesion{
-    background-image: url(../img/sesion.png);
+    background-image: url(../img/sesion.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .img1{
-    background-image: url(../img/min1.jpg);
+    background-image: url(../img/min1.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .fondoverde{
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondo.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .img2{
-    background-image: url(../img/img3.png);
+    background-image: url(../img/img3.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .img3{
-    background-image: url(../img/img4.png);
+    background-image: url(../img/img4.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .fondeado{
-    background-image: url(../img/img3.png);
+    background-image: url(../img/img3.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .fondeado2{
-    background-image: url(../img/inve.png);
+    background-image: url(../img/inve.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .inv{
-    background-image: url(../img/inve.png);
+    background-image: url(../img/inve.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .inv2{
-    background-image: url(../img/inve2.png);
+    background-image: url(../img/inve2.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -233,7 +233,7 @@
 
 /*SESIONES INFORMATIVAS*/
 .informativa{
-    background-image: url(../img/sesion-informativa.png);
+    background-image: url(../img/sesion-informativa.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -242,7 +242,7 @@
 
 /*AULA VIRTUAL*/
 .aula{
-    background-image: url(../img/aula.png);
+    background-image: url(../img/aula.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -251,7 +251,7 @@
 
 /*CURSO EN LINEA*/
 .curso-linea{
-    background-image: url(../img/curso-linea.png);
+    background-image: url(../img/curso-linea.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -261,7 +261,7 @@
 
 /*EXAMENES SIMULACRO*/
 .examen-simulacro{
-    background-image: url(../img/examen-simulacro.png);
+    background-image: url(../img/examen-simulacro.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -336,13 +336,13 @@
 
 /* ESTILOS SLIDER  */
 #carousel .carousel-item.boat{
-    background-image:url("../img/img4.png");
+    background-image:url("../img/img4.webp");
 }
 #carousel .carousel-item.sea{
-    background-image:url("../img/img3.png");
+    background-image:url("../img/img3.webp");
 }
 #carousel .carousel-item.river{
-    background-image:url("../img/inicio2.jpg");
+    background-image:url("../img/inicio2.webp");
 }
 #carousel .carousel-item{
     height:70vh;
