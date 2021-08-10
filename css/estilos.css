@@ -50,6 +50,12 @@
     background-position: center;
     background-size: cover;
 }
+.boletin{
+    background-image: url(../img/boletin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 /*INDEX*/
 .fondo{
     background-image: url(../img/img4.png);
@@ -174,6 +180,12 @@
 
 
 /*EXAMENES SIMULACRO*/
+.examen-simulacro{
+    background-image: url(../img/examen-simulacro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
 
@@ -262,7 +274,7 @@
     transition:transform 2s ease, -webkit-transform 2s ease;
 }
 #carousel .carousel-item .caption{
-    background:rgba(60,160,144,0.7);
+    background:rgba(60,160,144,0.8);
 }
 
 #carousel .carousel-item .caption2{
