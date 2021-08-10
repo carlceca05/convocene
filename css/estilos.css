@@ -1,14 +1,58 @@
-.fondo{
-    background-image: url(../img/img4.png);
+.alto{
+    height: 60vh;
+}
+.chonchito{
+    font-weight: 500;
+}
+.redonda{
+    border-radius: 20%;
+}
+.sombra{
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
+}
+.rotado{
+    position: relative; 
+    top: -150px;
+    left: 45%;
+    transform: scale(2) rotate(20deg);
+}
+.rotamovil{
+    position: relative; 
+    bottom: -50px;
+    left: 38%;
+    transform: scale(2);
+
+}
+/*FONDOS*/
+
+/*GLOBAL*/
+.requisitos{
+    background-image: url(../img/requisitos.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.alto{
-    height: 60vh;
+.terminar{
+    background-image: url(../img/terminar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.aula{
-    background-image: url(../img/aula.png);
+.ventajas{
+    background-image: url(../img/ventajas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.capacitate{
+    background-image: url(../img/capa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*INDEX*/
+.fondo{
+    background-image: url(../img/img4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,6 +65,30 @@
 }
 .fondo2{
     background-image: url(../img/chica-estudiando-examen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.taller{
+    background-image: url(../img/taller.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.simulacro{
+    background-image: url(../img/simulacro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.linea{
+    background-image: url(../img/linea.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sesion{
+    background-image: url(../img/sesion.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,9 +129,7 @@
     background-position: center;
     background-size: cover;
 }
-.chonchito{
-    font-weight: 500;
-}
+
 .inv{
     background-image: url(../img/inve.png);
     background-repeat: no-repeat;
@@ -76,57 +142,55 @@
     background-position: center;
     background-size: cover;
 }
-.sesion{
-    background-image: url(../img/sesion.png);
+
+
+
+/*SESIONES INFORMATIVAS*/
+.informativa{
+    background-image: url(../img/sesion-informativa.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.linea{
-    background-image: url(../img/linea.png);
+
+
+/*AULA VIRTUAL*/
+.aula{
+    background-image: url(../img/aula.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.simulacro{
-    background-image: url(../img/simulacro.png);
+
+
+/*CURSO EN LINEA*/
+.curso-linea{
+    background-image: url(../img/curso-linea.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.taller{
-    background-image: url(../img/taller.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.capacitate{
-    background-image: url(../img/capa.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.ventajas{
-    background-image: url(../img/ventajas.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.terminar{
-    background-image: url(../img/terminar.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.requisitos{
-    background-image: url(../img/requisitos.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.anima{
-    
-}
+
+
+
+/*EXAMENES SIMULACRO*/
+
+
+
+/*TALLER DE REACTIVOS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width:901px) and (max-width:3000px) {
     .cuadrada{
         display: none;
@@ -172,25 +236,7 @@
     }
     
 }    
-.redonda{
-    border-radius: 20%;
-}
-.sombra{
-    box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
-}
-.rotado{
-    position: relative; 
-    top: -150px;
-    left: 45%;
-    transform: scale(2) rotate(20deg);
-}
-.rotamovil{
-    position: relative; 
-    bottom: -50px;
-    left: 38%;
-    transform: scale(2);
 
-}
 
 
 /* ESTILOS SLIDER  */
