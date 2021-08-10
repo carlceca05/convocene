@@ -22,82 +22,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     
     <style>
-        .modalmask {
-        position: fixed;
-        font-family: Arial, sans-serif;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.8);
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;
-        pointer-events: none; 
-        }
-        .modalmask:target {
-        opacity:1;
-        pointer-events: auto;
-        }
-        .modalbox{
-        width: 70%;
-        position: relative;
-        padding: 20px;
-        background: #fff;
-        border-radius:3px;
-        -webkit-transition: all 500ms ease-in;
-        -moz-transition: all 500ms ease-in;
-        transition: all 500ms ease-in;   
-        }
-        .movedown {
-        margin: 0 auto;
-        }
-        .rotate {
-        margin: 10% auto;
-        -webkit-transform: scale(-5,-5);
-        transform: scale(-5,-5);
-        }
-        .resize {
-        margin: 10% auto;
-        width:0;
-        height:0;
-        }
-        .modalmask:target .movedown{       
-        margin:10% auto;
-        }
-        .modalmask:target .rotate{     
-        transform: rotate(360deg) scale(1,1);
-        -webkit-transform: rotate(360deg) scale(1,1);   
-        }
-        .modalmask:target .resize{
-        width:400px;
-        height:200px;
-        }
-        .close {
-        background: #606061;
-        color: #FFFFFF;
-        line-height: 25px;
-        position: absolute;
-        right: 10px;
-        text-align: center;
-        top: 10px;
-        width: 24px;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius:3px;
-        }
-        .close:hover {
-        background: #3CA090;
-        color:#222;
-        }
-        .testi{
-        position: absolute;
-        top:0;
-        right: 0;
-        padding: 3px;
-        }
+        
         
 
     </style>
@@ -383,14 +308,14 @@
                 <div class="col">
                     <div class="card shadow p-3 h-100">
                         <div id="examen">
-                            <h4 class="text-center text-primary"> Próximo examen </h4>
+                            <h4 class="text-center text-primary"> PRÓXIMO EXAMEN </h4>
                             <div class="page-header"> </div>
                         </div>
                     </div>
                 </div>
                 <div class="col ">
                     <div class="card shadow p-3 h-100">
-                        <h4 class="text-primary text-center"> Fechas y horarios del curso en aula virtual </h4>
+                        <h4 class="text-primary text-center"> PRÓXIMO CURSO </h4>
                         <div id="eug">
                             <div class="texto card-text"> 
                             </div>
@@ -399,7 +324,7 @@
                 </div>
                 <div class="col ">
                     <div class="card shadow p-3 h-100">
-                        <h4 class="text-primary text-center"> Costo del curso en aula virtual  </h4>
+                        <h4 class="text-primary text-center"> Costo  </h4>
                         <h3 class="card-text  text-center">$4,500</h3>
                         <p class="text-center"><a class="btn btn-outline-primary " href="#modal1"> Comprar</a></p>    
                     </div>
@@ -564,10 +489,11 @@
         </div>
     </section>
     <!-- carrusel no se porque no sirve estando mas abajo  -->
-    
+  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous" async></script>
+     
         <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -594,7 +520,7 @@
             <h5 class=""></h5>
             <a href="#close" title="Close" class="close">X</a>
                 <div class=" ">
-                    <iframe width="100%" height="800" src="https://convocatoriaceneval.com.mx/formularios/aula_virtual.html" frameborder="0" scrolling="no"> </iframe>  
+                    <iframe title="formulario aula" width="100%" height="750" src="formularios/formulario_aula_virtual.html" frameborder="0" scrolling="no"> </iframe>  
                 </div>  
             </div>
         </div>

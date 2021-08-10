@@ -714,14 +714,16 @@
       $.each(tabletop.sheets("examen").all(), function (i, exa) {
         var exa_li = $( '<h3 class="text-center">' + exa.aplicacion + '</h3><a class="text-center" href="http://registroenlinea.ceneval.edu.mx/RegistroLinea/" target="_new">Registro en línea ' + exa.registro + '</a> <br> ' + "<br> <h6>Resultados &nbsp;" + exa.resultados + "</h6>"  )
         exa_li.appendTo("#examen .page-header");
-      })
+        })
     }
-  </script>
+    </script>
+    <!--no recuerdo para que era este-->
+    <script src="js/jquery.min.js " async></script>
 
-<script src="js/jquery.min.js " async></script>
+    <!--carousel-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" async></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" async></script>
-<script>
+    <script>
     $(document).ready(function () {
 
         $('.items').slick({
