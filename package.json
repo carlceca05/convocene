@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "purgecss --css sass/custom.css --content index.html aula_virtual.html examenes_simulacro.html  --output sass/reducido.css"
+    
   },
   "repository": {
     "type": "git",

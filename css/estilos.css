@@ -30,6 +30,16 @@
     background-repeat: no-repeat;
     background-size: cover;   
     }
+    .modalbox2{
+        width: 70%;
+        position: relative;
+        padding: 20px;
+        border-radius:3px;
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;
+        background-color: #FFFFFF;  
+        }
     .movedown {
     margin: 0 auto;
     }
@@ -174,7 +184,7 @@
     background-size: cover;
 }
 .sesion{
-    background-image: url(../img/sesion.webp);
+    background-image: url(../img/sesion.png);/*aqui*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -238,7 +248,7 @@
 
 /*SESIONES INFORMATIVAS*/
 .informativa{
-    background-image: url(../img/sesion-informativa.webp);
+    background-image: url(../img/sesion-informativa.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -261,9 +271,6 @@
     background-position: center;
     background-size: cover;
 }
-
-
-
 /*EXAMENES SIMULACRO*/
 .examen-simulacro{
     background-image: url(../img/examen-simulacro.webp);
@@ -271,9 +278,6 @@
     background-position: center;
     background-size: cover;
 }
-
-
-
 /*TALLER DE REACTIVOS*/
 
 
