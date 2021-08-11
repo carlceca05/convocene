@@ -25,7 +25,7 @@
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-    background-image: url(../img/cursoenlinea.webp);
+    background-image: url(../img/linea-2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -228,7 +228,12 @@
     background-position: center;
     background-size: cover;
 }
-
+.bg-guia{
+    background-image: url(../img/fondo.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
 /*SESIONES INFORMATIVAS*/
@@ -329,7 +334,28 @@
     .modalbox{
         width: 90%;
     }
-    
+    /* index */
+    .sesion{
+        background-image: none;
+    }
+    .linea{
+        background-image: none;
+    }
+    .simulacro{
+        background-image: none;
+    }
+    .taller{
+        background-image: none;
+    }
+    .ventajas{
+        background-image: none;
+    }
+    .terminar{
+        background-image: none;
+    }
+    .capacitate{
+        background-image: none;
+    }
 }    
 
 

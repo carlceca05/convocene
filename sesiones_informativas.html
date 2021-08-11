@@ -23,83 +23,6 @@
     
     <style>
         
-        .modalmask {
-        position: fixed;
-        font-family: Arial, sans-serif;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.8);
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;
-        pointer-events: none; 
-        }
-        .modalmask:target {
-        opacity:1;
-        pointer-events: auto;
-        }
-        .modalbox{
-        width: 70%;
-        position: relative;
-        padding: 20px;
-        background: #fff;
-        border-radius:3px;
-        -webkit-transition: all 500ms ease-in;
-        -moz-transition: all 500ms ease-in;
-        transition: all 500ms ease-in;   
-        }
-        .movedown {
-        margin: 0 auto;
-        }
-        .rotate {
-        margin: 10% auto;
-        -webkit-transform: scale(-5,-5);
-        transform: scale(-5,-5);
-        }
-        .resize {
-        margin: 10% auto;
-        width:0;
-        height:0;
-        }
-        .modalmask:target .movedown{       
-        margin:10% auto;
-        }
-        .modalmask:target .rotate{     
-        transform: rotate(360deg) scale(1,1);
-        -webkit-transform: rotate(360deg) scale(1,1);   
-        }
-        .modalmask:target .resize{
-        width:400px;
-        height:200px;
-        }
-        .close {
-        background: #606061;
-        color: #FFFFFF;
-        line-height: 25px;
-        position: absolute;
-        right: 10px;
-        text-align: center;
-        top: 10px;
-        width: 24px;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius:3px;
-        }
-        .close:hover {
-        background: #3CA090;
-        color:#222;
-        }
-        .testi{
-        position: absolute;
-        top:0;
-        right: 0;
-        padding: 3px;
-        }
-        
 
     </style>
 
@@ -129,9 +52,11 @@
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item " href="curso_linea.html">Curso en línea</a></li>
                             <li><hr class="dropdown-divider"></li>
+                            <!--
                             <li><a class="dropdown-item" href="examenes_simulacro.html"> Exámenes simulacro</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="taller_reactivos.html"> Talleres de reactivos</a></li>
+                            -->
                         </ul>
                     </li>
                     <li class="nav-item ">
@@ -253,7 +178,7 @@
                         <div class="col-12 col-lg-8 px-5 espacio2">
                             <h2 class=" mb-4">Capacítate adecuadamente para aprobar tu examen CENEVAL</h2>
                             <h6 class="text-primary">Consigue tus metas y objetivos más fácil y rápido</h6>
-                            <p> <del> Capacítate en todos los temas de la guía para el examen único de prepa en un examen CENEVAL , estudia con profesores de cada área de conocimientos mediante transmisiones en vivo, contesta tus dudas y conoce los tips para aprobar más fácilmente.</del></p>
+                            <p>  Capacítate en todos los temas de la guía para el examen único de prepa en un examen CENEVAL.</p>
                             <ul class="list-unstyled">
                                 <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span> Clases videograbadas y resúmenes de cada uno de los temas.</li>
                                 <li><span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span> Exámenes parciales con reactivos similares a los de CENEVAL.</li>
@@ -593,13 +518,15 @@
     <!--formulario-->
     <section class="container-fluid ">
         <div class="container ">
+            <!--
             <div class="boletin text-white rounded shadow py-5 px-5 ">
                 <p class="text-center fs-4">¿Quieres estar al tanto de nuestras sesiones informativas? <p>
             <p class="text-center pt-4"><a class=" btn btn-outline-light" href="#modal2">Regístrate a nuestras sesiones informativas</a></p>
             </div>
+            -->
             <div class="boletin text-white rounded shadow py-5 px-5 ">
                 <p class="text-center fs-4">¿Quieres conocer más detalles de <strong> Convocatoria Ceneval </strong> y estar al tanto de información relevante, resultados y publicaciones, además sobre nuevos cursos de preparación para el <strong> examen CENEVAL</strong>.</p>
-            <p class="text-center pt-4"><a class=" btn btn-outline-light" href="#modal2">Inscríbete a nuestro boletín</a></p>
+            <p class="text-center pt-4"><a class=" btn btn-outline-light" href="#modal2">registrate a nuestras sesiones informativas</a></p>
             </div>
         </div>
     </section>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Examen Simulacro</title>
 
     <link rel="icon" type="image/png" href="img/convocatoria_ceneval.ico">
 
@@ -22,84 +22,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     
     <style>
-        .modalmask {
-        position: fixed;
-        font-family: Arial, sans-serif;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.8);
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;
-        pointer-events: none; 
-        }
-        .modalmask:target {
-        opacity:1;
-        pointer-events: auto;
-        }
-        .modalbox{
-        width: 70%;
-        position: relative;
-        padding: 20px;
-        background: #fff;
-        border-radius:3px;
-        -webkit-transition: all 500ms ease-in;
-        -moz-transition: all 500ms ease-in;
-        transition: all 500ms ease-in;   
-        }
-        .movedown {
-        margin: 0 auto;
-        }
-        .rotate {
-        margin: 10% auto;
-        -webkit-transform: scale(-5,-5);
-        transform: scale(-5,-5);
-        }
-        .resize {
-        margin: 10% auto;
-        width:0;
-        height:0;
-        }
-        .modalmask:target .movedown{       
-        margin:10% auto;
-        }
-        .modalmask:target .rotate{     
-        transform: rotate(360deg) scale(1,1);
-        -webkit-transform: rotate(360deg) scale(1,1);   
-        }
-        .modalmask:target .resize{
-        width:400px;
-        height:200px;
-        }
-        .close {
-        background: #606061;
-        color: #FFFFFF;
-        line-height: 25px;
-        position: absolute;
-        right: 10px;
-        text-align: center;
-        top: 10px;
-        width: 24px;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius:3px;
-        }
-        .close:hover {
-        background: #3CA090;
-        color:#222;
-        }
-        .testi{
-        position: absolute;
-        top:0;
-        right: 0;
-        padding: 3px;
-        }
         
-
     </style>
 
 </head>
@@ -165,14 +88,11 @@
     </nav>
     <!--seccion 1-->
     <section class="jumbotron-fluid examen-simulacro py-5">
-        <div class="container text-center py-5" >
+        <div class="container text-center py-5">
             <h1 class=" fw-bold  text-white ">EXÁMENES SIMULACRO</h1>
-            <h5 class=" mb-4 text-primary"> PON A PRUEBA TUS CONOCIMIENTOS </h5>
-           
+            <h5 class=" mb-4 text-white"> PON A PRUEBA TUS CONOCIMIENTOS </h5>
         </div>
     </section>
-    
-
     <!--seccion 3-->
     <section class="container-fluid">
         <div class="container pb-5">
@@ -196,11 +116,11 @@
             </div>
         </div>
     </section>
-<!--ventana emergente-->
-<section >
-    <div id="modal1" class="modalmask overflow-auto">
-        <div class="modalbox movedown " >
-            <h5 class="text-center bg-primary text-white p-3">Métodos de pago</h5>
+    <!--ventana emergente-->
+    <section >
+        <div id="modal1" class="modalmask overflow-auto">
+            <div class="modalbox movedown " >
+                <h5 class="text-center bg-primary text-white p-3">Métodos de pago</h5>
             <a href="#close" title="Close" class="close">X</a>
                 <div class="row ">
                     <div class="col">
@@ -241,7 +161,6 @@
             </div>
         </div>
     </section>
-
     <!--secion 2 -->
     <section class="container-fluid pb-4 ">
         <div class="container ">
@@ -253,12 +172,10 @@
                         <div class="col-12 col-lg-8 px-5 espacio2">
                             <h2 class=" mb-4">Capacítate adecuadamente para aprobar tu examen CENEVAL</h2>
                             <h6 class="text-primary">Consigue tus metas y objetivos más fácil y rápido</h6>
-                            <p> Familiarízate con la prueba real y descubre cómo son las preguntas que vendrán en tu <strong> examen de CENEVAL</strong>. Con este examen simulacro podras estar más preparado, para contestar todas las preguntas del examen real, sin problemas aprovecha esta oportunidad y refuerza tus conocimientos.</p>
-                            <ol class=" list-unstyled">
-                                <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span>Exámenes en línea</li>
-                                <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span>Respuestas al instante</li>
-                                <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span>Revisión en vivo</li>
-                            </ol>
+                            <p> Por fin un método sencillo y eficaz de preparación intensiva para el examen de la UNAM, si quieres quedarte en tu carrera, practica con preguntas de tipo examen. Resolver el examen simulacro UNAM 2020 te permitirá aumentar tus aciertos en la prueba real de manera exponencial.</p>
+                            <p>Podrás resolver el examen simulacro UNAM totalmente en línea. Este recurso de capacitación es una de las mejores y más recomendadas técnicas de estudio para el examen UNAM, otorgándote muchos más ventajas y beneficios sobre cualquier guía que puedas conseguir gratuitamente. Practica desde cualquier dispositivo con el material más actualizado y ve un paso adelante de los demás.</p>
+                            <p>Estudia de una manera práctica los temas que sí vienen en el examen, ensaya con reactivos tipo examen, ejercicios y realiza el simulacro más actualizado para que desarrolles una mayor velocidad de respuesta y una mayor seguridad sobre tu dominio de las preguntas de tipo examen.</p>
+                            <p>Tú también realiza el examen simulacro y practica con las preguntas tipo examen que tenemos para ti, con todo este material disponible, obtener los aciertos que necesitas para tu carrera será mucho más sencillo, nuestra amplia base de datos de reactivos y preguntas tipo examen de admisión a la UNAM, es simplemente el material de estudio más actualizado y confiable para capacitarte correctamente para tu examen a un precio sumamente accesible.</p>
                         </div>
                         <div class="col"></div>
                     </div>
@@ -678,10 +595,14 @@
 
 
     <!--fechas-->
-    <script src="js/jquery.js" async></script>
+
+
+    <!---->  <script src="js/jquery.js" ></script>-->
     <script type="text/javascript" src="js/bootstrap.js" async></script>
     <script type="text/javascript" src="js/tabletop.js" ></script>
-    <script type='text/javascript'>function posicionarMenu() { var b = $("header").outerHeight(true); var a = $("nav").outerHeight(true); if ($(window).scrollTop() >= b - a) { $("nav").addClass("navbar-fixed-top"); $("nav").removeClass("trampa") } else { $("nav").addClass("trampa"); $("nav").addClass("navbar-fixed-top") } } $(document).ready(function () { posicionarMenu(); $(window).scroll(function () { posicionarMenu() }) }); $(function () { $("#testmenu a").popover() });
+    <script type='text/javascript'>
+    /*function posicionarMenu() { var b = $("header").outerHeight(true); var a = $("nav").outerHeight(true); if ($(window).scrollTop() >= b - a) { $("nav").addClass("navbar-fixed-top"); $("nav").removeClass("trampa") } else { $("nav").addClass("trampa"); $("nav").addClass("navbar-fixed-top") } } $(document).ready(function () { posicionarMenu(); $(window).scroll(function () { posicionarMenu() }) }); $(function () { $("#testmenu a").popover() });*/
+
     //spreadsheet TODO: FIXME:
     var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Boph5TkZSiAV4RtYyP8yhLS1j-74uj-YAA54kUtwa5o/pubhtml';
     $(document).ready(function () {
@@ -714,12 +635,13 @@
         exa_li.appendTo("#examen .page-header");
       })
     }
-  </script>
+    </script>
 
-<script src="js/jquery.min.js " async></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" async></script>
-<script>
+
+    <script src="js/jquery.min.js " ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" async></script>
+    <script>
     $(document).ready(function () {
 
         $('.items').slick({
