@@ -375,12 +375,12 @@
     .testi2{
         position: absolute;
         top:0;
-        left: 0;
-        padding: 0px 0px 0px 10px;
+        left: 43%;
+        padding: 0px 0px 0px 0px;
         opacity: 0.4;
     }
     .advertensia{
-        font-size: 5em;
+        font-size: 3.5em;
     }
 }    
 
