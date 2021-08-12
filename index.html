@@ -11,7 +11,11 @@
 
     <!--links-->
     <link rel="icon" type="image/png" href="img/convocatoria_ceneval.ico">
-    <link rel="stylesheet" type="text/css" href="css/reducido.css">
+       
+    <link rel="stylesheet" type="text/css" href="sass/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="css/reducido.css">-->
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -23,6 +27,48 @@
     <!--SLIDER-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+
+    <style>
+        /* fondo cambiante */
+.fondazo{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-out; 
+    background-image: url('img/slider_1.webp');
+    /*background-color: blue;*/
+    -webkit-animation: fondoso 35s infinite linear;
+    animation: fondoso 35s infinite linear; 
+    -moz-animation: fondoso 35s infinite linear;
+}
+@keyframes fondoso{
+    0%{
+        background-image: url('img/slider_1.webp');
+    }
+    25%{
+        background-image: url('img/slider_4.webp');
+    }
+    26%{
+        background-image: url('img/slider_4.webp');
+    }
+    50%{
+        background-image: url('img/slider_3.webp');
+    }
+    51%{
+        background-image: url('img/slider_3.webp');
+    }
+    75%{
+        background-image: url('img/slider_1.webp');
+    }
+    76%{
+        background-image: url('img/slider_1.webp');
+    }
+    100%{
+        background-image: url('img/slider_4.webp');
+    }
+}
+    </style>
 
 </head>
 <body>
@@ -91,50 +137,58 @@
         </div>
     </nav>
     <!--slider bueno-->
-    <div class="container-fluid p-0">
-        <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
-            <ol class="carousel-indicators">
+    <div class="container-fluid p-0 fondazo">
+        <div id="carousel" class="carousel slide hero-slides " data-ride="carousel">
+            <ol class="carousel-indicators ">
                 <li class="active" data-target="#carousel" data-slide-to="0"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
                 <li data-target="#carousel" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active boat">
+            <div class="carousel-inner fondazo" role="listbox">
+                <div class="carousel-item active "> <!--boat-->
                     <div class="container h-100 d-md-block">
                         <div class="row align-items-center h-100">
                             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow">
-                                    <h1 class="text-white text-center fw-bold">Aviso importante</h1>
+                                <div class="caption p-5 rounded shadow position-relative">
+                                    <h1 class="text-white text-center fw-bold">AVISO IMPORTANTE</h1>
                                     <p class="text-white mt-4">Registrate en (ACREDITA-BACH) en la modalidad de lápiz y papel </p>
                                     <p class="text-white">La aplicación se llevará acabo unicamente de manera presencial únicamente en la ciudad de México el próximo 15 de mayo del 2021.</p>
                                     <a class="btn btn-outline-light" href="https://www.facebook.com/convocatoriaCENEVAL"> <i class="bi bi-facebook"></i>&nbsp; Síguenos para más información </a>
+                                    <div class="testi2">
+                                        <i class="bi bi-exclamation-triangle text-white advertensia" ></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item sea">
+                <div class="carousel-item "> <!--sea-->
                     <div class="container h-100 d-md-block">
                         <div class="row align-items-center h-100">
                             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow">
-                                    <h1 class="text-white text-center">Aviso importante</h1>
+                                <div class="caption p-5 rounded shadow position-relative">
+                                    <h1 class="text-white text-center ">AVISO IMPORTANTE</h1>
                                     <p class="text-white">Los resultados de la aplicación ACREDITA-BACH realizada el 7 de marzo se publicarán en el portal del  CENEVA</p>
                                     <p class="text-white">9 de julio del 2021</p>
                                     <a class="btn btn-outline-light" href="https://www.facebook.com/convocatoriaCENEVAL"> <i class="bi bi-facebook"></i>&nbsp; Síguenos para más información </a>
+                                    <div class="testi2">
+                                        <i class="bi bi-exclamation-triangle text-white advertensia" ></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item river">
+                <div class="carousel-item "> <!--river-->
                     <div class="container h-100 d-md-block">
                         <div class="row align-items-center h-100">
                             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow">
-                                    <h2 class="text-white ">Conoce la mejor forma de capacitarte</h2>
+                                <div class="caption p-5 rounded shadow position-relative">
+                                    <h2 class="text-white text-center mb-4">CONOCE LA MEJOR FORMA DE APRENDER</h2>
                                     <p class="text-white">Tenemos las herramientas necesarias para que puedas aprobar tu examen</p>
-                                    <a class="btn btn-outline-light" href="#capacitación"> Conoce más </a>
+                                    <a class="btn btn-outline-light" href="#capacitación"> CONOCER MÁS </a>
+                                    <div class="testi2">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -170,10 +224,12 @@
                         <div class="card-body ">
                             <i class="bi bi-calendar3 fs-2"></i>
                             <h6 class="card-title">FECHA DE RESULTADOS.</h6>
-                            <p class="card-text "> <strong> Periodo 2021-1</strong>
+                            <span class="badge bg-success">En línea</span > <span class="badge bg-success">CDMX</span>
+                            <p class="card-text "> <strong> Periodo 2021-1</strong>  
                             <br> Fecha 18 de junio</p>
-                            <p class=""> <strong> Periodo 2021-2</strong>
-                            <br>Fecha 9 de julio</p>
+                            <span class="badge bg-success">Presencial</span > <span class="badge bg-success">Nacional</span>
+                            <p class=""> <strong> Periodo 2021-2</strong> 
+                            <br> Fecha 9 de julio</p>
                             <h6 class="text-primary">JUN Y JUL 2021</h6>
                         </div>
                     </div>
