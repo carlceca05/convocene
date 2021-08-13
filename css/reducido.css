@@ -1,7 +1,3 @@
-
-
-
-
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -23,8 +19,8 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #3CA090;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
+  --bs-secondary: #07092F;
+  --bs-success: #808080;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
@@ -1492,6 +1488,11 @@ iframe {
   padding-left: 3rem !important;
 }
 
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
 .py-4 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
@@ -1504,6 +1505,10 @@ iframe {
 
 .pt-0 {
   padding-top: 0 !important;
+}
+
+.pt-1 {
+  padding-top: 0.25rem !important;
 }
 
 .pt-2 {
@@ -1610,7 +1615,11 @@ iframe {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #07092F !important;
+}
+
+.bg-success {
+  background-color: #808080 !important;
 }
 
 .bg-light {
@@ -1686,11 +1695,11 @@ iframe {
   transition: opacity 400ms ease-in;
   pointer-events: none; 
   }
-  .modalmask:target {
+.modalmask:target {
   opacity:1;
   pointer-events: auto;
-  }
-  .modalbox{
+}
+.modalbox{
   width: 70%;
   position: relative;
   padding: 20px;
@@ -1702,42 +1711,42 @@ iframe {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;   
-  }
-  .modalbox2{
-      width: 70%;
-      position: relative;
-      padding: 20px;
-      border-radius:3px;
-      -webkit-transition: all 500ms ease-in;
-      -moz-transition: all 500ms ease-in;
-      transition: all 500ms ease-in;
-      background-color: #FFFFFF;  
-      }
-  .movedown {
+}
+.modalbox2{
+  width: 70%;
+  position: relative;
+  padding: 20px;
+  border-radius:3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+  background-color: #FFFFFF;  
+}
+.movedown {
   margin: 0 auto;
   }
-  .rotate {
+.rotate {
   margin: 10% auto;
   -webkit-transform: scale(-5,-5);
   transform: scale(-5,-5);
   }
-  .resize {
+.resize {
   margin: 10% auto;
   width:0;
   height:0;
   }
-  .modalmask:target .movedown{       
+.modalmask:target .movedown{       
   margin:10% auto;
   }
-  .modalmask:target .rotate{     
+.modalmask:target .rotate{     
   transform: rotate(360deg) scale(1,1);
   -webkit-transform: rotate(360deg) scale(1,1);   
   }
-  .modalmask:target .resize{
+.modalmask:target .resize{
   width:400px;
   height:200px;
   }
-  .close {
+.close {
   background: #606061;
   color: #FFFFFF;
   line-height: 25px;
@@ -1750,17 +1759,26 @@ iframe {
   font-weight: bold;
   border-radius:3px;
   }
-  .close:hover {
+.close:hover {
   background: #3CA090;
   color:#222;
   }
-  .testi{
+.testi{
   position: absolute;
   top:0;
   right: 0;
   padding: 3px;
   }
-
+.testi2{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  padding: 0px 25px 0px 0px;
+  opacity: 0.4;
+}
+.advertensia{
+  font-size: 6em;
+}
 .alto{
   height: 60vh;
 }
@@ -1820,12 +1838,14 @@ iframe {
   background-size: cover;
 }
 /*INDEX*/
+
 .fondo{
   background-image: url(../img/img4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .fondo1{
   background-image: url(../img/chica-haciendo-su-examen_1098-218.webp);
   background-repeat: no-repeat;
@@ -1921,7 +1941,7 @@ iframe {
 
 /*SESIONES INFORMATIVAS*/
 .informativa{
-  background-image: url(../img/sesion-informativa.png);
+  background-image: url(../img/sesion-informativa.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1984,6 +2004,7 @@ iframe {
       margin-top: 100px;
   }
   
+  
 }
 @media only screen and (min-width:100px) and (max-width:900px) {
   .img2{
@@ -2033,11 +2054,22 @@ iframe {
   .capacitate{
       background-image: none;
   }
+  .testi2{
+      position: absolute;
+      top:0;
+      left: 43%;
+      padding: 0px 0px 0px 0px;
+      opacity: 0.4;
+  }
+  .advertensia{
+      font-size: 3.5em;
+  }
 }    
 
 
 
-/* ESTILOS SLIDER  */
+/* ESTILOS SLIDER  TODO: */
+
 #carousel .carousel-item.boat{
   background-image:url("../img/img4.webp");
 }
@@ -2060,7 +2092,7 @@ iframe {
   transition:transform 2s ease, -webkit-transform 2s ease;
 }
 #carousel .carousel-item .caption{
-  background:rgba(60,160,144,0.8);
+  background:rgba(60,160,144,0.85);
 }
 
 #carousel .carousel-item .caption2{
@@ -2082,7 +2114,4 @@ transition: 0.5s;
 .hola .product {
     min-width: 99%;
 }
-/* testimonios */
-
-
 

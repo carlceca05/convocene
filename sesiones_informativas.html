@@ -8,9 +8,12 @@
     <title>Sesiones Informativas</title>
 
     <link rel="icon" type="image/png" href="img/convocatoria_ceneval.ico">
-
+    <!--
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="sass/custom.css">
+    -->
+
+    <link rel="stylesheet" href="css/reducido.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!--fuente-->
@@ -66,6 +69,7 @@
                     <li class="nav-item ">
                         <a class="nav-link text-light" href=""></a>
                     </li>
+                    <!--
                     <li class="nav-item desaparesidos">
                         <a class="nav-link" href="https://www.facebook.com/convocatoriaCENEVAL">
                             <i class="bi bi-facebook"></i>
@@ -82,6 +86,21 @@
                         </a>
                     </li>
                     <li class="nav-item desaparesidos">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCC58G9au0gH7kv9vkrcauCw">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                    -->
+                    <li class="nav-item cuadrada d-flex ">
+                        <a class="nav-link" href="https://www.facebook.com/convocatoriaCENEVAL">
+                            <i class="bi bi-facebook">   </i> 
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a class="nav-link" href="https://www.instagram.com/convocatoriaceneval/ ">
+                            <i class="bi bi-instagram"></i>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a class="nav-link" href="https://www.tiktok.com/convocatoriaceneval">
+                            <img data-src="img/tik-tok.svg"  class="img-fluid lazyload" width="14px" height="14px" alt="tiktok convocatoria ceneval" style="margin-bottom:3px;" >
+                        </a>&nbsp;&nbsp;&nbsp;
                         <a class="nav-link" href="https://www.youtube.com/channel/UCC58G9au0gH7kv9vkrcauCw">
                             <i class="bi bi-youtube"></i>
                         </a>
@@ -174,7 +193,7 @@
                 <div  class="capacitate rounded shadow my-5 ">
                     <div class="row row-cols-1 row-cols-lg-2">
                         <div class="col cuadrada ">
-                            <img src="img/capa-2.png" class="img-fluid" alt="">
+                            <img src="img/capa-2.webp" class="img-fluid" alt="">
                         </div>
                         <div class="col-12 col-lg-8 px-5 espacio2">
                             <h2 class=" mb-4">Capacítate adecuadamente para aprobar tu examen CENEVAL</h2>
@@ -479,7 +498,8 @@
 
 
     <!--script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/lazysizes.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" async></script>
 
 
     <!--fechas-->
@@ -488,7 +508,6 @@
     <script type="text/javascript" src="js/bootstrap.js" async></script>
     <script type="text/javascript" src="js/tabletop.js" async></script>
     <script type='text/javascript'>
-    
     function posicionarMenu() { var b = $("header").outerHeight(true); var a = $("nav").outerHeight(true); if ($(window).scrollTop() >= b - a) { $("nav").addClass("navbar-fixed-top"); $("nav").removeClass("trampa") } else { $("nav").addClass("trampa"); $("nav").addClass("navbar-fixed-top") } } $(document).ready(function () { posicionarMenu(); $(window).scroll(function () { posicionarMenu() }) }); $(function () { $("#testmenu a").popover() });
 
     //spreadsheet TODO: FIXME:
@@ -524,8 +543,8 @@
       })
     }
   </script>
-
 -->
+
 <!--
 <script src="js/jquery.min.js " async></script>
 

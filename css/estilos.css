@@ -195,7 +195,7 @@
     background-size: cover;
 }
 .sesion{
-    background-image: url(../img/sesion.png);/*aqui*/
+    background-image: url(../img/sesion.webp);/*aqui*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -259,7 +259,7 @@
 
 /*SESIONES INFORMATIVAS*/
 .informativa{
-    background-image: url(../img/sesion-informativa.png);
+    background-image: url(../img/sesion-informativa.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
