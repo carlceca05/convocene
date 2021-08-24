@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "purgecss --css sass/custom.css --content index.html aula_virtual.html examenes_simulacro.html   --output css/reducido.css"
+    "build": "purgecss --css sass/custom.css --content index.html aula_virtual.html curso_linea.html sesiones_informativas --output sass/reducido.css"
     
   },
   "repository": {

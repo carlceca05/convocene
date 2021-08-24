@@ -122,6 +122,34 @@
     transform: scale(2);
 
 }
+.appwhatsapp{
+    position: fixed;
+    right: 15px;
+    bottom: 80px;
+    width: 60px;
+    z-index: 1000;
+}
+.arriba{
+    position: fixed;
+    right: 22px;
+    text-align: center;
+    line-height: 50px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(180, 180, 180, 0.7);
+    border-radius: 25px;
+    color: white;
+    vertical-align: middle;
+    z-index: 999;
+    transition: 1s all;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
 /*FONDOS*/
 
 /*GLOBAL*/
