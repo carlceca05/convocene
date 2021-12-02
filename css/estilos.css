@@ -1,3 +1,7 @@
+.logofooter{
+    width: 80%;
+}
+
 .modalmask {
     position: fixed;
     font-family: Arial, sans-serif;
@@ -410,6 +414,9 @@
     .advertensia{
         font-size: 3.5em;
     }
+    .logofooter{
+        width: 40%;
+    }
 }    
 
 
@@ -460,4 +467,4 @@ div::-webkit-scrollbar{
 	.hola .product {
 	    min-width: 99%;
 	}
-
+}

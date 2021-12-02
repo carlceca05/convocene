@@ -16,20 +16,21 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-144.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57.png">
-    <!--   
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    -->
-    <!--
+    
+    
+    <link rel="stylesheet" type="text/css" href="sass/custom.css">
+    
+
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
--->
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/reducido.min.css">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/iconos.css">
+
+    <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/reducido.min.css">-->
+    <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/iconos.css">-->
 
     <!--<link rel="stylesheet" type="text/css" href="css/reducido.css">-->
     <!--
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -37,6 +38,7 @@
     <!--SLIDER-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
 
 
     <style>
@@ -89,6 +91,19 @@
             transition:-webkit-transform 2s ease;
             transition:transform 2s ease;
             transition:transform 2s ease, -webkit-transform 2s ease;
+        }
+        @media only screen and (min-width:901px) and (max-width:3000px) {
+            .aparece{
+                display: none;
+            }
+        }
+        @media only screen and (min-width:100px) and (max-width:900px) {
+            .desaparece{
+                display: none;
+            }
+            .aparece{
+                display: block;
+            }
         }
     </style>
 
@@ -227,7 +242,7 @@
     </div>
     <!--seccion 1-->
     <section class="container-fluid py-5">
-        <div class="container py-5">
+        <div class="container pt-5">
             <h4 class="text-primary">EXAMEN ÚNICO CENEVAL <br> CONCURSO 2021 EXAMEN - 2 </h4>
             <h2>CALENDARIO</h2>
             <p class="">A continuación se presentan las fechas establecida dentro del <strong> calendario de CENEVAL.</strong>
@@ -239,7 +254,7 @@
                         <span class="mueve btn btn-lg cursor-pointer btn-outline-primary fw-bold ">&#155;</span>
                     </p>
                 </header>
-                <div class="m-auto d-flex hola" style="overflow-x: auto; " >
+                <div class="m-auto d-flex hola pt-2 pb-5 ps-0 ps-lg-3 pe-0 pe-lg-2" style="overflow-x: auto; scrollbar-width: none;" >
                     <div class="card me-2 position-relative  rounded product shadow">
                         <div class="card-body ">
                             <i class="bi bi-calendar3 fs-2"></i>
@@ -267,7 +282,7 @@
                             <h6 class="text-primary">JUL Y SEP 2021</h6>
                         </div>
                     </div>
-                    <div class="product card me-2 position-relative rounded">
+                    <div class="product card shadow me-2 position-relative rounded">
                         <div class="card-body">
                             <i class="bi bi-calendar3 fs-2"></i>
                             <h6 class="card-title">REGISTRO AL EXAMEN</h6>
@@ -294,9 +309,21 @@
             </div>
         </div>
     </section>
+    <!--aviso-->
+    <section class="container-fluid bg-danger py-4 mb-5">
+        <div class="container text-white  text-center">
+            <h1 class="mb-3">  ¿SABÍAS QUE?  </h1>
+            <p class="mb-0"> Solo una <strong class="text-uppercase text-warning" > tercera parte</strong> de los que aplican el <strong class="text-uppercase text-warning"> examen CENEVAL</strong> lo aprueban. </p>
+            <p class="mb-3"> Es por ello que es necesario una <strong class="text-uppercase text-warning"> capacitación </strong> de calidad. </p>
+            <h4 class="text-uppercase"> Conoce las opciones que tenemos para ti </h4>
+            <p  class="d-none">     La materia mas reprobada no es matematicas, texto argumentativo, nosotros te enseñaremos como aprobar a la primera esta materia, no aprueban por que les falta capacitacion o porque estudiaron hace mucho y no recuerdan mucha información, beneficios de la capacitación: se actualizan de información y se preparan mejor con una capacitación </p>
+            <p>   </p>
+            <p class="small"> Cursos - Exámenes - Talleres - Clases muestra - Guias Resueltas - Exámenes Simulacro resueltos   </p>
+        </div>
+    </section>
     <!--seccion 2-->
-    <section class="container-fluid ">
-        <div class="container pb-5">
+    <section class="container-fluid  ">
+        <div class="container py-5">
             <div class="sesion rounded shadow mt-3 mb-3 ">
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col cuadrada">
@@ -428,27 +455,25 @@
             <h2 class="text-center">VISITA NUESTRO BLOG</h2>
             <div class="row row-cols-1 row-cols-lg-3  mt-5">
                 <div class="col mb-3">
-                    <div class="card shadow" >
+                    <div class="card h-100 shadow" >
                         <div class="card-body">
                             <h6 class="card-title">Últimas entradas</h6>
-                            <p><a class="text-decoration-none" href="">Preguntas frecuentes CENEVAL</a> </p>
-                            <p><a class="text-decoration-none" href="">¿Qué es el ACREDITA-BACH?</a>    </p>
-                            <p><a class="text-decoration-none" href="">Tipos y formatos de reactivos</a> </p>
-                            <p><a class="text-decoration-none" href="">Blog</a> </p>
+                            <p><a class="text-decoration-none" href="https://convocatoriaceneval.com.mx/blog/ceneval/preguntas-frecuentes-ceneval/">Preguntas frecuentes CENEVAL</a> </p>
+                            <p><a class="text-decoration-none" href="https://convocatoriaceneval.com.mx/blog/ceneval/que-es-el-acredita-bach/">¿Qué es el ACREDITA-BACH?</a>    </p>
+                            <p><a class="text-decoration-none" href="https://convocatoriaceneval.com.mx/blog/ceneval/tipos-y-formatos-de-reactivos/">Tipos y formatos de reactivos</a> </p>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-3">
-                    <div class="card shadow">
+                    <div class="card h-100 shadow">
                         <div class="card-body">
                             <h6 class="card-title">Examen CENEVAL</h6>
-                            <p><a href="#" class="text-decoration-none">CENEVAL (3)</a></p>
-                            <a href="#" class="text-decoration-none">Uncategorized (1)</a></p>
+                            <p><a href="https://convocatoriaceneval.com.mx/blog/category/ceneval/" class="text-decoration-none">CENEVAL (3)</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-3">
-                    <div class="card   shadow">
+                    <div class="card h-100  shadow">
                         <div class="row pt-3">
                             <div class="col text-center">
                                 <a class="text-decoration-none" href="https://www.facebook.com/convocatoriaCENEVAL"> 
@@ -461,7 +486,7 @@
                                 </a>
                             </div>
                             <div class="col text-center">
-                                <a class="text-decoration-none" href="https://www.tiktok.com/convocatoriaceneval">  
+                                <a class="text-decoration-none" href="https://www.tiktok.com/@convocatoriaceneval">  
                                     <img src="img/tik-tok.svg" class="img-fluid m-2" width="20px" alt=""> 
                                     <p class="text-muted">Tik tok</p>
                                 </a>
@@ -485,13 +510,16 @@
         <div class="container ">
             <div class="boletin text-white rounded shadow  p-5 ">
                 <p class="text-center fs-4">¿Quieres conocer más detalles de <strong> Convocatoria CENEVAL </strong> y estar al tanto de información relevante, resultados y publicaciones, además sobre nuevos cursos de preparación para el <strong> EXAMEN CENEVAL</strong>.</p>
-            <p class="text-center pt-4"><a class=" btn btn-outline-light" href="#modal2">Regístrate a nuestras Sesiones Informativas</a></p>
+            <!--<p class="text-center pt-4"><a class=" btn btn-outline-light" href="#modal2">Regístrate a nuestras Sesiones Informativas</a></p>-->
+            <p class="text-center"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">
+                Regístrate a nuestras Sesiones Informativas
+              </button></p>
             </div>
         </div>
     </section>
-    <!--ventana emergente 2 TODO:-->
+    <!--ventana emergente 2 TODO:
     <section >
-    <div id="modal2" class="modalmask overflow-auto">
+    <div id="modal4" class="modalmask overflow-auto">
         <div class="modalbox movedown " >
             <h5 class=""></h5>
             <a href="#close" title="Close" class="close">X</a>
@@ -501,78 +529,238 @@
             </div>
         </div>
     </section>
+    -->
 
+    <!--NUEVA VENTANA EMERGENTE-->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe title="formulario sesiones"  width="100%" height="500" src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="auto"> </iframe>  
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!--
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+        ventana promocional
+      </button>-->
+    <!--ventana cierto tiempo 
+    <div class="modal fade  overlay_popup" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe title="formulario sesiones"  width="100%" height="500" src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="auto"> </iframe>  
+                </div>
+            </div>
+        </div>
+    </div> 
+    -->
+
+    <!-- colaboradores 1-->
+    <section class="container-fluid  desaparece ">
+        <div class="container ">
+            <div class="row py-5" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h5 class="text-center text-primary">NUESTROS</h5>
+            <h2 class="text-center mb-3">COLABORADORES</h2>
+                <div class="col" >
+                    <div  id="carousel4" class="carousel slide hero-slides d-flex justify-content-center " data-ride="carousel">
+                        <ol class="carousel-indicators ">
+                            <li class="active" data-target="#carousel4" data-slide-to="0"></li>
+                            <li data-target="#carousel4" data-slide-to="1"></li>
+                            <li data-target="#carousel4" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner  logos desaparece" role="listbox"  >
+                            <div class="carousel-item active "> 
+                                <div class="container  d-md-block">
+                                    <div class="caption  py-4 ">
+                                        <div class="row ">
+                                            <div class="col  d-flex justify-content-evenly">
+                                                <img class="lazyload img-fluid rounded shadow" src="img/bachilleratoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                                <img class="lazyload img-fluid rounded shadow"  src="img/prepaenunexamen.png" alt="cecaes" width="125px" title="fullness">
+                                                <img class="lazyload img-fluid rounded shadow" src="img/examenunicoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="carousel-item "> 
+                                <div class="container  d-md-block">
+                                    <div class="caption  ">
+                                        <div class="row">
+                                            <div class="col d-flex d-flex justify-content-evenly ">
+                                                <img class="lazyload img-fluid" src="img/convocatoria_ceneval_logo.png" alt="cecaes" width="100px" title="fullness">
+                                                <img class="lazyload img-fluid" src="img/convocatoria_ceneval_logo.png" alt="cecaes" width="100px" title="fullness">
+                                                <img class="lazyload img-fluid" src="img/convocatoria_ceneval_logo.png" alt="cecaes" width="100px" title="fullness">
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--colaboradores 1 mobiles-->
+    <section class="container-fluid py-5 aparece">
+        <div class="container">
+            <div class="row py-2" >
+                <h5 class="text-center text-primary">NUESTROS</h5>
+            <h2 class="text-center mb-3">COLABORADORES</h2>
+                    <div  id="carousel5" class="carousel slide hero-slides d-flex justify-content-center " data-ride="carousel">
+                        <ol class="carousel-indicators ">
+                            <li class="active" data-target="#carousel5" data-slide-to="0"></li>
+                            <li data-target="#carousel5" data-slide-to="1"></li>
+                            <li data-target="#carousel5" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner  logos " role="listbox"  >
+                            <div class="carousel-item active "> 
+                                <div class="container  d-md-block">
+                                    <div class="caption py-4  ">
+                                        <div class="row">
+                                            <div class="col  text-center">
+                                                <img class="lazyload img-fluid rounded shadow" src="img/bachilleratoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item "> 
+                                <div class="container  d-md-block">
+                                    <div class="caption  py-4">
+                                        <div class="row">
+                                            <div class="col text-center ">
+                                                <img class="lazyload img-fluid rounded shadow" src="img/prepaenunexamen.png" alt="cecaes" width="125px" title="fullness">
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="carousel-item "> 
+                                <div class="container  d-md-block">
+                                    <div class="caption  py-4">
+                                        <div class="row">
+                                            <div class="col  text-center">
+                                                <img class="lazyload img-fluid rounded shadow" src="img/examenunicoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--BANNER
+    <section class="container-fluid ">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <picture class="d-flex justify-content-center " >
+                        <source class="lazyload " type="image/webp"  width="80%" height="auto"  data-srcset="img/bannerscecaes.webp" >
+                        <img class="lazyload" type="image/jpg" data-src="img/bannerscecaes.jpg"  width="80%" height="auto"  alt=" " >
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
     <!--seccion footer-->
     <section class="container-fluid bg-light">
-        <div class="container py-5">
+        <div class="container pt-5">
             <div class="row row-cols-1 row-cols-lg-4">
                 <div class="col mb-4 text-center text-lg-start">
-                    <a href="">
-                    <img src="img/convocatoria_ceneval_logo.png" width="80%" class="img-fluid" alt=""></a>
+                    <a href="index.html">
+                        <!--
+                        <img src="img/convocatoria_ceneval_logo.png"  class="img-fluid logofooter"  alt="">-->
+                        <picture >
+                            <source class="lazyload logofooter" type="image/webp" data-srcset="img/convocatoria_ceneval_logo.webp">
+                            <img class="lazyload logofooter" data-src="img/convocatoria_ceneval_logo.png" alt=" " >
+                        </picture>
+                    </a>
                 </div>
                 <div class="col mb-4 text-center text-lg-start">
                     <h6>SECCIONES</h6>
                     <small class="text-muted">
-                        <p>Calendario</p>
-                        <p>Capacitación</p>
-                        <p>Sesiones</p>
-                        <p>Blog</p>
+                        <p class="mb-0">Calendario</p>
+                        <p class="mb-0">Capacitación</p>
+                        <p class="mb-0">Sesiones</p>
+                        <p class="mb-0">Blog</p>
                     </small>
                 </div>
                 <div class="col mb-4 text-center text-lg-start">
                     <h6>BLOG</h6>
                     <small class="text-muted">
-                        <p>Últimas entradas</p>
-                        <p>Categorias</p>
+                        <p class="mb-0">Últimas entradas</p>
+                        <p class="mb-0">Categorias</p>
                     </small>
                 </div>
                 <div class="col mb-4 text-center text-lg-start">
                     <h6>CONTACTO</h6>
                     <small class="text-muted">
-                        <p>(55) 1209-1084 | 6271-7532</p>
+                        <p> <i class="bi bi-whatsapp"></i>    (55) 5818-1083 | 6271-7532</p>
                     </small>
                 </div>
             </div>
             <h5 class="mt-4 text-center text-lg-start">PAGINAS AMIGAS</h5>
-            <div class="row row-cols-2 row-cols-lg-5 pt-4">
+            <div class="row row-cols-2 row-cols-lg-4 pt-4" style="max-width: 900px; margin-left: auto; margin-right: auto; ">
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriaUAM/">
-                        <img class="img-fluid w-75 redonda shadow"  width="" src="img/3.png" alt="convocatoria uam">
-                    </a>
-                </div>
-                <div class="col m-auto text-center mb-4">
-                    <a href="https://www.facebook.com/convocatoriaSEP">
-                        <img class="img-fluid w-75 redonda shadow" src="img/4.png" alt="convocatoria sep">
+                        <!--<img class="img-fluid w-75 redonda shadow"  width="" src="img/3.png" alt="convocatoria uam">-->
+                        <picture>
+                            <source class=" img-fluidlazyload redonda shadow" type="image/webp" width="100px" title="convocatoriaceneval" data-srcset="img/convocatoriauam.webp" alt="convocatoriauam">
+                            <img class=" img-fluid lazyload redonda shadow" type="image/png" width="100px" data-src="img/convocatoriauam.png" title="convocatoriaceneval" alt="convocatoriauam">
+                        </picture>
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriaunam/">
-                        <img class="img-fluid w-75 redonda shadow" src="img/1.png" alt="convocatoria unam">
+                        <img class="img-fluid  redonda shadow" src="img/convocatoriaunam.png" width="125px" alt="convocatoria unam">
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriacomipems">
-                        <img class="img-fluid w-75 redonda shadow" src="img/5.png" alt="convocatoria comipems">
+                        <img class="img-fluid  redonda shadow" src="img/convocatoriacomipems.png" width="125px" alt="convocatoria comipems">
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/cnvocatoriaIPN">
-                        <img class="img-fluid w-75 redonda shadow" src="img/2.png" alt="convocaotiria ipn">
+                        <img class="img-fluid  redonda shadow" src="img/convocatoriaipn.png" width="125px" alt="convocaotiria ipn">
                     </a>
                 </div>
             </div>
-            <p class="text-center text-muted pt-5">CONVOCATORIA CENEVAL 2021</p>
-            <p class="text-center"><a href="politica_privacidad.html" class=" text-decoration-none text-muted"> Política de Privacidad</a> </p>
+            <p class="text-center text-muted pt-5 mb-0">CONVOCATORIA CENEVAL 2021</p>
+            <p class="text-center mb-0 small"><a href="politica_privacidad.html" class=" text-decoration-none text-muted"> Política de Privacidad</a> </p>
             <p class="text-center text-muted"> <small> Todas las imágenes y logotipos de terceros fueron usados con fines informativos</small></p>
         </div>
     </section>
+    <style>
+        .flechita{
+            position: relative;
+            top: 5px;
+            transform: rotate(20deg);
+        }
+    </style>
+    <p class="bg-primary text-white text-center mb-0 " style="padding: 10px 0;" > <small>   Sitio creado por <a class="text-white " href="https://prospecta.studio">prospecta.studio </a></small> <img class="flechita" src="img/cursor.png" width="20px" height="auto"  alt=""> </p>
     <!-- icono arriba -->
 	<a  class="arriba" href="#top">
 		<i class="bi bi-chevron-up text-white " ></i>
 	</a>
     <!-- icono de whatsapp -->
-	<a  class="appwhatsapp"  target="_blank" href="https://api.whatsapp.com/send?phone=5215512091084&text=Hola!%20quiero%20informes%20sobre%20convocatoria%20CENEVAL">
-		<img class="appwhatsapp w-100 h-auto lazyload" data-src="img/whatsapp.webp"  alt="whatsapp">
+	<a  class="appwhatsapp"  target="_blank" href="https://api.whatsapp.com/send?phone=5215558181083&text=Hola!%20quiero%20informes%20sobre%20convocatoria%20CENEVAL">
+		<img class="appwhatsapp h-auto lazyload" data-src="img/whatsapp.webp"  alt="whatsapp">
 	</a>
 
 
@@ -587,6 +775,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
     <script src="js/main.js"></script>
+
+
+    
     
 </body>
 </html>
