@@ -1,3 +1,11 @@
+.colaboradores{
+
+}
+.colaboradores:hover{
+    transform: translate(0,-10px);
+    transition: all 1s;
+}
+
 .logofooter{
     width: 80%;
 }
@@ -228,10 +236,15 @@
 }
 .sesion{
     background-image: url(../img/sesion.webp);/*aqui*/
+    background-image: image-set (
+        url(../img/sesion.webp),
+        url(../img/sesion.png),
+    );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .img1{
     background-image: url(../img/min1.webp);
     background-repeat: no-repeat;
@@ -246,6 +259,10 @@
 }
 .img2{
     background-image: url(../img/img3.webp);
+    background-image: image-set (
+        url(../img/img3.webp),
+        url(../img/img3.png),
+    );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

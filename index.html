@@ -101,9 +101,6 @@
             .desaparece{
                 display: none;
             }
-            .aparece{
-                display: block;
-            }
         }
     </style>
 
@@ -428,7 +425,11 @@
     </section>
     -->
     <!--guia ceneval--> 
-    <img src="img/guia-para-el-sustentante.png" class="img-fluid sombra cuadrada  rotamovil mt-5" width="100px" height="" alt="guia ceneval" >
+    <picture >
+        <source class="img-fluid sombra cuadrada  rotamovil mt-5" width="100px" height="" type="image/webp" data-srcset="img/guia-para-el-sustentante.webp" alt="guia ceneval" title="guia ceneval">
+        <img class="img-fluid sombra cuadrada  rotamovil mt-5" width="100px" height="" type="image/png" data-src="img/guia-para-el-sustentante.png" alt="guia ceneval " title="guia ceneval" >
+    </picture>
+    <!--<img src="img/guia-para-el-sustentante.png" class="img-fluid sombra cuadrada  rotamovil mt-5" width="100px" height="" alt="guia ceneval" > -->
     <section class="container-fluid bg-guia pt-5 pt-lg-0 pararotado">
         <div class="container ">
             <div class="row row-cols-1 row-cols-lg-3 ">
@@ -446,7 +447,12 @@
             </div>
         </div>
     </section>
-    <img src="img/guia-para-el-sustentante.png" class="img-fluid sombra rotado desaparece" width="80px" height="" alt="guia ceneval" title="guia ceneval" >
+    <picture >
+        <source class="img-fluid sombra rotado desaparece" width="80px" height="" type="image/webp" data-srcset="img/guia-para-el-sustentante.webp" title="guia ceneval">
+        <img class="img-fluid sombra rotado desaparece" width="80px" height="" type="image/png" data-src="img/guia-para-el-sustentante.png" alt="guia ceneval " title="guia ceneval" >
+    </picture>
+    <!--
+    <img src="img/guia-para-el-sustentante.png" class="img-fluid sombra rotado desaparece" width="80px" height="" alt="guia ceneval" title="guia ceneval" >-->
     
     <!--seccion blog-->
     <section class="container-fluid  pt-5 pt-lg-0 ">
@@ -582,9 +588,32 @@
                                     <div class="caption  py-4 ">
                                         <div class="row ">
                                             <div class="col  d-flex justify-content-evenly">
-                                                <img class="lazyload img-fluid rounded shadow" src="img/bachilleratoceneval.png" alt="cecaes" width="125px" title="fullness">
-                                                <img class="lazyload img-fluid rounded shadow"  src="img/prepaenunexamen.png" alt="cecaes" width="125px" title="fullness">
-                                                <img class="lazyload img-fluid rounded shadow" src="img/examenunicoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                                <a href="https://bachilleratoceneval.com/">
+                                                    <picture class="">
+                                                        <source class="lazyload redonda colaboradores  shadow" type="image/webp" width="125px" data-srcset="img/bachilleratoceneval.webp">
+                                                        <source class="lazyload redonda colaboradores  shadow" type="image/webp" width="125px" data-srcset="img/bachilleratoceneval.png">
+                                                        <img class="lazyload redonda colaboradores shadow" width="125px" type="image/png" data-src="img/bachilleratoceneval.png" alt=" " >
+                                                    </picture>
+                                                    
+                                                </a>
+                                                <a href="https://prepaenunexamen.com/">
+                                                    <picture >
+                                                        <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/prepaenunexamen.webp">
+                                                        <img class="lazyload redonda shadow colaboradores" width="125px" data-src="img/prepaenunexamen.png" alt=" " >
+                                                    </picture>
+                                                    <!--
+                                                    <img class="lazyload img-fluid redonda shadow"  src="img/prepaenunexamen.png" alt="cecaes" width="125px" title="fullness">
+                                                    -->
+                                                </a>
+                                                <a href="https://examenunicoceneval.com/">
+                                                    <picture >
+                                                        <source class="lazyload redonda shadow colaboradores"  width="125px" type="image/webp" data-srcset="img/examenunicoceneval.webp">
+                                                        <img class="lazyload redonda shadow colaboradores" width="125px" data-src="img/examenunicoceneval.png" alt=" " >
+                                                    </picture>
+                                                    <!--
+                                                    <img class="lazyload img-fluid redonda shadow" src="img/examenunicoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                                    -->
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -629,7 +658,10 @@
                                     <div class="caption py-4  ">
                                         <div class="row">
                                             <div class="col  text-center">
-                                                <img class="lazyload img-fluid rounded shadow" src="img/bachilleratoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                                <picture >
+                                                    <source class="lazyload redonda shadow colaboradores" type="image/webp" width="125px" data-srcset="img/bachilleratoceneval.webp">
+                                                    <img class="lazyload redonda colaboradores" width="125px" type="image/png" data-src="img/bachilleratoceneval.png" alt=" " >
+                                                </picture>
                                             </div>
                                         </div>
                                     </div>
@@ -640,7 +672,10 @@
                                     <div class="caption  py-4">
                                         <div class="row">
                                             <div class="col text-center ">
-                                                <img class="lazyload img-fluid rounded shadow" src="img/prepaenunexamen.png" alt="cecaes" width="125px" title="fullness">
+                                                <picture >
+                                                    <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/prepaenunexamen.webp">
+                                                    <img class="lazyload redonda colaboradores" type="image/png" width="125px" data-src="img/prepaenunexamen.png" alt=" " >
+                                                </picture>
                                             </div>
                                         </div>
                                     </div>    
@@ -651,7 +686,10 @@
                                     <div class="caption  py-4">
                                         <div class="row">
                                             <div class="col  text-center">
-                                                <img class="lazyload img-fluid rounded shadow" src="img/examenunicoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                                <picture >
+                                                    <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/examenunicoceneval.webp">
+                                                    <img class="lazyload redonda shadow colaboradores" width="125px" type="image/png" data-src="img/examenunicoceneval.png" alt=" " >
+                                                </picture>
                                             </div>
                                         </div>
                                     </div>    
@@ -715,35 +753,56 @@
                 </div>
             </div>
             <h5 class="mt-4 text-center text-lg-start">PAGINAS AMIGAS</h5>
-            <div class="row row-cols-2 row-cols-lg-4 pt-4" style="max-width: 900px; margin-left: auto; margin-right: auto; ">
+            <div class="row row-cols-2 row-cols-lg-4 pt-4 mb-0 " style="max-width: 900px; margin-left: auto; margin-right: auto; ">
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriaUAM/">
                         <!--<img class="img-fluid w-75 redonda shadow"  width="" src="img/3.png" alt="convocatoria uam">-->
                         <picture>
-                            <source class=" img-fluidlazyload redonda shadow" type="image/webp" width="100px" title="convocatoriaceneval" data-srcset="img/convocatoriauam.webp" alt="convocatoriauam">
-                            <img class=" img-fluid lazyload redonda shadow" type="image/png" width="100px" data-src="img/convocatoriauam.png" title="convocatoriaceneval" alt="convocatoriauam">
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriauam.webp" alt="convocatoriauam">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriauam.png" title="convocatoriaceneval" alt="convocatoriauam">
                         </picture>
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriaunam/">
-                        <img class="img-fluid  redonda shadow" src="img/convocatoriaunam.png" width="125px" alt="convocatoria unam">
+                        <picture>
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriaunam.webp" alt="convocatoriaunam">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriaunam.png" title="convocatoriaceneval" alt="convocatoriaunam">
+                        </picture>
+                        <!--<img class="img-fluid  redonda shadow lazyload" data-src="img/convocatoriaunam.png" width="125px" alt="convocatoria unam">-->
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriacomipems">
-                        <img class="img-fluid  redonda shadow" src="img/convocatoriacomipems.png" width="125px" alt="convocatoria comipems">
+                        <picture>
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriacomipems.webp" alt="convocatoriacomipems">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriacomipems.png" title="convocatoriaceneval" alt="convocatoriacomipems">
+                        </picture>
+                        <!--<img class="img-fluid  redonda shadow lazyload" data-src="img/convocatoriacomipems.png" width="125px" alt="convocatoria comipems">-->
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/cnvocatoriaIPN">
-                        <img class="img-fluid  redonda shadow" src="img/convocatoriaipn.png" width="125px" alt="convocaotiria ipn">
+                        <picture>
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriaipn.webp" alt="convocatoriaipn">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriaipn.png" title="convocatoriaipn" alt="convocatoriaunam">
+                        </picture>
+                        <!--<img class="img-fluid  redonda shadow lazyload" data-src="img/convocatoriaipn.png" width="125px" alt="convocaotiria ipn">-->
                     </a>
                 </div>
             </div>
-            <p class="text-center text-muted pt-5 mb-0">CONVOCATORIA CENEVAL 2021</p>
-            <p class="text-center mb-0 small"><a href="politica_privacidad.html" class=" text-decoration-none text-muted"> Política de Privacidad</a> </p>
-            <p class="text-center text-muted"> <small> Todas las imágenes y logotipos de terceros fueron usados con fines informativos</small></p>
+            <p class="text-center text-muted mb-5"> <small> Todas las imágenes y logotipos de terceros fueron usados con fines informativos</small></p>
+                <div class="row mb-2">
+                    <div class="col">
+                        <p class="text-center text-muted text-lg-start  mb-0">ConvocatoriaCeneval 2021</p>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <p class="text-center  text-lg-end mb-0 small"><a href="politica_privacidad.html" class=" text-decoration-none text-muted"> Política de Privacidad</a> </p>
+                    </div>
+                </div>
         </div>
     </section>
     <style>
