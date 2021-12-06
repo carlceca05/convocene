@@ -1,3 +1,15 @@
+
+.sombrio{
+    
+    box-shadow: 0px 5px 15px 0px rgba(60, 160, 144, 0.4);
+}
+
+.gordita{
+    font-weight: 900;
+}
+.llenita{
+    font-weight: 800;
+}
 .colaboradores{
 
 }

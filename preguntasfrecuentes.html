@@ -17,8 +17,8 @@
 	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57.png">
     
     
-    <link rel="stylesheet" type="text/css" href="sass/custom.css">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="sass/custom.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/estilos.css">
 
     <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/reducido.min.css">-->
     <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/iconos.css">-->
@@ -26,7 +26,7 @@
     <!--<link rel="stylesheet" type="text/css" href="css/reducido.css">-->
     <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,55 +39,11 @@
 
 
     <style>
-        /* fondo cambiante */
-        .fondazo{
-            position: relative;
-            background-size: cover;
+        .frecuentes{
+            background-image: url(img/frecuentes.png);
             background-position: center;
-            transition: all .1s ease-out; 
-            background-image: url('img/slider_1.webp');
-            /*background-color: blue;*/
-            -webkit-animation: fondoso 35s infinite linear;
-            animation: fondoso 35s infinite linear; 
-            -moz-animation: fondoso 35s infinite linear;
-        }
-        @keyframes fondoso{
-            0%{
-                background-image: url('img/slider_1.webp');
-            }
-            25%{
-                background-image: url('img/slider_4.webp');
-            }
-            26%{
-                background-image: url('img/slider_4.webp');
-            }
-            50%{
-                background-image: url('img/slider_3.webp');
-            }
-            51%{
-                background-image: url('img/slider_3.webp');
-            }
-            75%{
-                background-image: url('img/slider_1.webp');
-            }
-            76%{
-                background-image: url('img/slider_1.webp');
-            }
-            100%{
-                background-image: url('img/slider_4.webp');
-            }
-        }
-        #carousel .carousel-item{
-            height:70vh;
-            width:100%;
-            min-height:350px;
-            background:no-repeat center center scroll;
-            background-size:cover;
-        }
-        #carousel .carousel-inner .carousel-item{
-            transition:-webkit-transform 2s ease;
-            transition:transform 2s ease;
-            transition:transform 2s ease, -webkit-transform 2s ease;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         @media only screen and (min-width:901px) and (max-width:3000px) {
             .aparece{
@@ -165,49 +121,76 @@
         </div>
     </nav>
     <!--seccion 1-->
-    <section class="jumbotron-fluid bg-secondary py-5">
+    <section class="jumbotron-fluid frecuentes py-5">
         <div class="container text-center py-5" >
             <h1 class=" fw-bold  text-white ">PREGUNTAS FRECUENTES </h1>
         </div>
     </section>
     <!--precios-->
     <section class="container-fluid py-5">
-        <div class="container py-5">
-            <h5 class="text-center text-primary"> HABLEMOS DE </h5>
-            <h2 class="text-center text-uppercase mb-5" >Precios</h2>
-            <div class="row">
-                <div class="col">
-                    <p class="text-center"> Precio del examen global </p>
-                    <h2 class="fw-bold text-center">   $2,950  </h2>
-                    <p> En caso de no acreditar un área o campo disciplinar, usted tendrá la oportunidad de presentarlo dos veces.  </p>
-                    <p> Examen de un solo campo disciplinar primera fase (Maremáticas, Ciencias experimentales, Humanidades y Ciencias sociales). </p>
+        <div class="container py-5 ">
+            <h2 class="text-center text-uppercase " > Costos por derecho a examen  </h2>
+            <div class="row row-cols-1 row-cols-lg-3 pt-5 mb-4 " style="/*max-width: 1200px;*/">
+                <div class="col ">
+                    <div class="card shadow p-4">
+                        <h6 class="text-center text-secondary text-uppercase mb-4  "> El Examen global tiene un costo de</h6>
+                        <h2 class="fw-bold text-center text-primary   mb-4">   $ 2,950  </h2>
+                        <p class="small"> En caso de <strong class="text-secondary"> no acreditar </strong> un área o campo disciplinar, tendrás <strong class="text-secondary"> dos opotunidades </strong> de presentarlo.  </p>
+                    </div>
                 </div>
                 <div class="col ">
-                    <h2 class="fw-bold text-center"> $1,420  </h2>
-                    <p> Examen de campo disciplinar segunda fase (Habilidad comunicativa).  </p>
+                    <div class="card shadow p-4 h-100">
+                        <h6 class=" text-secondary text-uppercase mb-4 text-center"> Examen de un solo campo disciplinar primera fase  </h6>
+                        <h2 class="fw-bold text-center text-primary mb-4"> $ 1,420  </h2>
+                        <p class="small"> (Matemáticas, Ciencias experimentales, Humanidades y Ciencias sociales). </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow p-4 h-100">
+                        <h6 class=" text-uppercase text-secondary mb-4 text-center">Examen de campo disciplinar segunda fase </h6>
+                        <h2 class="fw-bold text-center text-primary mb-4"> $ 2,090  </h2>
+                        <p class="small"> Habilidad comunicativa </p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col small bg-primary rounded shadow p-4 text-white ">
-                    <p> Deberá realizar el pago correspondiente dentro del periodo indicado en su formato de pago en ventanilla, por transferencia, con tarjeta de crédito o débito. No se aceptan pagos en OXXO ni otros sistemas de pago.</p>
-                    <p> Si requiere factura, favor de enviar el formato solicitud de factura para sustentantes.</p> 
+            <div class="row  ">
+                <div class="col">
+                    <div class="card small rounded shadow p-4 ">
+                        <p> Deberás realizar el pago correspondiente dentro del periodo indicado en tu formato de pago en ventanilla, por transferencia, con tarjeta de crédito o débito. (No se aceptan pagos en OXXO ni otros sistemas de pago).</p>
+                    <p> Si requiere factura, favor de enviar el formato solicitud de factura para sustentantes directamente a Ceneval. </p> 
                     <p> A partir de la fecha de presentación de la evaluación global, contará con un lapso de un año para presentar, en las fechas deseadas, las dos evaluaciones a las que tiene derecho. Para ello, será necesario volver a registrarse, cargar nuevamente los documentos y realizar el pago correspondiente al examen del campo pendiente de acreditar. </p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <!-- PREGUNTAS FRECUENTES -->
-    <section class="container-fluid py-5">
-        <div class="container py-5">
+    <section class="container-fluid  mb-5">
+        <div class="container pb-5">
+            <h5 class="text-center text-primary">RESUELVE TUS DUDAS</h5>
+            <h2 class="text-center mb-5">MÁS PREGUNTAS</h2>
             <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingVeintinueve">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintinueve" aria-expanded="false" aria-controls="collapseVeintinueve">
+                            ¿Qué porcentaje de sustentantes aprueban la evaluación global?
+                        </button>
+                    </h2>
+                    <div id="collapseVeintinueve" class="accordion-collapse show collapse" aria-labelledby="headingVeintinueve" data-bs-parent="#accordionExample">
+                        <div class="accordion-body small">
+                            <p>En promedio, una tercera parte de las personas que lo presentan.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="accordion-item ">
                     <h2 class="accordion-header " id="headingOne">
-                        <button class="accordion-button collapsed bg-success text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             ¿Cuáles son los requisitos para presentar el examen?
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body small">
                            <p> Deberá contar con los siguientes documentos en ORIGINAL y en BUEN ESTADO:</p>
                             <p>Si es MENOR de edad</p>
@@ -237,7 +220,7 @@
                 </div>
                 <div class="accordion-item ">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             ¿Pueden presentar el examen sustentantes extranjeros?
                         </button>
                     </h2>
@@ -271,7 +254,7 @@
                 </div>
                 <div class="accordion-item ">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             ¿En qué consiste el proceso de evaluación?
                         </button>
                     </h2>
@@ -290,8 +273,8 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            ¿Qué pasa si no acredita un campo disciplinar?
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Qué pasa si no acredito un campo disciplinar?
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -308,8 +291,8 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            ¿Dónde puede presentar el examen?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Dónde puedo presentar el examen?
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
@@ -320,8 +303,8 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseSix">
-                            ¿Cómo registrarse al examen?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            ¿Cómo me registro al examen?
                         </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -339,7 +322,7 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSeven">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                             ¿Cómo realizar el pago?
                         </button>
                     </h2>
@@ -352,8 +335,8 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingEight">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            ¿Qué pasa si no realiza el pago dentro de la fecha límite?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            ¿Qué pasa si no realizo el pago dentro de la fecha límite?
                         </button>
                     </h2>
                     <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
@@ -362,10 +345,11 @@
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingNine">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                            ¿Puede pagar los exámenes de dos o más personas, incluido el suyo, con un solo depósito?
+                        <button class="accordion-button collapsed bg-light text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            ¿Puedo pagar los exámenes de dos o más personas, incluido el suyo, con un solo depósito?
                         </button>
                     </h2>
                     <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
@@ -374,10 +358,11 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTen">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            ¿Cómo preparar los documentos solicitados?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            ¿Cómo preparo los documentos solicitados?
                         </button>
                     </h2>
                     <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
@@ -426,21 +411,21 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingEleven">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                            ¿Cómo obtener el comprobante de registro al examen (CREX)
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            ¿Cómo obtener el comprobante de registro al examen (CREX)?
                         </button>
                     </h2>
                     <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
                         <div class="accordion-body small">
-                            <p> Si realizó el registro sin convenio o con convenio que considera el pago parcial, dos días hábiles después de haber realizado el pago, deberá ingresar de nuevo a la dirección electrónica siguiente: http://registroenlinea.ceneval.edu.mx/RegistroLinea/. </p>
+                            <p> Si realizó el registro sin convenio o con convenio que considera el pago parcial, dos días hábiles después de haber realizado el pago, deberá ingresar de nuevo a la dirección electrónica siguiente: <a  href="https://registroenlinea.ceneval.edu.mx/RegistroLinea/"  rel="noopener noreferrer nofollow"> https://registroenlinea.ceneval.edu.mx/RegistroLinea/ </a>. </p>
                             <p> Ahí, deberá capturar su nombre y fecha de nacimiento, tal como lo hizo en la primera ocasión. Posteriormente, sólo si el pago ya fue acreditado, podrá obtener su COMPROBANTE DE REGISTRO AL EXAMEN (CREX). Después deberá seguir las instrucciones para la entrega de sus documentos en FORMATO DIGITAL en el sistema de carga de archivos.  </p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwelve">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                            ¿Cómo realizar la carga de sus documentos?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            ¿Cómo realizo la carga de mis documentos?
                         </button>
                     </h2>
                     <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
@@ -491,7 +476,7 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTrece">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrece" aria-expanded="false" aria-controls="collapseTrece">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrece" aria-expanded="false" aria-controls="collapseTrece">
                             ¿Cómo saber si la carga de documentos fue correcta?
                         </button>
                     </h2>
@@ -506,8 +491,8 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingCatorce">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatorce" aria-expanded="false" aria-controls="collapseCatorce">
-                            ¿Puede hacer correcciones de datos una vez realizado el registrado en línea?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatorce" aria-expanded="false" aria-controls="collapseCatorce">
+                            ¿Puedo hacer correcciones de datos una vez realizado el registrado en línea?
                         </button>
                     </h2>
                     <div id="collapseCatorce" class="accordion-collapse collapse" aria-labelledby="headingCatorce" data-bs-parent="#accordionExample">
@@ -519,8 +504,8 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingQuince">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuince" aria-expanded="false" aria-controls="collapseQuince">
-                            Si durante el registro en línea o la carga de documentos se presenta algún problema, ¿qué debe hacer?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuince" aria-expanded="false" aria-controls="collapseQuince">
+                            Si durante el registro en línea o la carga de documentos se presenta algún problema, ¿qué debo hacer?
                         </button>
                     </h2>
                     <div id="collapseQuince" class="accordion-collapse collapse" aria-labelledby="headingQuince" data-bs-parent="#accordionExample">
@@ -532,7 +517,7 @@
 <!--aaaa-->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingDieciseis">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDieciseis" aria-expanded="false" aria-controls="collapseDieciseis">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseDieciseis" aria-expanded="false" aria-controls="collapseDieciseis">
                             ¿Existe alguna guía para el examen?
                         </button>
                     </h2>
@@ -542,10 +527,10 @@
                         </div>
                     </div>
                 </div>
-                <!--me falto diecisiete-->
+                <!--me falto diecisiete
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingDieciocho">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDieciocho" aria-expanded="false" aria-controls="collapseDieciocho">
+                        <button class="accordion-button collapsed bg-light text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDieciocho" aria-expanded="false" aria-controls="collapseDieciocho">
                             ¿El Ceneval ofrece cursos o asesorías para el examen?
                         </button>
                     </h2>
@@ -555,11 +540,11 @@
                         </div>
                     </div>
                 </div>
-
+                -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingDiecinueve">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiecinueve" aria-expanded="false" aria-controls="collapseDiecinueve">
-                            El día de la aplicación, ¿a qué hora debe presentarse?
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiecinueve" aria-expanded="false" aria-controls="collapseDiecinueve">
+                            El día de la aplicación, ¿a qué hora debo presentarme?
                         </button>
                     </h2>
                     <div id="collapseDiecinueve" class="accordion-collapse collapse" aria-labelledby="headingDiecinueve" data-bs-parent="#accordionExample">
@@ -571,8 +556,8 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeinte">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeinte" aria-expanded="false" aria-controls="collapseVeinte">
-                            ¿Qué documentación debe tener a la mano para presentar el examen?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeinte" aria-expanded="false" aria-controls="collapseVeinte">
+                            ¿Qué documentación debo tener a la mano para presentar el examen?
                         </button>
                     </h2>
                     <div id="collapseVeinte" class="accordion-collapse collapse" aria-labelledby="headingVeinte" data-bs-parent="#accordionExample">
@@ -584,8 +569,8 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeintuno">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintuno" aria-expanded="false" aria-controls="collapseFive">
-                            Si extravió su identificación oficial, ¿puede presentar cualquier otra identificación con fotografía?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintuno" aria-expanded="false" aria-controls="collapseFive">
+                            Si extravio mi identificación oficial, ¿puedo presentar cualquier otra identificación con fotografía?
                         </button>
                     </h2>
                     <div id="collapseVeintuno" class="accordion-collapse collapse" aria-labelledby="headingVeintuno" data-bs-parent="#accordionExample">
@@ -597,13 +582,13 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeintidos">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintidos" aria-expanded="false" aria-controls="collapseVeintidos">
-                            Si extravió su CREX antes de la aplicación ¿cómo puede recuperarlo?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintidos" aria-expanded="false" aria-controls="collapseVeintidos">
+                            Si extravio mi CREX antes de la aplicación ¿cómo puedo recuperarlo?
                         </button>
                     </h2>
                     <div id="collapseVeintidos" class="accordion-collapse collapse" aria-labelledby="headingVeintidos" data-bs-parent="#accordionExample">
                         <div class="accordion-body small">
-                            <p>1. Ingrese a la dirección electrónica www.ceneval.edu.mx, busque la categoría Registro a un examen y dé clic, después ingrese a la opción Acreditación, posteriormente seleccione la opción ACREDITA-BACH en papel o en línea, según la modalidad que haya elegido al momento de registrarse.  </p>
+                            <p>1. Ingrese a la dirección electrónica <a  rel="noopener noreferrer nofollow" href="https://www.ceneval.edu.mx/">www.ceneval.edu.mx </a>, busque la categoría Registro a un examen y dé clic, después ingrese a la opción Acreditación, posteriormente seleccione la opción ACREDITA-BACH en papel o en línea, según la modalidad que haya elegido al momento de registrarse.  </p>
                             <p>2. Capture la información que se solicita y, posteriormente, el sistema abrirá otra ventana que indica Recuperar el COMPROBANTE DE REGISTRO AL EXAMEN (CREX). Haga clic ahí.  </p>
                             <p> 3. El sistema emitirá el CREX con el número de folio previamente asignado.  </p>                           
                         </div>
@@ -612,7 +597,7 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeintitres">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintitres" aria-expanded="false" aria-controls="collapseVeintitres">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintitres" aria-expanded="false" aria-controls="collapseVeintitres">
                             ¿Cómo se califican los exámenes?
                         </button>
                     </h2>
@@ -627,21 +612,21 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeinticuatro">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeinticuatro" aria-expanded="false" aria-controls="collapseVeinticuatro">
-                            ¿Cómo puede saber su resultado?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeinticuatro" aria-expanded="false" aria-controls="collapseVeinticuatro">
+                            ¿Cómo puedo saber mi resultado?
                         </button>
                     </h2>
                     <div id="collapseVeinticuatro" class="accordion-collapse collapse" aria-labelledby="headingVeinticuatro" data-bs-parent="#accordionExample">
                         <div class="accordion-body small">
-                            <p> Los resultados del examen se consultan en la página del Ceneval, en las fechas señaladas en el calendario de actividades. Para ello, es necesario ingresar a la sección de Consulta de resultados y después capturar el primer apellido y el número de folio que aparece en el CREX. De esta manera podrá acceder a su reporte de resultados individual y conocer la calificación global alcanzada. </p>
+                            <p> Los resultados del examen se consultan en la página del Ceneval, en las fechas señaladas en el calendario de actividades. Para ello, es necesario ingresar a la sección de <a rel="noopener noreferrer nofollow" href="http://prenlinea.ceneval.edu.mx/form.html">  Consulta de resultados </a> y después capturar el primer apellido y el número de folio que aparece en el CREX. De esta manera podrá acceder a su reporte de resultados individual y conocer la calificación global alcanzada. </p>
                         </div>
                     </div>
                 </div>
-
+                <!--
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeinticinco">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeinticinco" aria-expanded="false" aria-controls="collapseVeinticinco">
-                            ¿Se puede solicitar la revisión de examen?
+                        <button class="accordion-button collapsed bg-light text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeinticinco" aria-expanded="false" aria-controls="collapseVeinticinco">
+                            ¿Se puede solicitar revisión de examen?
                         </button>
                     </h2>
                     <div id="collapseVeinticinco" class="accordion-collapse collapse" aria-labelledby="headingVeinticinco" data-bs-parent="#accordionExample">
@@ -650,10 +635,10 @@
                         </div>
                     </div>
                 </div>
-
+                -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeintiseis">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintiseis" aria-expanded="false" aria-controls="collapseVeintiseis">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintiseis" aria-expanded="false" aria-controls="collapseVeintiseis">
                             ¿Cómo se tramita el certificado?
                         </button>
                     </h2>
@@ -669,7 +654,7 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeintisiete">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintisiete" aria-expanded="false" aria-controls="collapseVeintisiete">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintisiete" aria-expanded="false" aria-controls="collapseVeintisiete">
                             ¿Es válido el certificado que se entrega para continuar los estudios superiores?
                         </button>
                     </h2>
@@ -682,33 +667,22 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingVeintiocho">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintiocho" aria-expanded="false" aria-controls="collapseVeintiocho">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintiocho" aria-expanded="false" aria-controls="collapseVeintiocho">
                             ¿Dónde puede tramitar el duplicado del certificado?
                         </button>
                     </h2>
                     <div id="collapseVeintiocho" class="accordion-collapse collapse" aria-labelledby="headingVeintiocho" data-bs-parent="#accordionExample">
                         <div class="accordion-body small">
-                            <p>La única instancia que puede expedir un certificado de bachillerato o su duplicado es la Dirección General del Bachillerato de la SEP. Para mayor información visite la página www.dgb.sep.gob.mx/acuerdo-286/.</p>
+                            <p>La única instancia que puede expedir un certificado de bachillerato o su duplicado es la Dirección General del Bachillerato de la SEP. Para mayor información visite la página <a rel="noopener noreferrer nofollow" href="https://www.dgb.sep.gob.mx/acuerdo-286/">  www.dgb.sep.gob.mx/acuerdo-286/  </a>.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingVeintinueve">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVeintinueve" aria-expanded="false" aria-controls="collapseVeintinueve">
-                            ¿Qué porcentaje de sustentantes aprueban la evaluación global?
-                        </button>
-                    </h2>
-                    <div id="collapseVeintinueve" class="accordion-collapse collapse" aria-labelledby="headingVeintinueve" data-bs-parent="#accordionExample">
-                        <div class="accordion-body small">
-                            <p>En promedio, una tercera parte de las personas que lo presentan.</p>
-                        </div>
-                    </div>
-                </div>
-
+                
+                <!--
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTreinta">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreinta" aria-expanded="false" aria-controls="collapseTreinta">
+                        <button class="accordion-button collapsed bg-light text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreinta" aria-expanded="false" aria-controls="collapseTreinta">
                             ¿Se puede entregar una constancia de que presentó el examen para poder registrarse al examen de selección de la universidad?
                         </button>
                     </h2>
@@ -718,10 +692,10 @@
                         </div>
                     </div>
                 </div>
-
+                -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTreintauno">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreintauno" aria-expanded="false" aria-controls="collapseTreintauno">
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreintauno" aria-expanded="false" aria-controls="collapseTreintauno">
                             ¿Qué tipo de apoyo se brinda el día de la aplicación a las personas que tienen alguna discapacidad?
                         </button>
                     </h2>
@@ -736,21 +710,21 @@
                 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTreintados">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreintados" aria-expanded="false" aria-controls="collapseTreintados">
-                            ¿Cómo se puede tramitar la factura por el pago del examen?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreintados" aria-expanded="false" aria-controls="collapseTreintados">
+                            ¿Cómo puedo tramitar la factura por el pago del examen?
                         </button>
                     </h2>
                     <div id="collapseTreintados" class="accordion-collapse collapse" aria-labelledby="headingTreintados" data-bs-parent="#accordionExample">
                         <div class="accordion-body small">
-                            <p>En la sección de Contacto / Trámites y servicios / Solicitud de factura</p>
+                            <p>En la sección de  Contacto / Trámites y servicios / <a rel="noopener noreferrer nofollow"  href="https://ceneval.edu.mx/contacto-tramites/"> Solicitud de factura </a> </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTreintatres">
-                        <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreintatres" aria-expanded="false" aria-controls="collapseTreintatres">
-                            ¿En qué circunstancias y cómo puede solicitar el reembolso del pago efectuado para presentar el examen?
+                        <button class="accordion-button collapsed bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreintatres" aria-expanded="false" aria-controls="collapseTreintatres">
+                            ¿En qué circunstancias y cómo puedo solicitar el reembolso del pago efectuado para presentar el examen?
                         </button>
                     </h2>
                     <div id="collapseTreintatres" class="accordion-collapse collapse" aria-labelledby="headingTreintatres" data-bs-parent="#accordionExample">
@@ -979,35 +953,56 @@
                 </div>
             </div>
             <h5 class="mt-4 text-center text-lg-start">PAGINAS AMIGAS</h5>
-            <div class="row row-cols-2 row-cols-lg-4 pt-4" style="max-width: 900px; margin-left: auto; margin-right: auto; ">
+            <div class="row row-cols-2 row-cols-lg-4 pt-4 mb-0 " style="max-width: 900px; margin-left: auto; margin-right: auto; ">
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriaUAM/">
                         <!--<img class="img-fluid w-75 redonda shadow"  width="" src="img/3.png" alt="convocatoria uam">-->
                         <picture>
-                            <source class=" img-fluidlazyload redonda shadow" type="image/webp" width="100px" title="convocatoriaceneval" data-srcset="img/convocatoriauam.webp" alt="convocatoriauam">
-                            <img class=" img-fluid lazyload redonda shadow" type="image/png" width="100px" data-src="img/convocatoriauam.png" title="convocatoriaceneval" alt="convocatoriauam">
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriauam.webp" alt="convocatoriauam">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriauam.png" title="convocatoriaceneval" alt="convocatoriauam">
                         </picture>
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriaunam/">
-                        <img class="img-fluid  redonda shadow" src="img/convocatoriaunam.png" width="125px" alt="convocatoria unam">
+                        <picture>
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriaunam.webp" alt="convocatoriaunam">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriaunam.png" title="convocatoriaceneval" alt="convocatoriaunam">
+                        </picture>
+                        <!--<img class="img-fluid  redonda shadow lazyload" data-src="img/convocatoriaunam.png" width="125px" alt="convocatoria unam">-->
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/convocatoriacomipems">
-                        <img class="img-fluid  redonda shadow" src="img/convocatoriacomipems.png" width="125px" alt="convocatoria comipems">
+                        <picture>
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriacomipems.webp" alt="convocatoriacomipems">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriacomipems.png" title="convocatoriaceneval" alt="convocatoriacomipems">
+                        </picture>
+                        <!--<img class="img-fluid  redonda shadow lazyload" data-src="img/convocatoriacomipems.png" width="125px" alt="convocatoria comipems">-->
                     </a>
                 </div>
                 <div class="col m-auto text-center mb-4">
                     <a href="https://www.facebook.com/cnvocatoriaIPN">
-                        <img class="img-fluid  redonda shadow" src="img/convocatoriaipn.png" width="125px" alt="convocaotiria ipn">
+                        <picture>
+                            <source class=" img-fluidlazyload redonda shadow colaboradores" type="image/webp" width="125px" title="convocatoriaceneval" data-srcset="img/convocatoriaipn.webp" alt="convocatoriaipn">
+                            <img class=" img-fluid lazyload redonda shadow colaboradores" type="image/png" width="125x" data-src="img/convocatoriaipn.png" title="convocatoriaipn" alt="convocatoriaunam">
+                        </picture>
+                        <!--<img class="img-fluid  redonda shadow lazyload" data-src="img/convocatoriaipn.png" width="125px" alt="convocaotiria ipn">-->
                     </a>
                 </div>
             </div>
-            <p class="text-center text-muted pt-5 mb-0">CONVOCATORIA CENEVAL 2021</p>
-            <p class="text-center mb-0 small"><a href="politica_privacidad.html" class=" text-decoration-none text-muted"> Política de Privacidad</a> </p>
-            <p class="text-center text-muted"> <small> Todas las imágenes y logotipos de terceros fueron usados con fines informativos</small></p>
+            <p class="text-center text-muted mb-5"> <small> Todas las imágenes y logotipos de terceros fueron usados con fines informativos</small></p>
+                <div class="row mb-2">
+                    <div class="col">
+                        <p class="text-center text-muted text-lg-start small  mb-0">ConvocatoriaCENEVAL 2021</p>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <p class="text-center  text-lg-end mb-0 small"><a href="politica_privacidad.html" class=" text-decoration-none text-muted"> Política de Privacidad</a> </p>
+                    </div>
+                </div>
         </div>
     </section>
     <style>
@@ -1026,6 +1021,9 @@
 	<a  class="appwhatsapp"  target="_blank" href="https://api.whatsapp.com/send?phone=5215558181083&text=Hola!%20quiero%20informes%20sobre%20convocatoria%20CENEVAL">
 		<img class="appwhatsapp h-auto lazyload" data-src="img/whatsapp.webp"  alt="whatsapp">
 	</a>
+    
+   
+    
 
 
     <!--script-->
