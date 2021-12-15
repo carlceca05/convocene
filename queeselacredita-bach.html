@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Convocatoria Ceneval | blog </title>
+    <title>Convocatoria Ceneval | Blog | Preguntas Frecuentes CENEVAL </title>
     <!--metas-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,39 +43,60 @@
 
 
     <style>
-        .enlaceblog{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index:5;
-        }
         .titular{
             font-weight: 700; 
-            font-size: 55px;
+            font-size: 48px;
             color: #07092F;
             margin-top: 80px;
-            margin-bottom: 20px;
         }
-        .subtitular-carta{
-            font-weight: 500;
+        .subcategorias{
             font-size: 15px;
         }
-        .texto-carta{
+        .texto-cuerpo{
             font-weight: 300;
-            font-size: 14px;
+            margin: 15px 0px 15px 0px ;
         }
-        .ttular-carta{
-            font-size: 25px;
+        .texto-cuerpo strong{
+            color: #3CA090 ;
+            font-weight: bold;
         }
-        .texto-titular{
+        .image-cuerpo-columnas{
+            max-width: 70%;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .image-columnas{
+            display: flex;
+            justify-content: center;
+        }
+        .texto-cuerpo h2, h3, h4{
             font-size: 22px;
+            margin: 40px 0 20px  0;
         }
-        .carta{
-            width: 23rem;
+        .texto-cuerpo a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #2ea3f2;
         }
-        
+        .image-una-columna{
+            max-width: 55%;
+            border-radius: 5px;
+        }
+        .importante{
+            background-color: #3CA090;
+            padding: 12px 20px 10px  20px ;
+            color: white;
+            margin: 25px 0;
+        }
+        .alaccion{
+            background-color: red;
+            padding: 25px 20px 15px 20px ;
+            font-size: 45px;
+            
+
+        }
+
+
         @media only screen and (min-width:901px) and (max-width:3000px) {
             .aparece{
                 display: none;
@@ -85,13 +106,17 @@
             .desaparece{
                 display: none;
             }
-            
+            .image-una-columna{
+            max-width: 90%;
+            border-radius: 5px;
+            }
+            .image-cuerpo-columnas{
+            max-width: 90%;
+            border-radius: 5px;
+            }
             .titular{
                 font-size: 40px;
                 margin-top: 35px;
-            }
-            .carta{
-
             }
 
 
@@ -164,69 +189,175 @@
     <!--header entrada titulo-->
     <section class="container-fluid " >
         <div class="container text-center">
-            <h1 class="titular blog "  > Blog Convocatoria CENEVAL   </h1>
-            <p class=" texto-titular text-muted">Conoce más sobre CENEVAL en nuestro Blog </p>
-            <!--  aqui va la barra de busqueda  -->
+            <h1 class="titular "> ¿Qué es el ACREDITA-BACH? </h1>
+            <p class=" text-uppercase subcategorias ">May 21, 2021 | CENEVAL</p>
+            <p>  <i class="bi bi-share fs-5"></i> &nbsp;&nbsp;  <i class="bi bi-link-45deg fs-5"></i> </p>
+            <div class="fb-share-button" 
+            data-href="https://www.convocatoriaceneval.com.mx/blog/preguntasfrecuentesceneval.html" 
+            data-layout="button_count">
+            </div>
         </div>
     </section>
     <!--entrada-->
     <section class="container-fluid py-3 py-lg-5 ">
-        <div class="container " >
-            <div class="row row-cols-1 row-cols-lg-3 ">
-                <div class="col d-flex justify-content-center  mb-5">
-                    <div class="card sombrio carta" style="position: relative;" >
-                        <a class="enlaceblog" href="preguntasfrecuentesceneval.html" > </a>
-                        <img class="card-img-top " src="img/entrada-1.jpg" alt="">
-                        <div class="card-body   px-4 ">
-                            <h2 class="ttular-carta">  Preguntas frecuentes CENEVAL</h2>
-                            <h6 class="subtitular-carta">May 21, 2021 | Licenciatura UNAM </h6>
-                            <p class=" texto-carta ">¿Cómo me registro a un examen?Los interesados en presentar el Proceso de Acreditación de Conocimientos Equivalentes al Bachillerato General deberán contar con los siguientes documentos en ORIGINAL y en BUEN ESTADO:Sustentantes MAYORES de edad Clave Única de Registro...  </p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col d-flex justify-content-center  mb-5">
-                    <div class="card sombrio carta" >
-                        <a class="enlaceblog" href="queeselacredita-bach.html" > </a>
-                        <img class="card-img-top " src="img/entrda-1.jpg" alt="">
-                        <div class="card-body ">
-                            <h2 class="ttular-carta"> ¿Qué es el ACREDITA-BACH?</h2>
-                            <h6 class="subtitular-carta">May 21, 2021 | Licenciatura UNAM </h6>
-                            <p class=" texto-carta ">¿Cómo puedo terminar la prepa en un examen con validez oficial?, en el siguiente artículo conocerás todo lo que debes saber sobre el examen ACREDITA-BACH para la obtención del certificado de bachillerato por medio del examen único de CENEVAL.  </p>
-                        </div>
-                    </div>
+        <div class="container bg-light sombrio p-0 rounded" style=" max-width: 1000px;">
+            <div class="bg-light  " > <!--imagen destacada-->
+                <img class="w-100  rounded-top" src="img/entrda-1.jpg" alt="">
+            </div>
+            <div class="py-5 px-4 px-lg-5" > <!--body texto-->
+                <div style="display: flex; justify-content: center; margin-bottom: 30px; ">
+                    <iframe class="rounded shadow" width="560" height="315" src="https://www.youtube.com/embed/jwWBofJwGHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col d-flex justify-content-center  mb-5">
-                    <div class="card sombrio carta" >
-                        <a class="enlaceblog" href="tiposyformatosdereactivos.html" > </a>
-                        <img class="card-img-top " src="img/entrada-3.jpg" alt="">
-                        <div class="card-body ">
-                            <h2 class="ttular-carta">  Tipos y formatos de reactivos</h2>
-                            <h6 class="subtitular-carta">May 17, 2021 | Licenciatura UNAM </h6>
-                            <p class=" texto-carta ">tipo de reactivos de examen CENEVAL </p>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="col d-flex justify-content-center  ">
-                    <div class="card sombrio carta" >
-                        <img class="card-img-top " src="img/Convocatoria UNAM 2022.jpg" alt="">
-                        <div class="card-body ">
-                            <h2 class="ttular-carta">  Convocatoria UNAM 2022</h2>
-                            <h6 class="subtitular-carta">Dic 3, 2021 | Licenciatura UNAM </h6>
-                            <p class=" texto-carta "> Importante… la convocatoria del 2022 estará abierta a todas las carreras, incluyendo las del sistema en línea y abierto, que también contarán con un proceso exclusivo en septiembre. Si te interesa entrar a una licenciatura del sistema escolarizado, esta será la única oportunidad que tendrás en el año. Sin embargo, no olvides que sólo podrás aplicar para una sola opción.  </p>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <div class="col">
+                <h2 class="text-center text-uppercase text-secondary llenita"> ¿Qué es el ACREDITA-BACH? </h2>
+                <p class="texto-cuerpo"> Tal vez no cursaste o no terminaste tus <strong> estudios de bachillerato </strong> y deseas obtener el certificado de este nivel educativo de una forma más rápida, efectiva y sin complicaciones. Cualquiera sea el caso, el <strong> ACREDITA-BACH </strong> probablemente es la mejor opción para ti, sin importar si adquiriste tus conocimientos de forma autodidacta, por experiencia o a través de una capacitación. Aquí te explicamos todo lo que debes conocer sobre el <strong> CENEVAL</strong> y su <strong> examen único de bachillerato  ACREDITA-BACH</strong>.</p>
+                <h3 class="text-uppercase text-secondary llenita text-center" >¿Qué es el CENEVAL?</h3>
+                <p class="texto-cuerpo">Comencemos por lo más básico <strong> ¿Qué es el CENEVAL?</strong>
+                <br> <br>
+                El <strong> Centro Nacional de Evaluación para la Educación Superior </strong> o mejor conocido por sus siglas como el <strong> CENEVAL</strong>, es la institución responsable del diseño, aplicación y evaluación del <strong> examen para la acreditación </strong> de conocimientos equivalentes al <strong> bachillerato general</strong>. Es super importante dejar claro desde aquí que el CENEVAL no es el organismo evaluador, es la Secretaría de Educación Pública (SEP) quien lo hace.
+                <br> <br>
+                Continuemos con un poquito de historia, fue el <strong> 30 de octubre del año 2000</strong> cuando la <strong>x SEP promulgó el acuerdo 286</strong>. Aquí se definen los procedimientos por los cuales es posible acreditar los conocimientos correspondientes a niveles educativos o grados escolares adquiridos, ya sean de  forma autodidacta o a través de la experiencia laboral. Gracias a este acuerdo, es posible que se logre  <strong> acreditación del bachillerato</strong>, y así, obtener su certificado para continuar con su preparación académica o laboral.
+                <br> <br>
+                Un mes después de que se promulgara este acuerdo, en noviembre del 2000, la <strong> SEP</strong>  pidió al <strong> CENEVAL</strong> que se encargara de el diseño, aplicación y evaluación del <strong> Examen para la Acreditación de Conocimientos Equivalentes al bachillerato General</strong>. 
+                <br> <br>
+                Ahora que ya sabes por qué el <strong> CENEVAL </strong> puede hacer este examen, hablemos del objetivo de este examen, el cuál es evaluar los conocimientos y habilidades equivalentes a las competencias disciplinares básicas que se adquieren en el <strong> bachillerato general</strong>, como son: <strong> Matemáticas, Comunicación, Ciencias Experimentales, Ciencias Sociales y Humanidades</strong>.   </p>
+                <h4 class="text-center text-uppercase text-secondary llenita  ">Requisitos</h4>
+                <p class="texto-cuerpo"> Entonces, <strong> ¿quieres presentar el examen?</strong> Si tu respuesta es “si”, estos son los requisitos y documentos que necesitas reunir:  </p>
+                <h6 class=" text-uppercase text-secondary llenita ">Sustentantes MAYORES de edad</h6>
+                <ol> 
+                    <li> Clave Única de Registro de Población (CURP) </li>
+                    <li> Acta de nacimiento   </li>
+                    <li> Carta compromiso del sustentante    </li>
+                    <li> Identificación oficial vigente con fotografía (credencial para votar o pasaporte)  </li>
+                </ol>
+                <h6 class=" text-uppercase text-secondary llenita "> Sustentantes MENORES de edad  </h6>
+                <p class="texto-cuerpo"> Y si eres menor de edad, además del CURP y Acta de nacimiento, deberás llevar estos documentos (llenados a computadora y con firma autógrafa, es decir, a mano):   </p>
+                <ol>
+                    <li> Clave Única de Registro de Población (CURP) </li>
+                    <li> Acta de nacimiento </li>
+                    <li> Carta compromiso del padre o tutor del sustentante (llenada en computadora y con firma autógrafa) </li>
+                    <li> Carta responsiva del padre o tutor del sustentante (llenada en computadora y con firma autógrafa) </li>
+                    <li> Documento que acredite la representación legal del sustentante por parte de un tutor (únicamente para aquellos sustentantes que sean representados por un tutor) </li>
+                    <li>  Identificación oficial vigente con fotografía del padre o tutor (credencial para votar o pasaporte) </li>
+                </ol>
+                <p class="texto-cuerpo"> Todas estas cartas las podrás encontrar para su descarga en la página oficial del CENEVAL en el apartado de “Registro al examen”. </p>
+                <h6 class=" text-uppercase text-secondary llenita ">¿Eres extranjero? ¿Quiéres presentar el examen?  </h6>
+                <p class="texto-cuerpo"> Para ello deberá contar con los siguientes documentos: </p>
 
-                </div> 
-                <div class="col">
+                <h6 class="text-uppercase text-secondary llenita "> Sustentantes MAYORES de edad  </h6>
+                <ol>
+                    <li> Clave Única de Registro de Población (CURP)  </li>
+                    <li> Acta de nacimiento  </li>
+                    <li> Carta compromiso del sustentante  </li>
+                    <li> Identificación oficial vigente con fotografía:   </li>
+                </ol>
+                <ul>
+                    <li> Pasaporte vigente del país de origen o   </li>
+                    <li> Documento que acredite su legal estancia en México, expedido por la autoridad competente   </li>
+                </ul>
+                <h6 class=" text-uppercase text-secondary llenita "> Sustentantes MENORES de edad  </h6>
+                <ol>
+                    <li> Clave Única de Registro de Población (CURP)  </li>
+                    <li> Acta de nacimiento   </li>
+                    <li> Carta compromiso del padre o tutor del sustentante (llenada en computadora y con firma autógrafa)    </li>
+                    <li> Carta responsiva del padre o tutor del sustentante (llenada en computadora y con firma autógrafa)   </li>
+                    <li> Documento que acredite la representación legal del sustentante por parte de un tutor (únicamente para aquellos sustentantes que sean representados por un tutor)  </li>
+                    <li> Identificación oficial vigente con fotografía del padre o tutor:  </li>
+                    <li> Pasaporte vigente del país de origen o </li>
+                    <li> Documento que acredite su legal estancia en México, expedido por la autoridad competente.  </li>
+                </ol>
+                <div class="importante  rounded  shadow " > <!--importante-->
+                    <h5 class="text-center">IMPORTANTE </h5>
+                </div>
+                <ol>
+                    <li> Si usted es menor de edad en el momento de registrarse al examen, pero si cumple la mayoría de edad (18 años) antes o el día del examen, deberá cumplir con los requisitos de los sustentantes mayores de edad.   </li>
+                    <li> Si usted cumple la mayoría de edad (18 años) un día después de la aplicación del examen, será considerado como menor de edad.   </li>
+                </ol>
+                <h4 class=" text-uppercase text-secondary llenita  ">Modalidades</h4>
+                <h4 class=" text-uppercase text-secondary llenita  "> Examen Global  </h4>
+                <p class="texto-cuerpo "> Ya te registraste, ahora ¿cómo es? y <strong> ¿qué viene en el examen CENEVAL?</strong> Debes saber que el examen para el que te registraste recibe el nombre de <strong> “Examen Global”</strong>. Esta modalidad del examen está dirigida a todos los sustentantes que por primera ocasión van a someterse a la <strong> evaluación para acreditar el bachillerato</strong> y se compone de tres instrumentos de evaluación:   </p>
+                <ol>
+                    <li>  Examen General de Competencias Disciplinares Básicas (EGCD)  </li>
+                    <li> Examen de Comprensión lectora (ECL)  </li>
+                    <li> Examen de Habilidades de Expresión y Argumentación Escritas. (EHEAE)  </li>
+                </ol>
+                <p class="texto-cuerpo "> Pero ¡no te asustes! si bien estos tres instrumentos de evaluación están contenidos en un mismo examen y se presentan el mismo día, su aplicación se realiza en dos fases:  </p>
+                <ul>
+                    <li> Primera Fase. En esta fase se aplica el Examen General de Competencias Disciplinares Básicas (EGCD). Aquí pondrás a prueba tus conocimientos de Matemáticas, Ciencias Experimentales, Humanidades y Ciencias Sociales adquiridos de forma autodidacta, por experiencia o a través de una capacitación. El examen se conforma de 180 reactivos de opción múltiple, 45 reactivos por cada área y tiene una duración de.  </li>
+                    <li> Segunda Fase. En esta fase se aplica el Examen de Comprensión Lectora (ECL) que está conformado por 3 reactivos principales y de cada uno de ellos se desprenden 8 reactivos de opción múltiple. Es decir, en total son 24 reactivos. Los tipos de textos que verás en esta sección son Argumentativo e icónico-verbal, Literario y Científico. </li>
+                </ul>
+                <p class="texto-cuerpo "> La última evaluación de esta fase es el Examen de Habilidades de Expresión y Argumentación Escritas (EHEAE), donde se evaluarán tus conocimientos y habilidades escritas. Se te presentarán 3 preguntas polémicas de las cuáles tú deberás escoger una y desarrollar un texto argumentativo de 50 líneas o dos cuartillas, la segunda fase tiene una duración de…
+                <br> <br>
+                Si te interesa conocer más sobre los reactivos y como se califican los exámenes, te invitamos a consultar nuestro artículo <a target="_blank" href="tiposyformatosdereactivos.html"> “Tipos y Formatos de Reactivos”</a> 
+                <br> <br>    
+                Es importante recalcar que para acreditar este examen debes aprobar todos los campos formativos, si llegas a reprobar alguno tendrás que presentarlo nuevamente en el Examen de Campo Disciplinar (ECD), esta evaluación podrás presentarla dos veces (en las fechas que quieras) en el lapso de un año.  </p>
 
-                </div> 
+                <h4 class=" text-uppercase text-secondary llenita  "> Examen de Campo Disciplinar </h4>
+                <h6 class=" text-uppercase text-secondary llenita  ">¿Qué tienes que hacer para presentar el Examen de Campo Disciplinar? </h6>
+                <p class="texto-cuerpo "> Así como lo hiciste con el <strong> Examen Global</strong>, para el <strong> Examen de Campo Disciplinar</strong> también tendrás que registrarte, cargar los documentos que te habían pedido anteriormente y realizar el pago correspondiente.
+                <br> <br>
+                Este examen es más corto pues para las áreas de Matemáticas, Humanidades, Ciencias Experimentales y Sociales sólo hay 50 preguntas de opción múltiple, en las cuales solo se evalúan los conocimientos del campo que <strong> NO acreditaste</strong>. Por otro lado, en el examen del <strong> área de Habilidad Comunicativa</strong> hay cuatro lecturas con 32 reactivos de opción múltiple. Y para el <strong> Examen de  Habilidades de Expresión y Argumentación Escritas</strong> es prácticamente lo mismo que en el Examen Global, se te presentarán 3 preguntas de algún tema polémico y tendrás que desarrollar tu respuesta en 2 cuartillas o 50 líneas.
+                <!-- <br> <br>   
+                Si te intersa conocer más sobre el examen de campo disciplinar, te invitamos a consultar nuestro artículo “Examen de Campo Disciplinar    --> </p>
+                <h6 class=" text-uppercase text-secondary llenita  ">¿Qué pasa si no acredito un campo disciplinar? </h6>
+                <p class="texto-cuerpo ">  Aquellos sustentantes que presentaron la <strong> evaluación global</strong> y <strong> no acreditaron un campo disciplinar</strong>, cuentan con <strong> dos oportunidades para poder acreditarlo</strong>; a esta evaluación se le denomina <strong> Examen de Campo Disciplinar (ECD)</strong>. A partir de la fecha de presentación de la evaluación global, los sustentantes contarán con un lapso de un año para presentar, en las fechas que deseen, las dos evaluaciones a las que tienen derecho.
+                <br> <br>
+                Para presentar este examen será necesario que el sustentante vuelva registrarse, que cargue de nuevo sus documentos y realice el pago correspondiente al examen del campo que tiene derecho. 
+                <br> <br>
+                El examen de los campos disciplinares de Matemáticas, Ciencias Experimentales, Humanidades o Ciencias Sociales se aplica en papel y cada uno está conformado por 50 preguntas de opción múltiple, las cuales evalúan únicamente los conocimientos y las habilidades del campo no acreditado. Para cada campo se aplica un instrumento que debe ser contestado en un lapso de 2 horas y media (de 9:00 a 11:30 horas).
+                <br> <br>
+                La evaluación del campo disciplinar de <strong> Habilidad Comunicativa</strong> se realiza mediante dos instrumentos en papel que deben responderse en un tiempo máximo de 3 horas (de 16:00 a 19:00 horas).
+                </p>
+                <ol>
+                    <li> <strong> Examen de Comprensión Lectora (ECL).</strong> Está conformado por 3 textos de diferentes tipos y 24 reactivos de opción múltiple (ocho preguntas sobre cada texto). Además, se incluye otro texto con ocho reactivos de opción múltiple, los cuales no cuentan para la calificación, ya que el objetivo es someterlos a un análisis estadístico que aporte información sobre su calidad. La aplicación de este examen tiene una duración de 1 hora y media (de 16:00 a 17:30 horas)  </li>
+                    <li> <strong> Examen de Habilidades de Expresión y Argumentación Escritas (EHEAE).</strong> Se presentan tres preguntas polémicas de las cuales el sustentante deberá elegir una de ellas para redactar un texto argumentativo de 600 palabras como mínimo. La aplicación de este examen tiene una duración de 1 hora y media (de 17:31 a 19:00 horas); sin embargo, si el sustentante termina el ECL antes del tiempo establecido, puede iniciar con este examen.  </li>
+                </ol>
+                <div class="importante  rounded  shadow " > 
+                    <h5 class="text-center">IMPORTANTE </h5>
+                </div>
+                <p class="texto-cuerpo "> El ECD puede presentarse en la modalidad que usted prefiera: lápiz y papel o en línea.   </p>
+                <p class="texto-cuerpo fw-bold" >  Si buscas más información la puedes en contrar en nuestra sección de <a href="../preguntasfrecuentes.html"> preguntas frecuentes </a> para bachillerato CENEVAL.  </p>
+
+                <!--pasaje -->
+                <div class="row mt-5">
+                    <div class="col ">
+                        <p > <a class="text-decoration-none" href="vendernaturaporcatalogo.html">  <i class="bi bi-arrow-left"></i> Vendeasas  </a>    </p>
+                    </div>
+                    <div class="col">
+                        <p class="text-end"> <a class="text-decoration-none" href="guiaparanuevasconsultorasnatura.html"> Guia p <i class="bi bi-arrow-right"></i>  </a>     </p>
+                    </div>
+                </div>
+
+
+                    
+
+
+
+
+
+                
+                <div>
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v12.0&appId=1451065138573426&autoLogAppEvents=1" nonce="IUHPfcUP"></script>
+                    <div class="fb-comments" data-href="https://convocatoriaceneval.com.mx/blog/" data-width="800" data-numposts="5"></div>
+                </div>
+                <!--pasaje-->
+                <div class="row mt-5">
+                    <div class="col "><!--posterior-->
+                        <p > <a class="text-decoration-none" href=" ">  <i class="bi bi-arrow-left"></i> titulo de entrada  </a>    </p>
+                    </div>
+                    <div class="col"><!--anterior-->
+                        <p class="text-end"> <a class="text-decoration-none" href=" "> titulo de entrada <i class="bi bi-arrow-right"></i>  </a>     </p>
+                    </div>
+                </div>
+                
+
+
+                
+
             </div>
         </div>
     </section>
+
     <!--seccion blog-->
     <section class="container-fluid  pt-5 pt-lg-0 ">
         <div class="container pb-5">
@@ -275,11 +406,16 @@
                                 </a>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
+                
+                
             </div>
         </div>
     </section>
+    
+
     <!--boletin-->
     <section class="container-fluid mb-5">
         <div class="container ">
@@ -292,6 +428,20 @@
             </div>
         </div>
     </section>
+    <!--ventana emergente 2 TODO:
+    <section >
+    <div id="modal4" class="modalmask overflow-auto">
+        <div class="modalbox movedown " >
+            <h5 class=""></h5>
+            <a href="#close" title="Close" class="close">X</a>
+                <div class=" ">
+                    <iframe title="formulario sesiones"  width="100%" height="700" src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="no"> </iframe>  
+                </div>  
+            </div>
+        </div>
+    </section>
+    -->
+
     <!--NUEVA VENTANA EMERGENTE-->
     <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -305,6 +455,25 @@
             </div>
         </div>
     </div>   
+    <!--
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+        ventana promocional
+      </button>-->
+    <!--ventana cierto tiempo 
+    <div class="modal fade  overlay_popup" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe title="formulario sesiones"  width="100%" height="500" src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="auto"> </iframe>  
+                </div>
+            </div>
+        </div>
+    </div> 
+    -->
+
     <!-- colaboradores 1-->
     <section class="container-fluid  desaparece ">
         <div class="container ">
@@ -337,12 +506,18 @@
                                                         <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/prepaenunexamen.webp">
                                                         <img class="lazyload redonda shadow colaboradores" width="125px" data-src="img/prepaenunexamen.png" alt=" " >
                                                     </picture>
+                                                    <!--
+                                                    <img class="lazyload img-fluid redonda shadow"  src="img/prepaenunexamen.png" alt="cecaes" width="125px" title="fullness">
+                                                    -->
                                                 </a>
                                                 <a href="https://examenunicoceneval.com/">
                                                     <picture >
                                                         <source class="lazyload redonda shadow colaboradores"  width="125px" type="image/webp" data-srcset="img/examenunicoceneval.webp">
                                                         <img class="lazyload redonda shadow colaboradores" width="125px" data-src="img/examenunicoceneval.png" alt=" " >
                                                     </picture>
+                                                    <!--
+                                                    <img class="lazyload img-fluid redonda shadow" src="img/examenunicoceneval.png" alt="cecaes" width="125px" title="fullness">
+                                                    -->
                                                 </a>
                                             </div>
                                         </div>
