@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /formularios/
+Disallow: /guia/
+Disallow: /convocatorias/
+Disallow: /word/
+
+Sitemap: https://convocatoriaceneval.com.mx/sitemap.xml

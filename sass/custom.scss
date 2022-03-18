@@ -1,4 +1,500 @@
+.sombrio {
+  box-shadow: 0 5px 15px 0 rgba(60, 160, 144, .4)
+}
 
+.gordita {
+  font-weight: 900
+}
+
+.llenita {
+  font-weight: 800
+}
+
+.colaboradores:hover {
+  transform: translate(0, -10px);
+  transition: all 1s
+}
+
+.logofooter {
+  width: 80%
+}
+
+.modalmask {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity .4s ease-in;
+  -moz-transition: opacity .4s ease-in;
+  transition: opacity .4s ease-in;
+  pointer-events: none
+}
+
+.modalmask:target {
+  opacity: 1;
+  pointer-events: auto
+}
+
+.modalbox {
+  width: 70%;
+  position: relative;
+  padding: 20px;
+  border-radius: 3px;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  background-image: url(../img/linea-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.modalbox2 {
+  width: 70%;
+  position: relative;
+  padding: 20px;
+  border-radius: 3px;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  background-color: #fff
+}
+
+.movedown {
+  margin: 0 auto
+}
+
+.rotate {
+  margin: 10% auto;
+  -webkit-transform: scale(-5, -5);
+  transform: scale(-5, -5)
+}
+
+.resize {
+  margin: 10% auto;
+  width: 0;
+  height: 0
+}
+
+.modalmask:target .movedown {
+  margin: 10% auto
+}
+
+.modalmask:target .rotate {
+  transform: rotate(360deg) scale(1, 1);
+  -webkit-transform: rotate(360deg) scale(1, 1)
+}
+
+.modalmask:target .resize {
+  width: 400px;
+  height: 200px
+}
+
+.close {
+  background: #606061;
+  color: #fff;
+  line-height: 25px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 3px
+}
+
+.close:hover {
+  background: #3ca090;
+  color: #222
+}
+
+.testi {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px
+}
+
+.testi2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 25px 0 0;
+  opacity: .4
+}
+
+.advertensia {
+  font-size: 6em
+}
+
+.alto {
+  height: 60vh
+}
+
+.chonchito {
+  font-weight: 500
+}
+
+.redonda {
+  border-radius: 20%
+}
+
+.sombra {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, .1)
+}
+
+.rotado {
+  position: relative;
+  top: -150px;
+  left: 45%;
+  transform: scale(2) rotate(20deg)
+}
+
+.rotamovil {
+  position: relative;
+  bottom: -50px;
+  left: 38%;
+  transform: scale(2)
+}
+
+.appwhatsapp {
+  position: fixed;
+  right: 15px;
+  bottom: 80px;
+  width: 60px;
+  z-index: 1000
+}
+
+.arriba {
+  position: fixed;
+  right: 22px;
+  text-align: center;
+  line-height: 50px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(180, 180, 180, .7);
+  border-radius: 25px;
+  color: #fff;
+  vertical-align: middle;
+  z-index: 999;
+  transition: 1s all;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s
+}
+
+.requisitos {
+  background-image: url(../img/requisitos.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.terminar {
+  background-image: url(../img/terminar.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.ventajas {
+  background-image: url(../img/ventajas.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.capacitate {
+  background-image: url(../img/capa.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.boletin {
+  background-image: url(../img/boletin.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.fondo {
+  background-image: url(../img/img4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.fondo1 {
+  background-image: url(../img/chica-haciendo-su-examen_1098-218.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.fondo2 {
+  background-image: url(../img/chica-estudiando-examen.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.taller {
+  background-image: url(../img/taller.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.simulacro {
+  background-image: url(../img/simulacro.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.linea {
+  background-image: url(../img/linea.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.sesion {
+  background-image: url(../img/sesion.webp);
+  background-image: image-set (url(../img/sesion.webp), url(../img/sesion.png), );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.img1 {
+  background-image: url(../img/min1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.fondoverde {
+  background-image: url(../img/fondo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+
+.img3 {
+  background-image: url(../img/img4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.fondeado {
+  background-image: url(../img/img3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.fondeado2 {
+  background-image: url(../img/inve.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.inv {
+  background-image: url(../img/inve.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.inv2 {
+  background-image: url(../img/inve2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.bg-guia {
+  background-image: url(../img/fondo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.informativa {
+  background-image: url(../img/sesion-informativa.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.aula {
+  background-image: url(../img/aula.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.curso-linea {
+  background-image: url(../img/curso-linea.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+.examen-simulacro {
+  background-image: url(../img/examen-simulacro.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+@media only screen and (min-width:901px) and (max-width:3000px) {
+  .cuadrada {
+      display: none
+  }
+  .espacio {
+      padding-top: 48px;
+      padding-bottom: 48px
+  }
+  .espacio2 {
+      padding-top: 20px;
+      padding-bottom: 20px
+  }
+  .bordesito {
+      border-right: #3ca090 2px solid
+  }
+  .pararotado {
+      margin-top: 100px
+  }
+}
+
+@media only screen and (min-width:100px) and (max-width:900px) {
+  .img2 {
+      background-image: none
+  }
+  .inv {
+      background-image: none
+  }
+  .espacio {
+      padding-top: 0;
+      padding-bottom: 48px
+  }
+  .desaparece {
+      display: none
+  }
+  .reduxco {
+      width: 50px
+  }
+  .alto {
+      height: auto
+  }
+  .pararotado {
+      margin-top: 100px
+  }
+  .modalbox {
+      width: 90%
+  }
+  .sesion {
+      background-image: none
+  }
+  .linea {
+      background-image: none
+  }
+  .simulacro {
+      background-image: none
+  }
+  .taller {
+      background-image: none
+  }
+  .ventajas {
+      background-image: none
+  }
+  .terminar {
+      background-image: none
+  }
+  .capacitate {
+      background-image: none
+  }
+  .testi2 {
+      position: absolute;
+      top: 0;
+      left: 43%;
+      padding: 0;
+      opacity: .4
+  }
+  .advertensia {
+      font-size: 3.5em
+  }
+  .logofooter {
+      width: 40%
+  }
+}
+
+#carousel .carousel-item.boat {
+  background-image: url(../img/img4.webp)
+}
+
+#carousel .carousel-item.sea {
+  background-image: url(../img/img3.webp)
+}
+
+#carousel .carousel-item.river {
+  background-image: url(../img/inicio2.webp)
+}
+
+#carousel .carousel-item {
+  height: 70vh;
+  width: 100%;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover
+}
+
+#carousel .carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease
+}
+
+#carousel .carousel-item .caption {
+  background: rgba(60, 160, 144, .85)
+}
+
+#carousel .carousel-item .caption2 {
+  background: rgba(0, 0, 0, .5)
+}
+
+.oscurito {
+  background: rgba(0, 0, 0, .5)
+}
+
+div::-webkit-scrollbar {
+  display: none
+}
+
+.hola .product {
+  min-width: 33%;
+  transition: .5s
+}
+
+@media (max-width:768px) {
+  .hola .product {
+      min-width: 99%
+  }
+}
 $font-weight-normal:500;
 $headings-font-weight: 700;
 $primary:#3CA090;

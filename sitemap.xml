@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/</loc>
+  <lastmod>2022-02-05T19:44:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/blog/</loc>
+  <lastmod>2022-02-23T19:59:29+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/blog/convocatoriaceneval2022-1.html</loc>
+  <lastmod>2022-02-23T19:58:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/cursoenlinea.html</loc>
+  <lastmod>2022-01-27T21:03:03+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/preguntasfrecuentes.html</loc>
+  <lastmod>2022-01-21T18:29:08+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/sesionesinformativas.html</loc>
+  <lastmod>2022-02-01T18:46:11+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/blog/bachilleratocenevalprocesodeacreditacion.html</loc>
+  <lastmod>2022-01-31T19:27:57+00:00</lastmod>
+  <priority>0.40</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/blog/queeselacredita-bach.html</loc>
+  <lastmod>2022-02-01T16:39:57+00:00</lastmod>
+  <priority>0.30</priority>
+</url>
+
+<url>
+  <loc>https://convocatoriaceneval.com.mx/aulavirtual.html</loc>
+  <lastmod>2022-01-27T21:22:25+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+
+</urlset>
