@@ -7288,12 +7288,14 @@ fieldset:disabled .btn {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 1.25rem;
   left: 15%;
+  color: #fff;
+  top: 40%; /*con este se cambia la altura  */
+  max-width: 700px;
+  /*bottom: 1.25rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  color: #fff;
-  text-align: center;
+  text-align: center;*/
 }
 
 .carousel-dark .carousel-control-prev-icon,

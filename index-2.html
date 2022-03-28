@@ -106,35 +106,30 @@
                         url(img/slider_4.png),
                     );
             }
-
             50% {
                 background-image: url('img/slider_3.webp');
                 background-image: image-set (url(img/slider_3.webp),
                         url(img/slider_3.png),
                     );
             }
-
             51% {
                 background-image: url('img/slider_3.webp');
                 background-image: image-set (url(img/slider_3.webp),
                         url(img/slider_3.png),
                     );
             }
-
             75% {
                 background-image: url('img/slider_1.webp');
                 background-image: image-set (url(img/slider_1.webp),
                         url(img/slider_1.png),
                     );
             }
-
             76% {
                 background-image: url('img/slider_1.webp');
                 background-image: image-set (url(img/slider_1.webp),
                         url(img/slider_1.png),
                     );
             }
-
             100% {
                 background-image: url('img/slider_4.webp');
                 background-image: image-set (url(img/slider_4.webp),
@@ -142,7 +137,6 @@
                     );
             }
         }
-
         .appwhatsapp {
             position: fixed;
             right: 15px;
@@ -150,7 +144,6 @@
             width: 60px;
             z-index: 1000;
         }
-
         .arriba {
             position: fixed;
             right: 22px;
@@ -170,13 +163,11 @@
             transition-timing-function: ease;
             transition-delay: 0s;
         }
-
         @media only screen and (min-width:901px) and (max-width:3000px) {
             .aparece {
                 display: none;
             }
         }
-
         @media only screen and (min-width:100px) and (max-width:900px) {
             .desaparece {
                 display: none;
@@ -185,7 +176,6 @@
     </style>
 
 </head>
-
 <body>
     <!--navegacion-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -220,7 +210,6 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-
                             <li class=""><a class="dropdown-item " href="aulavirtual.html"> Aula Virtual</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -258,7 +247,7 @@
             </div>
         </div>
     </nav>
-    <!---->
+    <!--slider nuevo-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -269,37 +258,75 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner" style="height: 600px;">
-            <div class="carousel-item active" style="background-image: url(img/cambiante1-2.png); background-size: cover; background-position: center; height: 100%;">
+            <div class="carousel-item active" style="background-image: url(img/cambiante3-2.png); background-size: cover; background-position: center; height: 100%;">
                 <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1 class="">Examen Periodo 2022-2</h1>
-                        <p> Conoce todo acerca del proceso para la inscripción a la evaluación mas actual, junto con las fechas publicadas por CENEVAL   </p>
-                        <p><a class="btn btn-lg btn-light text-white" href="#">Ir a blog</a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel-item" style="background-image: url(img/cambiante2-2.png); background-size: cover; background-position: center; height: 100%;" >
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Curso en línea</h1>
-                        <p>Comienza tu capacitación hoy mismo, preparate para tu examen CENEVAL y aprueba a la primera</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Inscríbete</a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel-item" style="background-image: url(img/cambiante3-2.png); background-size: cover; background-position: center; height: 100%;">
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1 class="">Prepa para empresas</h1>
+                    <style>
+                        .carousel-caption2{
+                            position: absolute;
+                            right: 15%;
+                            left: 15%;
+                            color: #fff;
+                            top: 25%; 
+                            max-width: 700px;
+                        }
+                        .logos{
+                            width: 100px;
+                        }
+
+                        @media only screen and (min-width:100px) and (max-width:900px) {
+                            .carousel-caption2{
+                                position: absolute;
+                                right: 15%;
+                                left: 15%;
+                                color: #fff;
+                                top: 27%; 
+                                max-width: 700px;
+                            }
+                            .logos{
+                                width: 80px;
+                            }
+                        }
+                    </style>
+
+                    <div class="carousel-caption2 text-start">
+                        <h1 class="text-uppercase">Prepa para empresas</h1>
                         <p>Contamos con experiencia impartiendo cursos a empresas, apoya a tu personal para conseguir su bachillerato y puedan sobresalir con éxito.</p>
-                        <p><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
                         Solicitar cotización
-                    </button></p>
+                        </button></p>
+                        <div class="row row-cols-3  row-cols-lg-5 pt-0 pt-lg-5">
+                            <div class="col mb-3 mb-lg-0 ">
+                                <img class="logos" src="img/grammer-1.png"  alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/mabe-1.png" alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/medisense-1.png" alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/oxxo-1.png"  alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/pilgrims-1.png"  alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="carousel-item " style="background-image: url(img/cambiante1-2.png); background-size: cover; background-position: center; height: 100%;">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="text-uppercase ">Conoce las fechas del proximo examen </h1>
+                        <p> Conoce todo acerca de fechas, registro, proceso y sedes del último <strong>examen CENEVAL</strong>   </p>
+                        <p><a class="btn btn-lg btn-light shadow" href="#">Ir a blog</a></p>
+                    </div>
+                </div>
+            </div>
+            
+
+            
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -312,138 +339,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!--otro sldier
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
--->
-
-
-
-
-
-    <!--slider bueno
-    <div class="container-fluid p-0 fondazo">
-        <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li class="active" data-target="#carousel" data-slide-to="0"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active ">
-                    <div class="container h-100 d-md-block">
-                        <div class="row align-items-center h-100">
-                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow position-relative">
-                                    <h1 class="text-white text-center fw-bold  pt-4 pt-lg-0">AVISO IMPORTANTE</h1>
-                                    <p class="text-white mt-4 text-center ">  <strong class="text-secondary" style="font-size:1.5em;"> Periodo 2022-2</strong> <br><strong> Modalidad: Lápiz y papel </strong> <br>  Registro: 7 al 27 FEBRERO <br> Aplicación: 3 de ABRIL <br> Resultados:  3 de JUNIO </p>
-                                    
-                                    
-                                    <p class="text-center "><a class="btn btn-outline-light" target="_blank" href="blog/convocatoriaceneval2022-1.html" >  Ver más  </a></p> 
-                                    <div class="testi2">
-                                        <i class="bi bi-exclamation-triangle text-white advertensia" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-item">
-                    <div class="container h-100 d-md-block">
-                        <div class="row align-items-center h-100">
-                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow position-relative">
-                                    <h1 class="text-white text-center fw-bold  pt-4 pt-lg-0">AVISO IMPORTANTE</h1>
-                                    <p class="text-white mt-4 text-center ">  <strong class="text-secondary" style="font-size:1.5em;"> Periodo 2022-1</strong> <br><strong> Modalidad: Lápiz y papel </strong> <br>  Registro: 17 al 30 ENERO <br> Aplicación: 19 de FEBRERO <br> Resultados:  15 de ABRIL </p>
-                                    
-                                    
-                                    <p class="text-center "><a class="btn btn-outline-light" target="_blank" href="blog/convocatoriaceneval2022-1.html" >  Ver más  </a></p>
-                                    <div class="testi2">
-                                        <i class="bi bi-exclamation-triangle text-white advertensia" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-item ">
-                    <div class="container h-100 d-md-block">
-                        <div class="row align-items-center h-100">
-                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow">
-                                    <h2 class="text-white text-center mb-4">CONOCE LA MEJOR FORMA DE APRENDER</h2>
-                                    <p class="text-white">Tenemos las herramientas necesarias para que puedas aprobar tu examen</p>
-                                    <a class="btn btn-outline-light" href="#sesiones"> Conoce más </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-            
-        </div>
-        <div class="flotante shadow">
-            <p class="text-center"> <a class="text-decoration-none frecuen text-success"  href="preguntasfrecuentes.html"> Preguntas Frecuentes </a> </p>
-        </div>
-    </div>
--->
     <!--seccion 1 calendario-->
     <section id="calendario" class="container-fluid pt-5 pb-2">
         <div class="container py-5">
@@ -616,52 +511,6 @@
             </div>
         </div>
     </section>
-    <!--
-    <section class="container-fluid py-5">
-        <div class="container">
-            
-            <div id="simulacro" class="simulacro rounded shadow mt-3 mb-3 ">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col cuadrada">
-                        <img data-src="img/simulacro-2.png" class="img-fluid lazyload" alt="">
-                    </div>
-                    <div class="col px-5 espacio">
-                        <h2 class="fw-bold"> EXÁMENES SIMULACRO </h2>
-                        <h6 class="mb-3 text-primary " >PON A PRUEBA TUS CONOCIMIENTOS</h6>
-                        <p class="">Familiarízate con la prueba real y descubre cómo son las preguntas que vendrán en tu <strong> examen de CENEVAL</strong>. Con este examen simulacro podras estar más preparado, para contestar todas las preguntas del examen real, sin problemas aprovecha esta oportunidad y refuerza tus conocimientos.</p>
-                        <ol class=" list-unstyled">
-                            <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span>Exámenes en línea</li>
-                            <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span>Respuestas al instante</li>
-                            <li> <span class="me-2"> <svg class="" width="24px" height="24px" viewBox="0 0 24 24" fill="#3CA090" > <path d="M9.86338 18C9.58738 18 9.32338 17.886 9.13438 17.685L4.27138 12.506C3.89238 12.104 3.91338 11.471 4.31538 11.093C4.71838 10.715 5.35138 10.735 5.72838 11.137L9.85338 15.528L18.2614 6.32599C18.6354 5.91699 19.2674 5.88999 19.6754 6.26199C20.0824 6.63399 20.1104 7.26699 19.7384 7.67399L10.6014 17.674C10.4144 17.88 10.1484 17.998 9.87038 18H9.86338Z"></path>  </svg> </span>Revisión en vivo</li>
-                        </ol> 
-                        <a class="btn btn-outline-primary" href="examenes_simulacro.html"> Conocer más <i class="bi bi-arrow-right-short"></i></a>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </div>
-
-        </div>
-    </section>       
-    <section class="container-fluid py-5">
-        <div class="container">
-            <div id="taller" class="taller rounded shadow mt-3 mb-3 ">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col"> 
-                        <img data-src="img/taller-2.png" class="img-fluid cuadrada lazyload" alt="">
-                    </div>
-                    <div class="col px-5 espacio">
-                        <h2 class="fw-bold">TALLERES DE REACTIVOS </h2>
-                        <h6 class="mb-3 text-primary">CALIFICA Y EVALUA TUS 
-                        VCONOCIMIENTOS</h6>
-                        <p class="">Con nuestro <strong> Taller de reactivos</strong> podrás mejorar tu habilidad de respuesta en un tiempo corto y preciso, incrementaras tu habilidad de resolver los rectivos, identificar las respuestas facilmente y mejorar la comprensión de los temas.</p> 
-                        <a class="btn btn-outline-primary" href="taller_reactivos.html
-                        "> Conocer más <i class="bi bi-arrow-right-short"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
     <!--guia ceneval-->
     <picture>
         <source class="lazyload img-fluid sombra cuadrada  rotamovil mt-5" width="100px" height="" type="image/webp"
@@ -669,8 +518,6 @@
         <img class="lazyload img-fluid sombra cuadrada  rotamovil mt-5" width="100px" height="" type="image/png"
             data-src="img/guia-para-el-sustentante.png" alt="guia ceneval " title="guia ceneval">
     </picture>
-    <!--
-    <img data-src="img/guia-para-el-sustentante.webp" title="convocatoria CENEVAL" class="img-fluid sombra cuadrada  rotamovil mt-5 lazyload" width="100px" height="" alt="guia ceneval" >-->
     <section class="container-fluid bg-guia pt-5 pt-lg-0 pararotado">
         <div class="container ">
             <div class="row row-cols-1 row-cols-lg-3 ">
@@ -782,21 +629,8 @@
             </div>
         </div>
     </section>
-    <!--ventana emergente 2 TODO:
-    <section >
-    <div id="modal2" class="modalmask overflow-auto">
-        <div class="modalbox movedown " >
-           
-            <a href="#close" title="Close" class="close">X</a>
-                <div class=" ">
-                    <iframe title="formulario sesiones"  width="100%" height="800" src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="auto"> </iframe>  
-                </div>  
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!--NUEVA VENTANA EMERGENTE-->
+    
+    <!--NUEVA VENTANA EMERGENTE   TODO:  -->
     <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -816,12 +650,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    Solicita una cotización
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <iframe title="formulario sesiones" width="100%" height="500"
-                        src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="auto">
+                        src="formularios/formulario-cotizacion.html" frameborder="0" scrolling="auto">
                     </iframe>
                 </div>
             </div>
