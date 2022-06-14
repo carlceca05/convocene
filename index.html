@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4LG4Z0H3W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-M4LG4Z0H3W');
+    </script>
+    
     <title>Convocatoria CENEVAL | ACREDITA-BACH </title>
     
     <meta charset="UTF-8">
@@ -15,9 +25,9 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57.png">
 
-<!--
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/reducido.min.css">-->
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="sass/custom.css">
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/reducido.min.css">
+    <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="sass/custom.css">-->
     
     <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="css/reducido.min.css">
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/iconos.min.css">-->
@@ -77,6 +87,7 @@
                     url(img/slider_1.webp) type("image/webp"),
                     url(img/slider_1.png) type("image/png"),
                 );
+                
             }
             25%{
                 background-image: url('img/slider_4.webp');
@@ -129,31 +140,58 @@
             }
         }
         .appwhatsapp{
-            position: fixed;
-            right: 15px;
-            bottom: 80px;
-            width: 60px;
-            z-index: 1000;
+    position: fixed;
+    right: 15px;
+    bottom: 80px;
+    width: 60px;
+    z-index: 1000;
+}
+.arriba{
+    position: fixed;
+    right: 22px;
+    text-align: center;
+    line-height: 50px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(180, 180, 180, 0.7);
+    border-radius: 25px;
+    color: white;
+    vertical-align: middle;
+    z-index: 999;
+    transition: 1s all;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  color: #fff;
+  top: 40%; /*con este se cambia la altura  */
+  max-width: 700px;
+  /*bottom: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;*/
+}
+        .carousel-caption2{
+            position: absolute;
+            right: 15%;
+            left: 15%;
+            color: #fff;
+            top: 25%; 
+            max-width: 700px;
         }
-        .arriba{
-            position: fixed;
-            right: 22px;
-            text-align: center;
-            line-height: 50px;
-            bottom: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(180, 180, 180, 0.7);
-            border-radius: 25px;
-            color: white;
-            vertical-align: middle;
-            z-index: 999;
-            transition: 1s all;
-            transition-property: all;
-            transition-duration: 1s;
-            transition-timing-function: ease;
-            transition-delay: 0s;
+        .logos{
+            width: 100px;
         }
+        .t-colabora{
+            width:125px;
+        }
+
         @media only screen and (min-width:901px) and (max-width:3000px) {
             .aparece{
                 display: none;
@@ -162,6 +200,20 @@
         @media only screen and (min-width:100px) and (max-width:900px) {
             .desaparece{
                 display: none;
+            }
+            .carousel-caption2{
+                position: absolute;
+                right: 15%;
+                left: 15%;
+                color: #fff;
+                top: 27%; 
+                max-width: 700px;
+            }
+            .logos{
+                width: 80px;
+            }
+            .t-colabora{
+                width:100px;
             }
         }
     </style>
@@ -173,9 +225,10 @@
         <div class="container ">
             <a class="navbar-brand" href="index.html">
                  <picture>
-                    <source class="img-fluid lazyload " title="convocatoria ceneval" type="image/webp" width="90" height="auto" data-srcset="img/convocatoria_ceneval_logo.webp" alt="convocatoriaCENEVAL">
-                    <img class="img-fluid lazyload " title="convocatoria ceneval" type="image/png" width="90" height="auto" data-src="img/convocatoria_ceneval_logo.png" alt="convocatoriaCENEVAL " >
-                </picture>
+                            <source class="img-fluid lazyload " title="convocatoria ceneval" type="image/webp" width="90" height="auto" data-srcset="img/convocatoria_ceneval_logo.webp" alt="convocatoriaCENEVAL">
+                            <img class="img-fluid lazyload " title="convocatoria ceneval" type="image/png" width="90" height="auto" data-src="img/convocatoria_ceneval_logo.png" alt="convocatoriaCENEVAL " >
+                        </picture>
+                
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -224,345 +277,79 @@
             </div>
         </div>
     </nav>
-    <!--nuevo slider-->
-    <!--LINKS-->
-
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/style.css">
-    <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/sss.css">-->
-    <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="css/estilos.css">-->
-    <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" rel="stylesheet" href="css/modal.css"> -->
-    <!--<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
-
-    <style>
-    .img1 {
-      background-image: url("img/bg_bachillerato.webp");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .img2 {
-      background-image: url("img/baner_portada.webp");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .img3 {
-      background-image: url("img/");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    @media only screen and (min-width:100px) and (max-width:900px) {
-      .img2 {
-        background-image: url("img/movil.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
-    </style>
-
-    <section id="">
-        <div class=" " style="position: relative;">
-            <div id="myCarousel" class="carousel slide " >
-                <div id="icon-swipe" class="hidden-desktop"> <i class="icon-exchange"></i> <i class="icon-hand-up icon-2x"></i>
-                </div>
-                <ol class="carousel-indicators visible-desktop">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1" class="desaparece"></li>
-                    <!--<li data-target="#myCarousel" data-slide-to="2" class=""></li>-->
-                </ol>
-                <div class="carousel-inner "  >
-                    <div class="item row img1 active">
-                        <div class="span5 ">
-                        </div>
-                        <div class="container">
-                            <div class="block">
-                                <div class="aire">
-                                <h1 class="text-white">Bachillerato Ceneval<abbr
-                                    title="Centro Nacional de Evaluación Para la Educación Superior"></abbr><br> </h1>
-                                <p class="lead">Bachillerato 100% con validez Garantizado ¡Cursa en línea!
-                                    <br><br> </p>
-                                <p><a class="btn btn-primary btn-large" href="#pagar"><i class="fa fa-thumbs-o-up"
-                                        aria-hidden="true"></i> Regístrate »</a></p>
-                                </div>
-                            </div>
-                        </div>
+    <!--slider nuevo-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>-->
+        </div>
+        <div class="carousel-inner" style="height: 600px;">
+            <div class="carousel-item active" style="background-image: url(img/cambiante2-2.png); background-size: cover; background-position: center; height: 100%;">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="text-uppercase">Convocatoria CENEVAL</h1>
+                        <p class="fs-4">Aquí encontrarás todo acerca de la última aplicación del examen Ceneval y como puedes obtener tu certificado de bachillerato en un examen   </p>
                     </div>
-                    <div class="item row img2 desaparece">
-                        <div class="container">
-                            <div class="block">
-                                <div class="aire">
-                                    <h1>Prepa para Empresas<br></h1>
-                                    <p class="lead">Contamos con experiencia impartiendo cursos a empresas, apoya a tu personal para conseguir su bachillerato y puedan sobresalir con éxito.<br><br></p>
-                                    <p><a class="btn btn-primary btn-large" href="#myModal" role="button" data-toggle="modal" target=""><i
-                                            class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp; Solicita una cotización »</a></p>
-                                </div>
+                </div>
+            </div>
+            <div class="carousel-item "
+        style="background-image: url(img/cambiante1-2.png); background-size: cover; background-position: center; height: 100%;">
+        <div class="container">
+          <div class="carousel-caption2 text-start">
+            <h1 class="text-uppercase ">Conoce las fechas del proximo examen </h1>
+            <p> Conoce todo acerca de fechas, registro, proceso y sedes del último <strong>examen CENEVAL</strong> </p>
+            <p><a class="btn btn-lg btn-light shadow" href="https://bachilleratoceneval.com/blog/">Ir a blog</a></p>
+          </div>
+        </div>
+      </div>
+            <div class="carousel-item " style="background-image: url(img/cambiante3-2.png); background-size: cover; background-position: center; height: 100%;">
+                <div class="container">
+                    <div class="carousel-caption2 text-start">
+                        <h1 class="text-uppercase">Prepa para empresas</h1>
+                        <p>Contamos con experiencia impartiendo cursos a empresas, apoya a tu personal para conseguir su bachillerato y puedan sobresalir con éxito.</p>
+                        <p><button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#modal3">
+                        Solicitar cotización
+                        </button></p>
+                        <div class="row row-cols-3  row-cols-lg-5 pt-0 pt-lg-5">
+                            <div class="col mb-3 mb-lg-0 ">
+                                <img class="logos" src="img/grammer-1.png"  alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/mabe-1.png" alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/medisense-1.png" alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/oxxo-1.png"  alt="">
+                            </div>
+                            <div class="col mb-3 mb-lg-0">
+                                <img class="logos" src="img/pilgrims-1.png"  alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    
-  <!-- SCRIPTS -->
-  <!--otro-->
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=236430009732599";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-  <!--SCRIPTS-->
-  <link rel="stylesheet" type="text/css" href="js/sss.js">
-  <link rel="stylesheet" type="text/css" href="js/sss.min.js">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="/js/modernizr.js"></script>
-  <script src="js/sss.js"></script>
-  <script>
-	  jQuery(function($){
-	    $('.slider-testimonial').sss({
-	      slideShow : true,
-	      speed : 4000
-	      });
-	  });
-	</script>
-  <!-- Mailchimp GOAL -->
-  <script type="text/javascript">
-  var $mcGoal = {'settings':{'uuid':'d1c31d7bc8bc027585d5ca6a8','dc':'us3'}};
-    (function() {
-      var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
-      sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore (sp, s);
-  })(); 
-</script>
-<!-- ENDS Mailchimp GOAL -->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/57ec42d181b5df649ae7da2d/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-<script src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/scripts.js"></script> 
-<!-- <script type="text/javascript" src="../js/prefixfree.js"></script> --> 
-<script type="text/javascript" src="js/tabletop.js"></script> 
-<script type="text/javascript">$(function(){var a=$(window);setTimeout(function(){$(".bs-docs-sidenav").affix({offset:{top:function(){return a.width()<=1200?495:544}}})},100)});</script> 
-
-<script type='text/javascript'>function posicionarMenu(){var b=$("header").outerHeight(true);var a=$("nav").outerHeight(true);if($(window).scrollTop()>=b-a){$("nav").addClass("navbar-fixed-top");$("nav").removeClass("trampa")}else{$("nav").addClass("trampa");$("nav").addClass("navbar-fixed-top")}}$(document).ready(function(){posicionarMenu();$(window).scroll(function(){posicionarMenu()})});$(function(){$("#testmenu a").popover()});
-     //spreadsheet
-      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Boph5TkZSiAV4RtYyP8yhLS1j-74uj-YAA54kUtwa5o/pubhtml';
-      $(document).ready( function() {
-        Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showInfo,
-                         wanted: [ "distrito federal", "viaducto", "oaxaca", "queretaro",  "examen" ],
-                         debug: true } )
-      })
-      function showInfo(data, tabletop) {
-        $.each( tabletop.sheets("distrito federal").all(), function(i, df) {
-          var df_li = $('<p><b>' + df.dias + '</b></p><p><i class="icon-calendar"></i> ' + df.fecha + '<br><i class="icon-time"></i> ' + df.horario + '<br><i class="icon-file-alt"></i> ' + df.examen + '<br><b style="color:red;">' + df.status + '</b></p>')
-          df_li.prependTo("#eug .texto");
-        })
-        $.each( tabletop.sheets("oaxaca").all(), function(i, oax) {
-          var oax_li = $('<p><b>' + oax.dias + '</b></p><p><i class="icon-calendar"></i> ' + oax.fecha + '<br><i class="icon-time"></i> ' + oax.horario + '<br><i class="icon-file-alt"></i> ' + oax.examen + '<br><b style="color:red;">' + oax.status + '</b></p>')
-          oax_li.prependTo("#oax .texto");
-        })
-        $.each( tabletop.sheets("queretaro").all(), function(i, qro) {
-          var qro_li = $('<p><b>' + qro.dias + '</b></p><p><i class="icon-calendar"></i> ' + qro.fecha + '<br><i class="icon-time"></i> ' + qro.horario + '<br><i class="icon-file-alt"></i> ' + qro.examen + '<br><b style="color:red;">' + qro.status + '</b></p>')
-          qro_li.prependTo("#qro .texto");
-        })
-        $.each( tabletop.sheets("viaducto").all(), function(i, vto) {
-          var vto_li = $('<p><b>' + vto.dias + '</b></p><p><i class="icon-calendar"></i> ' + vto.fecha + '<br><i class="icon-time"></i> ' + vto.horario + '<br><i class="icon-file-alt"></i> ' + vto.examen + '<br><b style="color:red;">' + vto.status + '</b></p>')
-          vto_li.prependTo("#vto .texto");
-        })
-        $.each( tabletop.sheets("examen").all(), function(i, exa) {
-          var exa_li = $('<h2>Examen ' + exa.aplicacion + '</h3><a href="http://registroenlinea.ceneval.edu.mx/RegistroLinea/" target="_new">Registro en línea ' + exa.registro + '</a>')
-          exa_li.appendTo("#examen .page-header");
-        })
-      }
-    </script> 
-
-  <script>
-    // Exit intent
-    function addEvent(obj, evt, fn) {
-        if (obj.addEventListener) {
-            obj.addEventListener(evt, fn, false);
-        }
-        else if (obj.attachEvent) {
-            obj.attachEvent("on" + evt, fn);
-        }
-    }
-    // Exit intent trigger
-    addEvent(document, 'mouseout', function(evt) {
-        if (evt.toElement == null && evt.relatedTarget == null ) {
-          $("#mostrarmodal").modal("toggle");
-         };
-    });
-    // Closing the Popup Box
-    $('a.close').click(function(){
-    $('.lightbox').slideUp();
-    });
-  </script>
-  <!--OTRO SCRIPT-->
-  <script>
-    $(document).ready(function(){
-       $("#mostrarmodal").modal("toggle");
-    });
-  </script>
-  <!--OTRO SCRIPT-->
-  <script>
-    var acc = document.getElementsByClassName("accordion-1");
-    var i;
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active1");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
-  <!--OTRO SCRIPT-->
-  <script type="text/javascript">
-  //tabs fechas
-  $('#fechas a').click(function (e) {
-    e.preventDefault();
-      $(this).tab('show');
-  })
-  </script>
-  
-
-  
-  
-  <script type="text/javascript">
-  function posicionarMenu() {
-    var e = $("header").outerHeight(true);
-    var t = $("nav").outerHeight(true);
-    if ($(window).scrollTop() >= e - t) {
-        $("nav").addClass("navbar-fixed-top");
-        $("nav").removeClass("trampa")
-    } else {
-        $("nav").addClass("trampa");
-        $("nav").addClass("navbar-fixed-top")
-    }
-}
-
-$(document).ready(function () {
-    $("#myCarousel").carousel({
-        interval: 6000
-    });
-
-    $("#myCarousel").swiperight(function () {
-        $("#myCarousel").carousel("prev")
-    });
-
-    $("#myCarousel").swipeleft(function () {
-        $("#myCarousel").carousel("next")
-    })
-});
-
-</script>
-
-
-
-
-
-    <!--slider bueno
-    <div class="container-fluid p-0 fondazo">
-        <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li class="active" data-target="#carousel" data-slide-to="0"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active ">
-                    <div class="container h-100 d-md-block">
-                        <div class="row align-items-center h-100">
-                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow position-relative">
-                                    <h1 class="text-white text-center fw-bold  pt-4 pt-lg-0">AVISO IMPORTANTE</h1>
-                                    <p class="text-white mt-4 text-center ">  <strong class="text-secondary" style="font-size:1.5em;"> Periodo 2022-2</strong> <br><strong> Modalidad: Lápiz y papel </strong> <br>  Registro: 7 al 27 FEBRERO <br> Aplicación: 3 de ABRIL <br> Resultados:  3 de JUNIO </p>
-                                    
-                                    
-                                    <p class="text-center "><a class="btn btn-outline-light" target="_blank" href="blog/convocatoriaceneval2022-1.html" >  Ver más  </a></p> 
-                                    <div class="testi2">
-                                        <i class="bi bi-exclamation-triangle text-white advertensia" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-item">
-                    <div class="container h-100 d-md-block">
-                        <div class="row align-items-center h-100">
-                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow position-relative">
-                                    <h1 class="text-white text-center fw-bold  pt-4 pt-lg-0">AVISO IMPORTANTE</h1>
-                                    <p class="text-white mt-4 text-center ">  <strong class="text-secondary" style="font-size:1.5em;"> Periodo 2022-1</strong> <br><strong> Modalidad: Lápiz y papel </strong> <br>  Registro: 17 al 30 ENERO <br> Aplicación: 19 de FEBRERO <br> Resultados:  15 de ABRIL </p>
-                                    
-                                    
-                                    <p class="text-center "><a class="btn btn-outline-light" target="_blank" href="blog/convocatoriaceneval2022-1.html" >  Ver más  </a></p>
-                                    <div class="testi2">
-                                        <i class="bi bi-exclamation-triangle text-white advertensia" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-item ">
-                    <div class="container h-100 d-md-block">
-                        <div class="row align-items-center h-100">
-                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div class="caption p-5 rounded shadow">
-                                    <h2 class="text-white text-center mb-4">CONOCE LA MEJOR FORMA DE APRENDER</h2>
-                                    <p class="text-white">Tenemos las herramientas necesarias para que puedas aprobar tu examen</p>
-                                    <a class="btn btn-outline-light" href="#sesiones"> Conoce más </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
             
         </div>
-        <div class="flotante shadow">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+         <div class="flotante shadow">
             <p class="text-center"> <a class="text-decoration-none frecuen text-success"  href="preguntasfrecuentes.html"> Preguntas Frecuentes </a> </p>
         </div>
     </div>
--->
     <!--seccion 1 calendario-->
     <section id="calendario" class="container-fluid pt-5 pb-2">
         <div class="container py-5">
@@ -582,39 +369,41 @@ $(document).ready(function () {
                         <div class="card-body ">
                             <i class="bi bi-calendar3 fs-2"></i>
                             <h6 class="card-title">REGISTRO AL EXAMEN</h6>
+                            <span class="badge bg-success">CDMX</span> <span class="badge bg-primary">Lápíz y papel</span>
+                            <p class="card-text "> <strong> Periodo 2022-3</strong>
+                            <br> Del 25 de Abril al 22 de Mayo </p>
                             <span class="badge bg-success">Nacional</span> <span class="badge bg-primary">Presencial</span>
                             <p class="card-text "> <strong> Periodo 2022-2</strong>
                             <br> Del 7 al 27 Febrero </p>
-                            <span class="badge bg-success">Nacional</span> <span class="badge bg-primary">Presencial</span>
-                            <p class="card-text "> <strong> Periodo 2022-1</strong>
-                            <br> Del 17 al 30 Enero </p>
-                            <h6 class="text-primary"> ENE-FEB 2022</h6>
+                           
+                            <h6 class="text-primary"> FEB-MAY 2022</h6>
                         </div>
                     </div>
                     <div class="product card shadow me-2 position-relative rounded">
                         <div class="card-body">
                             <i class="bi bi-calendar3 fs-2"></i>
                             <h6 class="card-title">APLICACIÓN DEL EXAMEN</h6>
+                            <span class="badge bg-success">CDMX</span> <span class="badge bg-primary">Lápiz y papel</span>
+                            <p class="card-text "> <strong> Periodo 2022-3</strong>
+                            <br> 10 de Julio </p>
                             <span class="badge bg-success">Nacional</span> <span class="badge bg-primary">Presencial</span>
                             <p class="card-text "> <strong> Periodo 2022-2</strong>
                             <br> 3 de Abril </p>
-                            <span class="badge bg-success">Nacional</span> <span class="badge bg-primary">Presencial</span>
-                            <p class="card-text "> <strong> Periodo 2022-1</strong>
-                            <br> 19 de Febrero </p>
-                            <h6 class="text-primary">FEB-ABR 2022</h6>
+                            
+                            <h6 class="text-primary">ABR-JUL 2022</h6>
                         </div>
                     </div>
                     <div class="product card me-2 position-relative rounded shadow">
                         <div class="card-body">
                             <i class="bi bi-calendar3 fs-2"></i>
                             <h6 class="card-title">FECHA DE RESULTADOS</h6>
+                             <span class="badge bg-success">CDMX</span> <span class="badge bg-primary">Lápiz y papel</span>
+                            <p class="card-text "> <strong> Periodo 2022-3</strong>  
+                            <br> 26 de Agosto  </p>
                             <span class="badge bg-success">Nacional</span> <span class="badge bg-primary">Presencial</span>
                             <p class="card-text "> <strong> Periodo 2022-2</strong>  
                             <br> 3 de Junio  </p>
-                            <span class="badge bg-success">Nacional</span> <span class="badge bg-primary">Presencial</span>
-                            <p class="card-text "> <strong> Periodo 2022-1</strong>  
-                            <br> 15 de Abril  </p>
-                            <h6 class="text-primary">  ABR-JUN 2022</h6>
+                            <h6 class="text-primary">  JUN-AGO 2022</h6>
                             
                         </div>
                     </div>
@@ -631,12 +420,13 @@ $(document).ready(function () {
     </section>
     
     <!--aviso-->
-    <section class="container-fluid bg-danger py-4 mb-5">
+    <section class="container-fluid bg-secondary py-4 mb-5">
         <div class="container text-white  text-center">
-            <h1 class="mb-3">  ¿SABÍAS QUE?  </h1>
-            <p class="mb-0"> Solo una <strong class="text-uppercase text-warning" > tercera parte</strong> de los que aplican el <strong class="text-uppercase text-warning"> examen CENEVAL</strong> lo aprueban. </p>
-            <p class="mb-3"> Es por ello que es necesario una <strong class="text-uppercase text-warning"> capacitación </strong> de calidad. </p>
-            <h4 class="text-uppercase "> Aprueba a la primera </h4>
+            <h2 class="mb-3  text-uppercase  text-primary  h1 " >  ¡Inicia tu curso ahora!  </h2>
+            <p class="mb-0"> Aún estás a tiempo de comenzar con tu capacitación.
+                No lo dejes todo para el final y comienza ahora. 
+                Si tienes dudas puedes mandar un mensaje  por whatsapp y con gusto te atenderemos.  </p>
+                <p class="mt-4 mb-4 ">  <a class="btn btn-primary text-white  "  href=""> ¡Inscríbete! </a> </p>
             <p class="mb-0"> Conoce las opciones que tenemos para ti   </p>
             <p class="small"> Cursos - Exámenes - Talleres - Clases muestra - Guias Resueltas - Exámenes Simulacro resueltos   </p>
         </div>
@@ -845,20 +635,6 @@ $(document).ready(function () {
             </div>
         </div>
     </section>
-    <!--ventana emergente 2 TODO:
-    <section >
-    <div id="modal2" class="modalmask overflow-auto">
-        <div class="modalbox movedown " >
-           
-            <a href="#close" title="Close" class="close">X</a>
-                <div class=" ">
-                    <iframe title="formulario sesiones"  width="100%" height="800" src="formularios/formulario_sesiones_informativas.html" frameborder="0" scrolling="auto"> </iframe>  
-                </div>  
-            </div>
-        </div>
-    </section>
-    -->
-    
     <!--NUEVA VENTANA EMERGENTE-->
     <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -872,140 +648,61 @@ $(document).ready(function () {
             </div>
         </div>
     </div>   
-    <!-- colaboradores 1-->
-    <section class="container-fluid  desaparece ">
+    <!--NUEVA VENTANA EMERGENTE-->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe title="formulario sesiones" width="100%" height="500"
+                        src="formularios/formulario-cotizacion.html" frameborder="0" scrolling="auto">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- colaboradores -->
+    <section class="container-fluid ">
         <div class="container ">
-            <div class="row py-5" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+            <div class=" py-5" style="max-width: 800px; margin-left: auto; margin-right: auto;">
                 <h5 class="text-center text-primary">NUESTROS</h5>
-            <h2 class="text-center mb-3">COLABORADORES</h2>
-                <div class="col" >
-                    <div  id="carousel4" class="carousel slide hero-slides d-flex justify-content-center " data-ride="carousel">
-                        <ol class="carousel-indicators ">
-                            <li class="active" data-target="#carousel4" data-slide-to="0"></li>
-                            <li data-target="#carousel4" data-slide-to="1"></li>
-                            <li data-target="#carousel4" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner  logos desaparece" role="listbox"  >
-                            <div class="carousel-item active "> 
-                                <div class="container  d-md-block">
-                                    <div class="caption  py-4 ">
-                                        <div class="row ">
-                                            <div class="col  d-flex justify-content-evenly">
-                                                <a href="https://bachilleratoceneval.com/" target="_blank">
-                                                    <picture >
-                                                        <source class="lazyload redonda shadow colaboradores" type="image/webp" width="125px" data-srcset="img/bachilleratoceneval.webp">
-                                                        <img class="lazyload redonda shadow colaboradores" width="125px" data-src="img/bachilleratoceneval.png" alt="ceneval " >
-                                                    </picture>
+                <h2 class="text-center mb-3">COLABORADORES</h2>
+                <div  class="row">
+                    <div class="col d-flex justify-content-center ">
+                        <a href="https://bachilleratoceneval.com/" target="_blank">
+                            <picture >
+                                <source class="lazyload redonda shadow colaboradores t-colabora" type="image/webp"  data-srcset="img/bachilleratoceneval.webp">
+                                <img class="lazyload redonda shadow colaboradores t-colabora"  data-src="img/bachilleratoceneval.png" alt="ceneval " >
+                            </picture>
                                                     
-                                                </a>
-                                                <a href="https://prepaenunexamen.com/" target="_blank">
-                                                    <picture >
-                                                        <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/prepaenunexamen.webp">
-                                                        <img class="lazyload redonda shadow colaboradores" width="125px" data-src="img/prepaenunexamen.png" alt="ceneval " >
-                                                    </picture>
+                        </a>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <a href="https://prepaenunexamen.com/" target="_blank">
+                            <picture >
+                                <source class="lazyload redonda shadow colaboradores t-colabora" type="image/webp" data-srcset="img/prepaenunexamen.webp">
+                                <img class="lazyload redonda shadow colaboradores t-colabora" data-src="img/prepaenunexamen.png" alt="ceneval " >
+                            </picture>
                                                     
                                                     
-                                                </a>
-                                                <a href="https://examenunicoceneval.com/" target="_blank">
-                                                    <picture >
-                                                        <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/examenunicoceneval.webp" alt="ceneval">
-                                                        <img class="lazyload redonda shadow colaboradores" width="125px" data-src="img/examenunicoceneval.png" alt="ceneval " >
-                                                    </picture>
+                        </a>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <a href="https://examenunicoceneval.com/" target="_blank">
+                            <picture >
+                                <source class="lazyload redonda shadow colaboradores t-colabora" type="image/webp" data-srcset="img/examenunicoceneval.webp" alt="ceneval">
+                                <img class="lazyload redonda shadow colaboradores t-colabora" data-src="img/examenunicoceneval.png" alt="ceneval " >
+                            </picture>
                                                     
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--
-                            <div class="carousel-item "> 
-                                <div class="container  d-md-block">
-                                    <div class="caption  ">
-                                        <div class="row">
-                                            <div class="col d-flex d-flex justify-content-evenly ">
-                                                <img class="lazyload img-fluid" src="img/convocatoria_ceneval_logo.png" alt="cecaes" width="100px" title="fullness">
-                                                <img class="lazyload img-fluid" src="img/convocatoria_ceneval_logo.png" alt="cecaes" width="100px" title="fullness">
-                                                <img class="lazyload img-fluid" src="img/convocatoria_ceneval_logo.png" alt="cecaes" width="100px" title="fullness">
-                                            </div>
-                                        </div>
-                                    </div>    
-                                </div>
-                            </div>
-                            -->
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--colaboradores 1 mobiles-->
-    <section class="container-fluid py-5 aparece">
-        <div class="container">
-            <div class="row py-2" >
-                <h5 class="text-center text-primary">NUESTROS</h5>
-            <h2 class="text-center mb-3">COLABORADORES</h2>
-                    <div  id="carousel5" class="carousel slide hero-slides d-flex justify-content-center " data-ride="carousel">
-                        <ol class="carousel-indicators ">
-                            <li class="active" data-target="#carousel5" data-slide-to="0"></li>
-                            <li data-target="#carousel5" data-slide-to="1"></li>
-                            <li data-target="#carousel5" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner  logos " role="listbox"  >
-                            <div class="carousel-item active "> 
-                                <div class="container  d-md-block">
-                                    <div class="caption py-4  ">
-                                        <div class="row">
-                                            <div class="col  text-center">
-                                                <a href="https://bachilleratoceneval.com/" target="_blank">
-                                                <picture >
-                                                    <source class="lazyload redonda shadow colaboradores" type="image/webp" width="125px" data-srcset="img/bachilleratoceneval.webp">
-                                                    <img class="lazyload redonda colaboradores shadow" width="125px" type="image/png" data-src="img/bachilleratoceneval.png" alt=" " >
-                                                </picture>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item "> 
-                                <div class="container  d-md-block">
-                                    <div class="caption  py-4">
-                                        <div class="row">
-                                            <div class="col text-center ">
-                                                <a href="https://prepaenunexamen.com/" target="_blank">
-                                                <picture >
-                                                    <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/prepaenunexamen.webp">
-                                                    <img class="lazyload redonda shadow colaboradores" type="image/png" width="125px" data-src="img/prepaenunexamen.png" alt=" " >
-                                                    </a>
-                                                </picture>
-                                            </div>
-                                        </div>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="carousel-item "> 
-                                <div class="container  d-md-block">
-                                    <div class="caption  py-4">
-                                        <div class="row">
-                                            <div class="col  text-center">
-                                                <a href="https://examenunicoceneval.com/" target="_blank">
-                                                <picture >
-                                                    <source class="lazyload redonda shadow colaboradores" width="125px" type="image/webp" data-srcset="img/examenunicoceneval.webp">
-                                                    <img class="lazyload redonda shadow colaboradores" width="125px" type="image/png" data-src="img/examenunicoceneval.png" alt=" " >
-                                                </picture>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>    
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
+    
     
     <!--seccion footer-->
     <section class="container-fluid bg-light">
@@ -1091,9 +788,6 @@ $(document).ready(function () {
                 </div>
         </div>
     </section>
-    <!--
-    <p class="bg-primary text-white text-center mb-0 " style="padding: 10px 0;" > <small>   Sitio creado por <a class="text-white "  href="https://prospecta.studio" target="_blank">prospecta.studio </a></small> <img class="flechita" src="img/cursor.png" width="20px" height="auto"  alt=""> </p>
-    -->
     <!-- icono arriba -->
 	<a  class="arriba" href="#top">
 		<i class="bi bi-chevron-up text-white " ></i>
