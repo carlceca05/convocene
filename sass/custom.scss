@@ -192,14 +192,14 @@
 }
 
 .requisitos {
-  background-image: url(../img/requisitos.webp);
+  background-image: url(../img/examenunicoceneval-fondo6-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
 }
 
 .terminar {
-  background-image: url(../img/terminar.webp);
+  background-image: url(../img/bachileratoceneval-fondo6.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -211,9 +211,14 @@
   background-position: center;
   background-size: cover
 }
-
-.capacitate {
-  background-image: url(../img/capa.webp);
+.capacitate{
+  background-image: url(../img/convocatoriaceneval-fondo1-cursolinea.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.capacitate2 {
+  background-image: url(../img/bachileratoceneval-fondo1.png);/* aaa  */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -260,9 +265,15 @@
   background-position: center;
   background-size: cover
 }
-
-.linea {
+.linea{
   background-image: url(../img/linea.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.linea2 {
+  background-image: url(../img/bachileratoceneval-fondo4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -339,9 +350,15 @@
   background-position: center;
   background-size: cover
 }
-
-.aula {
+.aula{
   background-image: url(../img/aula.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.aula2 {
+  background-image: url(../img/bachileratoceneval-fondo3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover
@@ -360,6 +377,11 @@
   background-position: center;
   background-size: cover
 }
+
+                            .costos-index{
+                                max-width: 70%;
+                            }
+                        
 
 @media only screen and (min-width:901px) and (max-width:3000px) {
   .cuadrada {
@@ -410,9 +432,7 @@
   .sesion {
       background-image: none
   }
-  .linea {
-      background-image: none
-  }
+  
   .simulacro {
       background-image: none
   }
@@ -425,8 +445,26 @@
   .terminar {
       background-image: none
   }
+  .linea {
+    background-image: none
+}
   .capacitate {
       background-image: none
+  }
+  .aula {
+    background-image: none
+  }
+  .linea2 {
+    background-image: none
+}
+  .capacitate2 {
+      background-image: none
+  }
+  .aula2 {
+    background-image: none
+  }
+  .requisitos{
+    background-image: none;
   }
   .testi2 {
       position: absolute;
@@ -440,6 +478,9 @@
   }
   .logofooter {
       width: 40%
+  }
+  .costos-index{
+    max-width: 100%;
   }
 }
 
