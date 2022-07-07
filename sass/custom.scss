@@ -368,14 +368,34 @@
   background-image: url(../img/curso-linea.webp);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover
+  background-size: cover;
+}
+.curso-presencial {
+  background-image: url(../img/curso-presencial.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.presencial-1{
+  background-image: url(../img/presencial1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.presencial-index{
+  background-image: url(../img/curso-presencial-index.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .examen-simulacro {
   background-image: url(../img/examen-simulacro.webp);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover
+  background-size: cover;
 }
 
                             .costos-index{
@@ -481,6 +501,12 @@
   }
   .costos-index{
     max-width: 100%;
+  }
+  .presencial-1{
+    background: none;
+  }
+  .presencial-index{
+    background: none;
   }
 }
 
